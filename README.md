@@ -18,4 +18,6 @@ This repository contains files relating to the Program and Schedule for [rstudio
 
 3.  Submit your changes as a PR and someone on the program committee will approve ASAP.
 
+You may submit as many changes/PRs as you want, up until the deadline of [TODO].
+
 If you have any questions please do not hesitate to ask on the [\#rstudio-global-2021-speakers Slack channel](https://rstudio.slack.com/archives/C01CWSPESJD) or file an issue!
