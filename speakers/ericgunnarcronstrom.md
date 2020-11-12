@@ -1,5 +1,6 @@
 ---
 talk_id: 246
+type: talk
 name: Eric Gunnar Cronstrom
 affiliation: Central Michigan University
 links:

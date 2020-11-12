@@ -1,5 +1,6 @@
 ---
 talk_id: 179
+type: talk
 name: Matt Thomas
 affiliation: British Red Cross
 links:

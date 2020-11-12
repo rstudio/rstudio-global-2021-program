@@ -1,5 +1,6 @@
 ---
 talk_id: 179
+type: talk
 name: Mike Page
 affiliation: British Red Cross
 links:

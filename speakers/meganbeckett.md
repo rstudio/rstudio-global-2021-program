@@ -1,5 +1,6 @@
 ---
 talk_id: 261
+type: talk
 name: Megan Beckett
 affiliation: Exegetic Analytics
 links:

@@ -1,5 +1,6 @@
 ---
 talk_id: 309
+type: talk
 name: Mine Cetinkaya-Rundel
 affiliation: RStudio & University of Edinburgh
 links:

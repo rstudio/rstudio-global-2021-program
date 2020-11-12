@@ -1,5 +1,6 @@
 ---
 talk_id: 278
+type: talk
 name: Neal Richardson
 affiliation: Ursa Computing
 links:

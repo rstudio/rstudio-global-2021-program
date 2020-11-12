@@ -1,5 +1,6 @@
 ---
 talk_id: 314
+type: talk
 name: JooYoung Seo
 affiliation: The Pennsylvania State University
 links:

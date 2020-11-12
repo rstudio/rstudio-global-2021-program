@@ -1,5 +1,6 @@
 ---
 talk_id: 290
+type: talk
 name: Andrew Tran
 affiliation: The Washington Post
 links:

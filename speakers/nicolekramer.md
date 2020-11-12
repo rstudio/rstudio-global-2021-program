@@ -1,5 +1,6 @@
 ---
 talk_id: 182
+type: talk
 name: Nicole Kramer
 affiliation: University of North Carolina at Chapel Hill
 links:

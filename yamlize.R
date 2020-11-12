@@ -46,12 +46,15 @@ full_names <- lapply(parsed_speakers, magrittr::extract2, i = "name") %>% unlist
 last_names <- full_names %>% strsplit(" ") %>% lapply(tail, n = 1) %>% unlist()
 parsed_speakers <- parsed_speakers[order(tolower(last_names))]
 
+talk_type <- vapply(parsed_speakers, magrittr::extract2, character(1), i = "type")
+
 if (dir.exists("yaml_output")) {
   unlink("yaml_output", recursive = TRUE)
 }
 dir.create("yaml_output")
 
-write_yaml(parsed_speakers, "yaml_output/all_speakers.yml")
+write_yaml(parsed_speakers[talk_type == "talk"], "yaml_output/talks.yml")
+write_yaml(parsed_speakers[talk_type == "lightning"], "yaml_output/lightning.yml")
 
 dir.create("yaml_output/speakers")
 lapply(parsed_speakers, function(speaker) {

@@ -1,5 +1,6 @@
 ---
 talk_id: 315
+type: talk
 name: Grant Fleming
 affiliation: Elder Research Inc.
 links:

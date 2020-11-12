@@ -1,5 +1,6 @@
 ---
 talk_id: 187
+type: talk
 name: Marcus Adams
 affiliation: Merck
 links:

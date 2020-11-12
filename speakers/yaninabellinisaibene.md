@@ -1,5 +1,6 @@
 ---
 talk_id: 214
+type: talk
 name: Yanina Bellini Saibene
 affiliation: INTA - MetaDocencia
 links:

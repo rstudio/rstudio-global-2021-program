@@ -1,5 +1,6 @@
 ---
 talk_id: 274
+type: talk
 name: Sophie Beiers
 affiliation: American Civil Liberties Union
 links:

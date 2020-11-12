@@ -1,5 +1,6 @@
 ---
 talk_id: 286
+type: talk
 name: Kara Woo
 affiliation: Sage Bionetworks
 links:

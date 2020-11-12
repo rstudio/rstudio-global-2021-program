@@ -1,5 +1,6 @@
 ---
 talk_id: 293
+type: talk
 name: Aaron Jacobs
 affiliation: Crescendo Technology
 links:

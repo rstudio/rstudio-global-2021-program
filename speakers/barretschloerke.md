@@ -1,5 +1,6 @@
 ---
 talk_id: 312
+type: talk
 name: Barret Schloerke
 affiliation: RStudio
 links:

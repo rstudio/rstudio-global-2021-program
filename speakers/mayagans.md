@@ -1,5 +1,6 @@
 ---
 talk_id: 148
+type: talk
 name: Maya Gans
 affiliation: Cytel Inc
 links:

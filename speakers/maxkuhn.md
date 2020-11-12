@@ -1,5 +1,6 @@
 ---
 talk_id: 222
+type: talk
 name: Max Kuhn
 affiliation: RStudio
 links:

@@ -1,7 +1,8 @@
 ---
 talk_id: 327
+type: talk
 name: Riva Quiroga
-affiliation: .na.character
+affiliation: null
 links:
   homepage: null
   twitter: null

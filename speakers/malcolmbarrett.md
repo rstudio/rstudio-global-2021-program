@@ -1,5 +1,6 @@
 ---
 talk_id: 279
+type: talk
 name: Malcolm Barrett
 affiliation: Livongo Health
 links:

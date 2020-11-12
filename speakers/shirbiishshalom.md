@@ -1,5 +1,6 @@
 ---
 talk_id: 323
+type: talk
 name: Shirbi Ish-Shalom
 affiliation: Intuit
 links:

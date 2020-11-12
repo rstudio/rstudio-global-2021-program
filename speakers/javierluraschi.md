@@ -1,5 +1,6 @@
 ---
 talk_id: 112
+type: talk
 name: Javier Luraschi
 affiliation: RStudio
 links:

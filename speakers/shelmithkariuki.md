@@ -1,5 +1,6 @@
 ---
 talk_id: 221
+type: talk
 name: Shelmith Kariuki
 affiliation: 'Data Analytics Consultant: UN DESA, Population Division'
 links:

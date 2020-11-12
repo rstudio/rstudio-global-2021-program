@@ -1,5 +1,6 @@
 ---
 talk_id: 262
+type: talk
 name: Kate Hertweck
 affiliation: Fred Hutchinson Cancer Research Center
 links:

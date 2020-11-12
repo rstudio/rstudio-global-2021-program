@@ -1,5 +1,6 @@
 ---
 talk_id: 186
+type: talk
 name: Rika Gorn
 affiliation: Spring Health
 links:

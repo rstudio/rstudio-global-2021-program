@@ -1,5 +1,6 @@
 ---
 talk_id: 218
+type: talk
 name: Sean Lopp
 affiliation: RStudio
 links:

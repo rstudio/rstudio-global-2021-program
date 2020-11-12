@@ -2,7 +2,12 @@ library(dplyr)
 library(purrr)
 library(yaml)
 
-slugify <- . %>% gsub("[ -]+", "", .) %>% tolower()
+slugify <- . %>%
+  # Remove middle initials
+  sub(" [A-Z]\\. ", " ", .) %>%
+  # Remove special characters
+  gsub("[ '-]+", "", .) %>%
+  tolower()
 
 speaker_details_url <- "https://docs.google.com/spreadsheets/d/1PKlltk03RD9jAxMCKnMGOiFaMTpC_j0SYT47OzI3aDk/edit#gid=2077809528"
 
@@ -22,7 +27,7 @@ speakers$country <- speakers$country %>%
 
 submissions_url <- "https://docs.google.com/spreadsheets/d/1b9Kr--fqvNk-fVse9APvWdSCwHtPx61iHhQPULflEIk/edit#gid=1099129659"
 submissions <- googlesheets4::read_sheet(submissions_url) %>%
-  filter(decision == "accept") %>%
+  filter(decision %in% c("accept", "lightning")) %>%
   mutate(speaker_slug = slugify(name))
 
 # Some speakers submitted their proposal by one name, but gave a subtly
@@ -38,6 +43,9 @@ replace_idx <- match(submissions$speaker_slug, names(submissions_to_speakers))
 submissions$speaker_slug[which(!is.na(replace_idx))] <- submissions_to_speakers[na.omit(replace_idx)]
 
 joined <- submissions %>% full_join(speakers, by = c(speaker_slug = "slug"))
+
+# Make sure all slugs contain only lowercase characters
+stopifnot(all(grepl("^[a-z]+$", joined$speaker_slug)))
 
 # Hack to join mattthomas to mikepage
 joined$id[joined$speaker_slug == "mattthomas"] <- joined[joined$speaker_slug == "mikepage", "id"]
@@ -58,9 +66,15 @@ joined %>%
     on.exit(close(f))
 
     writeLines("---", f)
-    yaml::write_yaml(list(
+    speaker_name <- if (!is.na(s$name.y)) s$name.y else s$name.x
+    data <- list(
       talk_id = as.integer(s$id),
-      name = s$name.y,
+      type = switch(s$decision,
+        lightning = "lightning",
+        accept = "talk",
+        `NA` = "talk",
+        stop("Unexpected decision value for ", s$speaker_slug, ": ", s$decision)),
+      name = speaker_name,
       affiliation = s$affiliation,
       links = list(
         homepage = yaml_null,
@@ -69,7 +83,11 @@ joined %>%
         linkedin = yaml_null
       ),
       location = s$country
-    ), f)
+    )
+    data <- lapply(data, function(x) {
+      if (identical(x, NA_character_)) yaml_null else x
+    })
+    yaml::write_yaml(data, f)
     writeLines(c("---", ""), f)
 
     # Talk title/abstract
@@ -81,7 +99,7 @@ joined %>%
     # Bio
     writeLines(paste0("# Speaker bio"), f)
     writeLines("", f)
-    writeLines(paste0(s$name.y, " is a human person."), f)
+    writeLines(paste0(speaker_name, " is a human person."), f)
   })
 
 # # == Create talks/*.md ========

@@ -1,5 +1,6 @@
 ---
 talk_id: 291
+type: talk
 name: Ahmadou Dicko
 affiliation: STATS4D
 links:

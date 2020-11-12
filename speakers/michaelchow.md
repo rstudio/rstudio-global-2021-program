@@ -1,5 +1,6 @@
 ---
 talk_id: 322
+type: talk
 name: Michael Chow
 affiliation: On Sabbatical
 links:

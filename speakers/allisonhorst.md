@@ -1,5 +1,6 @@
 ---
 talk_id: 308
+type: talk
 name: Allison Horst
 affiliation: UC Santa Barbara / RStudio
 links:

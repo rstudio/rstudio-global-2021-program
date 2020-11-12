@@ -1,5 +1,6 @@
 ---
 talk_id: 273
+type: talk
 name: Irene Steves
 affiliation: Riskified
 links:

@@ -1,5 +1,6 @@
 ---
 talk_id: 125
+type: talk
 name: Emily Riederer
 affiliation: Capital One
 links:
