@@ -22,6 +22,6 @@ This repository contains files relating to the Program and Schedule for [rstudio
 
 **You don't need to run any of the scripts in this repo**--just edit your Markdown file and provide the headshot.
 
-You may submit as many changes/PRs as you want, up until the deadline of January 1.
+You may submit as many changes/PRs as you want, up until the deadline of December 25.
 
-Thank you again for your participation!
+Thank you again for your participation in rstudio::global 2021!
