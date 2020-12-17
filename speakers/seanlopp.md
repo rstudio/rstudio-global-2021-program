@@ -4,19 +4,17 @@ type: talk
 name: Sean Lopp
 affiliation: RStudio
 links:
-  homepage: null
-  twitter: null
-  github: null
+  homepage: https://loppsided.blog
+  twitter: lopp_sean
+  github: slopp
   linkedin: null
 location: United States
 ---
 
 # R & Python: Going Steady
 
-There has been a lot of excitement about the R and Python love story. This talk will focus on the day-to-day aspects of their blossoming relationship. We'll cover tips and tricks for combining the two languages inside RStudio as well as tools for multi-language teams using and RStudio' professional products.
-
-NOTE: the game plan would be a rapid fire talk following in the footsteps of Jonathan's always popular "tips and tricks" talk. Python interpreter, REPL, and environment pane in RStudio. Jupyter/VS Code in RSP. PyPI in RSPM. All the Python things in RSC.
+While there has been a lot of excitement about the R and Python love story, there are still misconceptions that individuals, teams, or organizations must pick between R or Python. This talk will explain why this false choice exists, debunk the myths that cause teams to be stuck with only one tool, and clarify how data scientists can use both languages to be more effective. We will explore this love story's blossoming relationship by looking at updates to RStudio's packages and products that make it easier to develop and collaborate in R and Python. This talk is for individuals who want to uncover the benefits of multilingual data science, IT professionals who are skeptical their life can get better by supporting more languages, and data science managers interested in enabling their teams instead of forcing their data superheros to be subservient to particular tools.
 
 # Speaker bio
 
-Sean Lopp is a human person.
+Sean Lopp is an engineer, data scientist, and product leader. At RStudio, he helps data science teams uncover better habits and adopt better tools. He has worked with hundreds of organizations in finance, manufacturing, consumer tech, pharma, and healthcare. Sean led the creation of RStudio's Package Manager. Before RStudio Sean worked in NREL's transportation research group. He lives in Colorado and skis and bikes with his family.
