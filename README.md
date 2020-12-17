@@ -10,11 +10,11 @@ This repository contains files relating to the Program and Schedule for [rstudio
 
 1.  Find your Markdown file under the `speakers/` directory.
 
-    1.  Ensure the existing metadata is correct, and fill out any of the `null` links. (Do not add additional fields, they will be ignored.)
+    1.  Ensure the existing metadata is correct, and fill out any of the `null` links. If your location field is `null`, you can add your country if you like. (Do not add additional fields, they will be ignored.)
 
-    2.  Edit the talk title and abstract. (Markdown is allowed, but it's probably best to stick to simple formatting.)
+    2.  Edit the talk title and abstract. (Markdown is allowed, but please stick to simple formatting.)
 
-    3.  Fill out the speaker bio paragraph.
+    3.  Fill out the speaker bio section with a paragraph (or two).
 
 2.  **Provide a square headshot** by uploading a .jpg or .png to the `speakers/` directory. The filename must match your Markdown file, except for the file extension. (For example, Sean Lopp has `speakers/seanlopp.md`, so his headshot would need to be `speakers/seanlopp.jpg` or `speakers/seanlopp.png`.)
 
