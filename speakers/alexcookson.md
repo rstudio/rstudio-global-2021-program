@@ -4,11 +4,11 @@ type: lightning
 name: Alex Cookson
 affiliation: null
 links:
-  homepage: null
-  twitter: null
-  github: null
-  linkedin: null
-location: null
+  homepage: https://www.alexcookson.com/
+  twitter: https://twitter.com/alexcookson
+  github: https://github.com/tacookson
+  linkedin: https://www.linkedin.com/in/alexcookson/
+location: Canada
 ---
 
 # The power of Great Datasets
