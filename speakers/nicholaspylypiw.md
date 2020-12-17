@@ -13,7 +13,7 @@ location: United States
 
 # Racial Equity Dashboard: Unpacking Systemic Inequity
 
-At Cape Fear Collective, we’re redefining what a town square looks like in our community, serving as a place where all people, organizations, and ideas can come together to effect real, lasting, and systemic change. By merging cutting edge data science with an emphasis on equity and the lived experience of our most marginalized communities, Cape Fear Collective supports Southeastern North Carolina’s front line organizations in combating poverty, racism, poor health and education outcomes, and socio-economic disparities. This talk is about how we bring that model to life through our [Racial Equity Dashboard] (https://cape-fear-collective.shinyapps.io/racial-equity/), from data sourcing, to modeling and, ultimately, action.
+At Cape Fear Collective, we’re redefining what a town square looks like in our community, serving as a place where all people, organizations, and ideas can come together to effect real, lasting, and systemic change. By merging cutting edge data science with an emphasis on equity and the lived experience of our most marginalized communities, Cape Fear Collective supports Southeastern North Carolina’s front line organizations in combating poverty, racism, poor health and education outcomes, and socio-economic disparities. This talk is about how we bring that model to life through our [Racial Equity Dashboard](https://cape-fear-collective.shinyapps.io/racial-equity/), from data sourcing, to modeling and, ultimately, action.
 
 # Speaker bio
 
