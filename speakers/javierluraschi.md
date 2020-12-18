@@ -2,19 +2,23 @@
 talk_id: 112
 type: talk
 name: Javier Luraschi
-affiliation: RStudio
+affiliation: ""
 links:
-  homepage: null
-  twitter: null
-  github: null
-  linkedin: null
+  homepage: http://about.me/javierluraschi
+  twitter: https://twitter.com/javierluraschi
+  github: https://github.com/javierluraschi
+  linkedin: https://www.linkedin.com/in/javierluraschi/
 location: United States
 ---
 
 # Using pins with Python and JavaScript
 
-Last year we presented 'pins' as a brand new R package to pin, discover and cache remote resources for R users. This talk will introduce new features that extend 'pins' to support Python and JavaScript, which enables to collaborate with ease and data to flow across workflows.
+Last year, [pins](https://pins.rstudio.com) got released as a brand new R package to pin, discover and cache remote resources for R users. This package has matured to support many use cases; from caching remote URLs, and easily sharing datasets with other R users, to building automated pipelines.
+
+However, in order to truly collaborate in multi-disciplinary data-driven teams, one needs to consider how to collaborate beyond R? How can we share resources with designers and machine learning experts who happen to use different programming languages like Python and JavaScript?
+
+This talk will introduce the [pinsjs](https://pinsjs.github.io/) project, a cross-language community project which has the goal of bringing `pins` to the broader open source community to enable rich workflows across larger data-driven teams.
 
 # Speaker bio
 
-Javier Luraschi is a human person.
+Javier is the author of “Mastering Spark with R”, pins, sparklyr, mlflow and torch. He holds a double degree in Math and Software Engineer and decades of industry experience with a focus on data analysis. Javier is currently working on a project of his own; and previously worked in RStudio, Microsoft Research and SAP.
