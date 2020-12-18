@@ -4,10 +4,10 @@ type: talk
 name: Nicole Kramer
 affiliation: University of North Carolina at Chapel Hill
 links:
-  homepage: null
-  twitter: null
-  github: null
-  linkedin: null
+  homepage: NULL
+  twitter: https://twitter.com/nekramer27
+  github: https://github.com/PhanstielLab
+  linkedin: https://www.linkedin.com/in/nicole-kramer-229183127/
 location: United States
 ---
 
@@ -17,4 +17,4 @@ R is unparalleled in its ability to transform raw data into a wide array of beau
 
 # Speaker bio
 
-Nicole Kramer is a human person.
+Nicole Kramer is a third year [Bioinformatics and Computational Biology](https://bcb.unc.edu/) graduate student at the University of North Carolina at Chapel Hill. She works in the [lab of Dr. Doug Phanstiel](http://phanstiel-lab.med.unc.edu/), where her and her colleagues use experimental and computational techniques to study human genomics. Prior to grad school, Nicole received her B.S. in Biological Engineering from MIT in 2018. When not doing science, you can find Nicole petting dogs, admiring giraffes, or knitting tiny animals!
