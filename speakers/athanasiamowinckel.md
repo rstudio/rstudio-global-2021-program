@@ -2,13 +2,13 @@
 talk_id: 128
 type: lightning
 name: Athanasia M. Mowinckel
-affiliation: null
+affiliation: [Center for Lifespan Changes in Brain and Cognition](https://www.oslobrains.no/)
 links:
-  homepage: null
-  twitter: null
-  github: null
-  linkedin: null
-location: null
+  homepage: https://drmowinckels.io/
+  twitter: @DrMowinckels
+  github: Athanasiamo
+  linkedin: https://www.linkedin.com/in/drmowinckels/
+location: Oslo, Norway
 ---
 
 # Make a package - Make some friends
@@ -21,4 +21,6 @@ Rather than make me shy off development, the R neuro community's positive feedba
 
 # Speaker bio
 
-Athanasia M. Mowinckel is a human person.
+Athanasia M. Mowinckel is a staff scientist at the Center for Lifespan Changes in Brain and Cognition, at the University of Oslo. 
+She has a background on cognitive psychology, and uses R for almost everything. 
+She goes by the nickname "Mo" (closer to 'Mou' than 'Moe'), and is a member of the R-Ladies Global team. 
