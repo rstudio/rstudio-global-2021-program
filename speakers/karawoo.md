@@ -4,9 +4,9 @@ type: talk
 name: Kara Woo
 affiliation: Sage Bionetworks
 links:
-  homepage: null
-  twitter: null
-  github: null
+  homepage: https://karawoo.com/
+  twitter: https://twitter.com/kara_woo
+  github: https://github.com/karawoo
   linkedin: null
 location: United States
 ---
@@ -17,4 +17,4 @@ Everyone who creates visualizations in R is bound to make mistakes that prevent 
 
 # Speaker bio
 
-Kara Woo is a human person.
+Kara Woo is a principal bioinformatics engineer at Sage Bionetworks. She leads a team of developers building tools and infrastructure for open science. Kara previously worked at Washington State University and at the National Center for Ecological Analysis and Synthesis (NCEAS), where she combined data management with fieldwork in Siberia at Lake Baikal. She has four cats.
