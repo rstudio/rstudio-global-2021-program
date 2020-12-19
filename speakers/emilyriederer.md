@@ -4,23 +4,21 @@ type: talk
 name: Emily Riederer
 affiliation: Capital One
 links:
-  homepage: null
-  twitter: null
-  github: null
-  linkedin: null
+  homepage: https://emily.rbind.io/
+  twitter: https://twitter.com/EmilyRiederer
+  github: http://github.com/emilyriederer
+  linkedin: https://www.linkedin.com/in/emilyriederer/
 location: United States
 ---
 
-# oRganization: Building an R package-verse for your org
+# oRganization: How to make internal R packages part of your team
 
 Many case studies demonstrate the benefits of organizations developing internal R packages. But how do you move your organization from individual internal packages to a coherent internal ecosystem?
 
-This talk will define an ontology of internal tools that meet different jobs-to-be-done, from unblocking IT challenges to democratizing tribal knowledge. 
+This talk applies the jobs-to-be-done framework to consider the different roles that internal tools can play, from unblocking IT challenges to democratizing tribal knowledge. Beyond technical functionality, we will explore design principles and practice that make internal packages good teammates and consider how these deviate from open-source standards. 
 
-Next, we will explore design principles and practices for internal packages and consider how these deviate from open-source standards due to organizations’ unique opportunities and constraints.
-
-Finally, we will demonstrate how an internal ecosystem can maximize its impact by fully leveraging the RStudio IDE, including features like snippets, add-ins, templates, and the new visual editor.
+Finally, we will consider how to exploit the unique challenges and opportunities of developing within an organization to make packages that collaborate well -- both with other packages and their human teammates. 
 
 # Speaker bio
 
-Emily Riederer is a human person.
+Emily Riederer is a Senior Analytics Manager at Capital One where she leads a team building innersource data products, tools, and applications in R. Emily is an active member of the R community; she is the developer of the `projmgr` and `convo` R packages, a founding co-organizer of the annual satRday Chicago conference, and frequently writes about R and data science on Twitter and her blog (emily.rbind.io). Most recently, she coauthored the *R Markdown Cookbook* from CRC Press and contributed essays to the forthcoming O'Reilly book *97 Things Data Engineers Should Know*. 
