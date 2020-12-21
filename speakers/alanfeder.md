@@ -5,10 +5,10 @@ name: Alan Feder
 affiliation: null
 links:
   homepage: null
-  twitter: null
-  github: null
-  linkedin: null
-location: null
+  twitter: https://twitter.com/AlanFeder
+  github: https://github.com/AlanFeder
+  linkedin: https://www.linkedin.com/in/alanfeder/
+location: New York City, NY, USA
 ---
 
 # Categorical Embeddings: New Ways to Simplify Complex Data
