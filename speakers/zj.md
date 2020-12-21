@@ -5,10 +5,10 @@ name: ZJ
 affiliation: null
 links:
   homepage: null
-  twitter: null
-  github: null
-  linkedin: null
-location: null
+  twitter: https://twitter.com/evalparse
+  github: https://github.com/xiaodaigh/
+  linkedin: https://linkedin.com/in/daizj
+location: Australia
 ---
 
 # Easy larger-than-RAM data manipulation with {disk.frame}
@@ -21,4 +21,4 @@ However, the need to handle larger-than-RAM data doesn't go away just because RA
 
 # Speaker bio
 
-ZJ is a human person.
+ZJ is a machine learning developer based in Melbourne, Australia. He regularly contributes to open source projects. He has more than 10 years of experience in banking before joining the tech sector. In his free time, he enjoys playing Go/Baduk/Weiqi.
