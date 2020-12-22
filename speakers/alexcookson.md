@@ -2,7 +2,7 @@
 talk_id: 307
 type: lightning
 name: Alex Cookson
-affiliation: null
+affiliation: Royal Canadian Mint
 links:
   homepage: https://www.alexcookson.com/
   twitter: https://twitter.com/alexcookson
