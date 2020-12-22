@@ -11,13 +11,13 @@ links:
 location: South Africa
 ---
 
-# Automagic image creation and translation
+# Aesthetically automated figure production
 
-Automation. Reproducibility. Accessibility. Data driven. These are not concepts one would normally associate with the publishing industry, where designers traditionally produce every artefact manually using proprietary software.
+Automation, reproducibility, data driven. These are not normally concepts one would associate with the traditional publishing industry, where designers normally manually produce every artefact in proprietary software. And, when you have 1000s of figures to produce and update for a single textbook, this becomes an insurmountable task, meaning our textbooks quickly become outdated, especially in our rapidly advancing world.
 
-With the tidyverse tools in our back pocket, we rose to the challenge to revolutionize this workflow. We collaborated with a bespoke, modern publishing group to develop a system to automatically generate figures for openly-licensed textbooks. The system derives figure contents from data and generates translations into several languages. 
+With R and the tidyverse in our back pocket, we rose to the challenge to revolutionize this workflow. I will explain how we collaborated with a publishing group to develop a system to aesthetically automate the production of figures for a textbook including translations into several languages. 
 
-This project also advances the open education agenda of enabling educators and students to re-use content for their own purposes whilst at the same time teaching R and coding skills.
+I think you’ll find this talk interesting as it shows how we applied tools that are familiar to us, but in an unconventional way to fundamentally transform a conventional process.
 
 # Speaker bio
 
