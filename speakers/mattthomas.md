@@ -5,7 +5,7 @@ name: Matt Thomas
 affiliation: British Red Cross
 links:
   homepage: matthewgthomas.co.uk / redcross.org.uk
-  twitter: @matthewgthomas
+  twitter: https://twitter.com/matthewgthomas
   github: https://github.com/matthewgthomas
   linkedin: https://www.linkedin.com/in/matthewgthomas/
 location: United Kingdom

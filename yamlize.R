@@ -1,8 +1,10 @@
 library(magrittr)
 library(parsermd)
 library(commonmark)
+library(yaml)
 
 parse_file <- function(filename) {
+  message(filename)
   rmd <- parse_rmd(filename)
   rmd_df <- as_tibble(rmd)
 

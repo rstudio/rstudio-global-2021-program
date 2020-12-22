@@ -2,10 +2,10 @@
 talk_id: 128
 type: lightning
 name: Athanasia M. Mowinckel
-affiliation: [Center for Lifespan Changes in Brain and Cognition](https://www.oslobrains.no/)
+affiliation: "[Center for Lifespan Changes in Brain and Cognition](https://www.oslobrains.no/)"
 links:
   homepage: https://drmowinckels.io/
-  twitter: @DrMowinckels
+  twitter: https://twitter.com/DrMowinckels
   github: Athanasiamo
   linkedin: https://www.linkedin.com/in/drmowinckels/
 location: Oslo, Norway
