@@ -1,7 +1,11 @@
 ---
 talk_id: 186
 type: talk
-name: Rika Gorn
+track: B
+blocks:
+  - foxtrot
+  - lima
+name: Rika
 affiliation: Spring Health
 links:
   homepage: null

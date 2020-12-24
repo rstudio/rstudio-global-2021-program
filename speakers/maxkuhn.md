@@ -1,6 +1,10 @@
 ---
 talk_id: 222
 type: talk
+track: C
+blocks:
+  - delta
+  - juliett
 name: Max Kuhn
 affiliation: RStudio
 links:

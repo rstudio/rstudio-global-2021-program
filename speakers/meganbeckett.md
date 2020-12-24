@@ -1,6 +1,10 @@
 ---
 talk_id: 261
 type: talk
+track: A
+blocks:
+  - bravo
+  - hotel
 name: Megan Beckett
 affiliation: Exegetic Analytics
 links:

@@ -1,6 +1,10 @@
 ---
 talk_id: 291
 type: talk
+track: A
+blocks:
+  - foxtrot
+  - lima
 name: Ahmadou Dicko
 affiliation: STATS4D
 links:

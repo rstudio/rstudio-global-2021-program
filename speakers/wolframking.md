@@ -1,6 +1,10 @@
 ---
 talk_id: 162
 type: lightning
+track: B
+blocks:
+  - foxtrot
+  - lima
 name: Wolfram King
 affiliation: null
 links:

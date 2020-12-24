@@ -1,6 +1,10 @@
 ---
 talk_id: 125
 type: talk
+track: B
+blocks:
+  - delta
+  - juliett
 name: Emily Riederer
 affiliation: Capital One
 links:

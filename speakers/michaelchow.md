@@ -1,6 +1,10 @@
 ---
 talk_id: 322
 type: talk
+track: B
+blocks:
+  - bravo
+  - hotel
 name: Michael Chow
 affiliation: On Sabbatical
 links:

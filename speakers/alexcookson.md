@@ -1,6 +1,10 @@
 ---
 talk_id: 307
 type: lightning
+track: B
+blocks:
+  - delta
+  - juliett
 name: Alex Cookson
 affiliation: Royal Canadian Mint
 links:

@@ -1,6 +1,10 @@
 ---
 talk_id: 323
 type: talk
+track: C
+blocks:
+  - delta
+  - juliett
 name: Shirbi Ish-Shalom
 affiliation: Intuit
 links:

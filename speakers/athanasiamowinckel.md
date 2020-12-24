@@ -1,6 +1,10 @@
 ---
 talk_id: 128
 type: lightning
+track: B
+blocks:
+  - delta
+  - juliett
 name: Athanasia M. Mowinckel
 affiliation: "[Center for Lifespan Changes in Brain and Cognition](https://www.oslobrains.no/)"
 links:

@@ -1,6 +1,10 @@
 ---
 talk_id: 100
 type: lightning
+track: B
+blocks:
+  - foxtrot
+  - lima
 name: Dean Marchiori
 affiliation: null
 links:

@@ -1,6 +1,10 @@
 ---
 talk_id: 112
 type: talk
+track: B
+blocks:
+  - bravo
+  - hotel
 name: Javier Luraschi
 affiliation: ""
 links:

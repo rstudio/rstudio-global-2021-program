@@ -1,6 +1,10 @@
 ---
 talk_id: 290
 type: talk
+track: A
+blocks:
+  - foxtrot
+  - lima
 name: Andrew Tran
 affiliation: The Washington Post
 links:

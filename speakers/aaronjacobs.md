@@ -1,6 +1,10 @@
 ---
 talk_id: 293
 type: talk
+track: C
+blocks:
+  - foxtrot
+  - lima
 name: Aaron Jacobs
 affiliation: Crescendo Technology
 links:

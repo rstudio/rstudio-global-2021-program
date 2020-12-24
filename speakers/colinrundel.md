@@ -1,6 +1,10 @@
 ---
 talk_id: 303
 type: lightning
+track: C
+blocks:
+  - foxtrot
+  - lima
 name: Colin Rundel
 affiliation: null
 links:

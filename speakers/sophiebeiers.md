@@ -1,6 +1,10 @@
 ---
 talk_id: 274
 type: talk
+track: C
+blocks:
+  - bravo
+  - hotel
 name: Sophie Beiers
 affiliation: American Civil Liberties Union
 links:

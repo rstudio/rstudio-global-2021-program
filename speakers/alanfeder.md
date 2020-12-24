@@ -1,6 +1,10 @@
 ---
 talk_id: 224
 type: lightning
+track: C
+blocks:
+  - delta
+  - juliett
 name: Alan Feder
 affiliation: Invesco
 links:

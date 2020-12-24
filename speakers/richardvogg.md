@@ -1,6 +1,10 @@
 ---
 talk_id: 225
 type: lightning
+track: C
+blocks:
+  - delta
+  - juliett
 name: Richard Vogg
 affiliation: null
 links:

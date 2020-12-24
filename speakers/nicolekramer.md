@@ -1,6 +1,10 @@
 ---
 talk_id: 182
 type: talk
+track: C
+blocks:
+  - bravo
+  - hotel
 name: Nicole Kramer
 affiliation: University of North Carolina at Chapel Hill
 links:

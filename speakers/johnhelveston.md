@@ -1,6 +1,10 @@
 ---
 talk_id: 134
 type: lightning
+track: B
+blocks:
+  - delta
+  - juliett
 name: John Helveston
 affiliation: George Washington University
 links:

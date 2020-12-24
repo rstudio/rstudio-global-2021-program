@@ -1,6 +1,10 @@
 ---
 talk_id: 251
 type: lightning
+track: C
+blocks:
+  - bravo
+  - hotel
 name: Pamela E. Pairo
 affiliation: null
 links:

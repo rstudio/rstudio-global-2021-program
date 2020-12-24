@@ -1,6 +1,10 @@
 ---
 talk_id: 163
 type: lightning
+track: B
+blocks:
+  - foxtrot
+  - lima
 name: Carson Sievert
 affiliation: null
 links:

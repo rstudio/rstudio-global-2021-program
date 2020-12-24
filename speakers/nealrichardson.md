@@ -1,6 +1,10 @@
 ---
 talk_id: 278
 type: talk
+track: C
+blocks:
+  - foxtrot
+  - lima
 name: Neal Richardson
 affiliation: Ursa Computing
 links:

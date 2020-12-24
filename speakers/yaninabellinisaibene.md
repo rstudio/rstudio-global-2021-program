@@ -1,6 +1,10 @@
 ---
 talk_id: 214
 type: talk
+track: A
+blocks:
+  - delta
+  - juliett
 name: Yanina Bellini Saibene
 affiliation: INTA - MetaDocencia - R-Ladies
 links:

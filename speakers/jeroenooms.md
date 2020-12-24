@@ -1,6 +1,10 @@
 ---
 talk_id: 239
 type: talk
+track: B
+blocks:
+  - delta
+  - juliett
 name: Jeroen Ooms
 affiliation: UC Berkeley
 links:

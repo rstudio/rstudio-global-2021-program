@@ -1,6 +1,10 @@
 ---
 talk_id: 254
 type: lightning
+track: B
+blocks:
+  - delta
+  - juliett
 name: Marie Vendettuoli
 affiliation: null
 links:

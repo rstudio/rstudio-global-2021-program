@@ -1,6 +1,10 @@
 ---
 talk_id: 245
 type: lightning
+track: C
+blocks:
+  - foxtrot
+  - lima
 name: Garrick Aden-Buie
 affiliation: null
 links:

@@ -1,6 +1,10 @@
 ---
 talk_id: 273
 type: talk
+track: B
+blocks:
+  - bravo
+  - hotel
 name: Irene Steves
 affiliation: Riskified
 links:

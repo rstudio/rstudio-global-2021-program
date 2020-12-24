@@ -1,6 +1,10 @@
 ---
 talk_id: 314
 type: talk
+track: C
+blocks:
+  - bravo
+  - hotel
 name: JooYoung Seo
 affiliation: The Pennsylvania State University
 links:

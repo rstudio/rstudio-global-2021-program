@@ -1,6 +1,10 @@
 ---
 talk_id: 262
 type: talk
+track: A
+blocks:
+  - delta
+  - juliett
 name: Kate Hertweck
 affiliation: Fred Hutchinson Cancer Research Center
 links:

@@ -1,6 +1,10 @@
 ---
 talk_id: 185
 type: lightning
+track: B
+blocks:
+  - foxtrot
+  - lima
 name: Danielle Oberdier
 affiliation: null
 links:

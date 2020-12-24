@@ -1,6 +1,10 @@
 ---
 talk_id: 308
 type: talk
+track: A
+blocks:
+  - bravo
+  - hotel
 name: Allison Horst
 affiliation: UC Santa Barbara / RStudio
 links:

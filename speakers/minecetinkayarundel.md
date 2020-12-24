@@ -1,6 +1,10 @@
 ---
 talk_id: 309
 type: talk
+track: A
+blocks:
+  - delta
+  - juliett
 name: Mine Cetinkaya-Rundel
 affiliation: RStudio & University of Edinburgh
 links:

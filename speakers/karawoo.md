@@ -1,6 +1,10 @@
 ---
 talk_id: 286
 type: talk
+track: A
+blocks:
+  - bravo
+  - hotel
 name: Kara Woo
 affiliation: Sage Bionetworks
 links:

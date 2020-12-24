@@ -1,6 +1,10 @@
 ---
 talk_id: 193
 type: lightning
+track: C
+blocks:
+  - delta
+  - juliett
 name: Chelsea Parlett-Pelleriti
 affiliation: null
 links:

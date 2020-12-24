@@ -1,6 +1,10 @@
 ---
 talk_id: 179
 type: talk
+track: A
+blocks:
+  - foxtrot
+  - lima
 name: Mike Page
 affiliation: British Red Cross
 links:

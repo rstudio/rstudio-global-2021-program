@@ -1,6 +1,10 @@
 ---
 talk_id: 117
 type: lightning
+track: C
+blocks:
+  - delta
+  - juliett
 name: Simon Couch
 affiliation: Reed College
 links:

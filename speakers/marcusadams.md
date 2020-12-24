@@ -1,6 +1,10 @@
 ---
 talk_id: 187
 type: talk
+track: B
+blocks:
+  - foxtrot
+  - lima
 name: Marcus Adams
 affiliation: Merck
 links:

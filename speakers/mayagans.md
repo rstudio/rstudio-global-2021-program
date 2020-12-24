@@ -1,6 +1,10 @@
 ---
 talk_id: 148
 type: talk
+track: A
+blocks:
+  - bravo
+  - hotel
 name: Maya Gans
 affiliation: Atorus Research
 links:

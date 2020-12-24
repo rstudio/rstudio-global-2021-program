@@ -1,6 +1,10 @@
 ---
 talk_id: 246
 type: talk
+track: B
+blocks:
+  - foxtrot
+  - lima
 name: Eric Gunnar Cronstrom
 affiliation: Central Michigan University
 links:

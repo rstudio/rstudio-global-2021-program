@@ -1,6 +1,10 @@
 ---
-talk_id: 312
+talk_id: ???
 type: talk
+track: C
+blocks:
+  - foxtrot
+  - lima
 name: Winston Chang
 affiliation: RStudio
 links:

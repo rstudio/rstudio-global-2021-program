@@ -1,6 +1,10 @@
 ---
 talk_id: 114
 type: lightning
+track: C
+blocks:
+  - foxtrot
+  - lima
 name: ZJ
 affiliation: null
 links:

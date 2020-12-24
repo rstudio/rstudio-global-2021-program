@@ -1,6 +1,10 @@
 ---
 talk_id: 328
 type: lightning
+track: C
+blocks:
+  - bravo
+  - hotel
 name: Michael Chirico
 affiliation: null
 links:

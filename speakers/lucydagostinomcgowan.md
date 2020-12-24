@@ -1,6 +1,10 @@
 ---
 talk_id: 334
 type: lightning
+track: C
+blocks:
+  - foxtrot
+  - lima
 name: Lucy D'Agostino McGowan
 affiliation: null
 links:

@@ -1,6 +1,10 @@
 ---
 talk_id: 218
 type: talk
+track: B
+blocks:
+  - bravo
+  - hotel
 name: Sean Lopp
 affiliation: RStudio
 links:

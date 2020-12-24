@@ -1,6 +1,10 @@
 ---
 talk_id: 221
 type: talk
+track: A
+blocks:
+  - foxtrot
+  - lima
 name: Shelmith Kariuki
 affiliation: 'Data Analytics Consultant: UN DESA, Population Division'
 links:

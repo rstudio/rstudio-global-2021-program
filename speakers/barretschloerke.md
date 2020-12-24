@@ -1,6 +1,10 @@
 ---
 talk_id: 312
 type: talk
+track: C
+blocks:
+  - foxtrot
+  - lima
 name: Barret Schloerke
 affiliation: RStudio
 links:

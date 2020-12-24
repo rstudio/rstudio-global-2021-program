@@ -1,6 +1,10 @@
 ---
 talk_id: 279
 type: talk
+track: B
+blocks:
+  - delta
+  - juliett
 name: Malcolm Barrett
 affiliation: Teladoc Health
 links:

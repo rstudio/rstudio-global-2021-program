@@ -1,6 +1,10 @@
 ---
 talk_id: 180
 type: lightning
+track: C
+blocks:
+  - bravo
+  - hotel
 name: Dorris Scott
 affiliation: null
 links:

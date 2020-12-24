@@ -1,6 +1,10 @@
 ---
 talk_id: 167
 type: lightning
+track: C
+blocks:
+  - bravo
+  - hotel
 name: Nicholas Pylypiw
 affiliation: Cape Fear Collective
 links:

@@ -1,6 +1,10 @@
 ---
 talk_id: 327
 type: talk
+track: A
+blocks:
+  - delta
+  - juliett
 name: Riva Quiroga
 affiliation: null
 links:
