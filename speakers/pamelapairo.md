@@ -8,11 +8,11 @@ blocks:
 name: Pamela E. Pairo
 affiliation: null
 links:
-  homepage: null
-  twitter: null
-  github: null
-  linkedin: null
-location: null
+  homepage: https://pamepairo.netlify.app/
+  twitter: https://twitter.com/PamePairo
+  github: https://github.com/PamelaPairo
+  linkedin: https://www.linkedin.com/in/pamela-e-pairo-5a2004202/
+location: Argentina
 ---
 
 # An easy and friendly way to build your multilingual website
@@ -21,4 +21,4 @@ Having a personal website is a great way to share our experiences with other peo
 
 # Speaker bio
 
-Pamela E. Pairo is a human person.
+Pamela E. Pairo is a Ph.D. in Biological Sciences of the University of Buenos Aires, with expertise in community ecology. One of her research lines focuses on analyzing the impact of human activities on the diversity and composition of biological communities with particular interest in arthropods. In addition, she is interested in studying the spatio-temporal patterns of dengue disease in Argentina. She also is a teaching assistant in statistics at the Argentine University of Enterprise (UADE).
