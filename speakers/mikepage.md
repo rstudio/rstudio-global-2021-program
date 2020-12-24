@@ -8,9 +8,9 @@ blocks:
 name: Mike Page
 affiliation: British Red Cross
 links:
-  homepage: null
-  twitter: null
-  github: null
+  homepage: https://www.mikejohnpage.com/
+  twitter: https://twitter.com/MikeJohnPage
+  github: https://github.com/mikejohnpage
   linkedin: null
 location: Switzerland
 ---
@@ -21,4 +21,4 @@ We will discuss the importance of cognitive speed, defined here as the rate in w
 
 # Speaker bio
 
-Mike Page is a human person.
+Mike Page is a data scientist on the Strategic Insight and Foresight team at the British Red Cross. Here, he helps to develop a suite of open source tools and dashboards including the [Vulnerability Index](https://britishredcrosssociety.github.io/covid-19-vulnerability/) and [Resilience Index](https://britishredcross.shinyapps.io/resilience-index/). Mike is also the author of several R packages including mortyr and newsrivr. In his spare time, you can find him rock climbing around the Alps.
