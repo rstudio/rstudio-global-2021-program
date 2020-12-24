@@ -6,13 +6,13 @@ blocks:
   - foxtrot
   - lima
 name: Colin Rundel
-affiliation: null
+affiliation: University of Edinburgh & Duke University
 links:
   homepage: null
-  twitter: null
-  github: null
+  twitter: https://twitter.com/rundel
+  github: https://github.com/rundel
   linkedin: null
-location: null
+location: Edinburgh, Scotland
 ---
 
 # parsermd` - parsing R Markdown for fun ~~and profit~~
@@ -21,4 +21,4 @@ location: null
 
 # Speaker bio
 
-Colin Rundel is a human person.
+Colin Rundel is Lecturer in Statistics and Data Science in the School of Mathematics at the University of Edinburgh and an Assistant Professor of the Practice in the Department of Statistical Science at Duke University. He is a long time user R and RStudio and his research interests include statistical computing, bayesian methods for spatial statistics, with a focus on applications in biology and ecology.
