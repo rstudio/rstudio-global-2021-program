@@ -5,13 +5,13 @@ track: A
 blocks:
   - delta
   - juliett
-name: Mine Cetinkaya-Rundel
-affiliation: RStudio & University of Edinburgh
+name: Mine Çetinkaya-Rundel
+affiliation: RStudio & University of Edinburgh & Duke University
 links:
-  homepage: null
-  twitter: null
-  github: null
-  linkedin: null
+  homepage: http://mine-cr.com/
+  twitter: https://twitter.com/minebocek
+  github: https://github.com/mine-cetinkaya-rundel
+  linkedin: https://www.linkedin.com/in/minec/
 location: United Kingdom
 ---
 
@@ -21,4 +21,4 @@ As enrolments in statistics and data science courses grow and as these courses b
 
 # Speaker bio
 
-Mine Cetinkaya-Rundel is a human person.
+Mine Çetinkaya-Rundel is Professional Educator and Data Scientist at RStudio as well as Senior Lecturer at University of Edinburgh and Associate Professor of the Practice at Duke University. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM. She works on the [OpenIntro](https://www.openintro.org/) project, is also the creator and maintainer of [datasciencebox.org](https://datasciencebox.org/), teaches the popular [Statistics with R](https://www.coursera.org/specializations/statistics) MOOC on Coursera. She has four cats.
