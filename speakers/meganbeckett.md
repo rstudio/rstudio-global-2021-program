@@ -21,4 +21,4 @@ I think you’ll find this talk interesting as it shows how we applied tools tha
 
 # Speaker bio
 
-Megan Beckett is a human person.
+Megan Beckett is a Data Scientist at Exegetic Analytics, where she consults, develops and leads several analytical projects across a wide range of fields and industries. *"Scientifically creative; creatively scientific."* This aptly describes her philosophy and approach in her work and life. Megan helped co-found and organises the Cape Town R-Ladies chapter and is a co-organiser of the satRday events in South Africa. She loves to paint, with her most recent work exploring the [biodiversity of southern Africa](https://mappamundi.netlify.app/portfolio/), and running is her passion, whether on the raod or the trail.
