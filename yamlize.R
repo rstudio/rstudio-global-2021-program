@@ -153,6 +153,8 @@ df <- tibble::tibble(
   time2
 )
 
+readr::write_csv(df, "export.csv")
+
 if (FALSE) {
 
 if (dir.exists("yaml_output")) {
