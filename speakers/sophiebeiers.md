@@ -4,7 +4,7 @@ type: talk
 name: Sophie Beiers
 affiliation: American Civil Liberties Union
 links:
-  homepage: www.sophiebeiers.com
+  homepage: http://www.sophiebeiers.com
   twitter: https://twitter.com/sophiebeiers
   github: https://github.com/sophiebeiers
   linkedin: https://www.linkedin.com/in/sophiebeiers/

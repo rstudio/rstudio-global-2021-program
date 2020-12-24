@@ -6,7 +6,7 @@ affiliation: Capital One
 links:
   homepage: https://emily.rbind.io/
   twitter: https://twitter.com/EmilyRiederer
-  github: http://github.com/emilyriederer
+  github: https://github.com/emilyriederer
   linkedin: https://www.linkedin.com/in/emilyriederer/
 location: United States
 ---

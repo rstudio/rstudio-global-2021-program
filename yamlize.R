@@ -3,6 +3,20 @@ library(parsermd)
 library(commonmark)
 library(yaml)
 
+normalize_social <- function(x, url_prefix) {
+  if (is.null(x)) {
+    NULL
+  } else if (grepl("^[\\da-zA-Z_]+$", x)) {
+    paste0(url_prefix, x)
+  } else if (grepl(url_prefix, x, fixed = TRUE)) {
+    x
+  } else if (grepl(sub("www\\.linkedin\\.", "linkedin\\.", url_prefix), x, fixed = TRUE)) {
+    x
+  } else {
+    stop("Unexpected URL: ", x)
+  }
+}
+
 parse_file <- function(filename) {
   message(filename)
   rmd <- parse_rmd(filename)
@@ -28,12 +42,39 @@ parse_file <- function(filename) {
 
   speaker <- unclass(rmd[[1]])
 
+  if (!is.null(speaker$links$homepage)) {
+    with(httr::parse_url(speaker$links$homepage), {
+      stopifnot(!is.null(scheme))
+      stopifnot(!is.null(hostname))
+    })
+  }
+
+  links <- list(
+    Homepage = speaker$links$homepage,
+    Twitter = normalize_social(speaker$links$twitter, "https://twitter.com/"),
+    GitHub = normalize_social(speaker$links$github, "https://github.com/"),
+    LinkedIn = normalize_social(speaker$links$linkedin, "https://www.linkedin.com/in/")
+  )
+
+  links_html <- htmltools::p(class = "speaker-links",
+    mapply(names(links), links, FUN = function(nm, url) {
+      if (!is.null(url)) {
+        htmltools::tags$a(href = url, nm)
+      }
+    }, SIMPLIFY = FALSE, USE.NAMES = FALSE)
+  )
+
+  if (length(links_html$children) == 0) {
+    links_html <- NULL
+  }
+  links_html <- as.character(links_html)
+
   # TODO: Check speaker metadata requirements
 
   c(
     list(),
     speaker,
-    bio = speaker_bio,
+    bio = paste(speaker_bio, links_html, sep = "\n"),
     speaker_slug = tools::file_path_sans_ext(basename(filename)),
     title = talk_title,
     abstract = talk_abstract_html

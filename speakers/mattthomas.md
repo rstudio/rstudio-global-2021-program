@@ -4,7 +4,7 @@ type: talk
 name: Matt Thomas
 affiliation: British Red Cross
 links:
-  homepage: matthewgthomas.co.uk / redcross.org.uk
+  homepage: http://matthewgthomas.co.uk
   twitter: https://twitter.com/matthewgthomas
   github: https://github.com/matthewgthomas
   linkedin: https://www.linkedin.com/in/matthewgthomas/
