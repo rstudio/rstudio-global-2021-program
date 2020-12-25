@@ -6,13 +6,13 @@ blocks:
   - foxtrot
   - lima
 name: Wolfram King
-affiliation: null
+affiliation: R Weekly
 links:
-  homepage: null
-  twitter: null
-  github: null
+  homepage: https://rweekly.org
+  twitter: https://twitter.com/rweekly_org
+  github: https://github.com/rweekly/rweekly.org
   linkedin: null
-location: null
+location: China
 ---
 
 # Lifelong Learning with R Weekly
@@ -34,4 +34,4 @@ In this talk I will cover these 6 topics:
 
 # Speaker bio
 
-Wolfram King is a human person.
+Wolfram King is the founder of the R Weekly project. He is an active member of the R Community and has several popular R open-source projects on Github.
