@@ -34,4 +34,4 @@ In this talk I will cover these 6 topics:
 
 # Speaker bio
 
-Wolfram King is the founder of the R Weekly project. He is an active member of the R Community and has several popular R open-source projects on Github.
+Wolfram King is the founder of the R Weekly project. He is an active member of the R Community and has several popular R open-source projects on GitHub.
