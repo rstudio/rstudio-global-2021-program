@@ -13,7 +13,7 @@ location: Israel
 
 # The dynamic duo: SQL & R
 
-There's a point in every data wranglers' career in which their full dataset can no longer fit into just CSV files, and the journey to database-world begins. I reached this point about two years ago, when I transitioned from ecological research to the world of eCommerce fraud prevention. My calls to read_csv became scarcer as I came to rely more and more on databases. In this talk, I'll demonstrate how I use both R and SQL to access database tables, and how I incorporate both into my daily workflow, aided by features in RStudio IDE. I'll also discuss our company’s "riskiconn" package for handling database connections and queries, which includes customizations to simplify day-to-day data querying.
+There's a point in every data wranglers' career in which their full dataset can no longer fit into just CSV files, and the journey to database-world begins. I reached this point about two years ago, when I transitioned from ecological research to the world of eCommerce fraud prevention. My calls to read_csv became scarcer as I came to rely more and more on databases. In this talk, I'll demonstrate how I use R and SQL to access database tables, and how I incorporate both into my daily workflow, aided by features in RStudio IDE. I'll also discuss our company’s "riskiconn" package for handling database connections and queries, which includes customizations to simplify day-to-day data querying.
 
 # Speaker bio
 
