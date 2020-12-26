@@ -8,21 +8,21 @@ blocks:
 name: Jeroen Ooms
 affiliation: UC Berkeley
 links:
-  homepage: null
-  twitter: null
-  github: null
-  linkedin: null
+  twitter: opencpu
+  github: jeroen
+  linkedin: datajeroen
 location: Netherlands
 ---
 
-# The rOpenSci build infrastructure
+# Monitoring health and impact of open-source projects
 
-Over the past year we have been improving the rOpenSci development infrastructure to provide an array services for users and maintainers of rOpenSci packages, and also for the rOpenSci editorial team to monitor the activity and health of projects in our organization.
+At rOpenSci, we have come to realize that in order to help researchers get the most out of R, we need better tooling to monitor the quality, health, and impact of R packages. This applies both to our internal projects, as well as other packages in the R ecosystem. But what exactly makes a good R package?
 
-This talk will discuss some of these tools, such as our docs server which hosts ropensci themed pkgdown documentation for all packages, and our new package server, which automatically builds the source and binary packages for all rOpenSci projects.
+In this talk we discuss various aspects of open-source software that are not always immediately obvious, and that you may want to consider when depending on an R package. We identify several categories of indicators you could look for, ranging from the role in the dependency network, to expectations around maintenance and participation.
 
-More generally, I hope to show how centralizing these processes to the level of the organization can help to make the R packages easier to find and install, while reducing the maintenance load for individual package authors.
+Finally we introduce an ambitious new rOpenSci project called [R-universe](https://r-universe.dev): an open platform, where we will experiment with showing metrics and other background information about packages, that may reveal something about the health and the impact of the project, and also facilitate discovery of other software.
 
 # Speaker bio
 
-Jeroen Ooms is a human person.
+Jeroen Ooms is a researcher and software developer with the rOpenSci group at UC Berkeley. He has written (too) many CRAN packages, and also maintains the compilers and build infrastructure for R on Windows. In this talk he will finally reveal how to pronounce his name.
+
