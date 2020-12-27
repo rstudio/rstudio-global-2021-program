@@ -40,7 +40,21 @@ Alex Cookson,Royal Canadian Mint,https://rstudio-global-2021.s3.amazonaws.com/sp
     <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
   </a>
 </p>",2021-01-21 22:00,2021-01-21 22:00
-Allison Horst,UC Santa Barbara / RStudio,,,2021-01-21 18:00,2021-01-21 18:00
+Allison Horst,UC Santa Barbara / RStudio,https://rstudio-global-2021.s3.amazonaws.com/speakers/allisonhorst.png,"<p>Allison is an Assistant Teaching Professor at the Bren School of Environmental Science and Management (UC Santa Barbara), where she teaches environmental data science, math, and statistics courses. She has been an Artist-in-Residence with the National Center for Ecological Analysis and Synthesis (NCEAS) (2018 - 2019) and RStudio (2019 - 2020). Allison's background is in engineering (BS in Chemical Engineering, MS in Mechanical Engineering) and environmental science (PhD Environmental Science and Management). She is a co-founder and member of R-Ladies Santa Barbara, and co-founded and organizes the weekly UCSB TidyTuesday coding club.</p>
+<p class=""speaker-links"">
+  <a href=""https://www.allisonhorst.com/"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/homepage.png"" alt=""Homepage"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://twitter.com/allison_horst"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/allisonhorst"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://www.linkedin.com/in/allison-horst-16a885158/"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-21 18:00,2021-01-21 18:00
 Andrew Tran,The Washington Post,,,2021-01-22 02:00,2021-01-22 02:00
 Athanasia M. Mowinckel,[Center for Lifespan Changes in Brain and Cognition](https://www.oslobrains.no/),https://rstudio-global-2021.s3.amazonaws.com/speakers/athanasiamowinckel.jpg,"<p>Athanasia M. Mowinckel is a staff scientist at the Center for Lifespan Changes in Brain and Cognition, at the University of Oslo.
 She has a background on cognitive psychology, and uses R for almost everything.
@@ -76,8 +90,30 @@ Barret Schloerke,RStudio,https://rstudio-global-2021.s3.amazonaws.com/speakers/b
 </p>",2021-01-22 02:00,2021-01-22 02:00
 Carson Sievert,,https://rstudio-global-2021.s3.amazonaws.com/speakers/carsonsievert.png,"<p>Carson is a software engineer at RStudio working on projects that bridge R with web technologies, such as <code>{shiny}</code>, <code>{bslib}</code>, <code>{thematic}</code>, and <code>{plotly}</code>. Before joining RStudio in late 2018, Carson worked as consultant, delivering analytical and scientific software to organizations such as the Library of Congress, NOAA, Sandia National Labs, and plotly. Carson began consulting part-time during his PhD in statistics at Iowa State, where his work on the R package <code>{plotly}</code> was recognized by the ASA with the 2017 Chambers Award. His book &quot;Interactive data visualization with R, plotly, and shiny&quot;&quot; is freely available online at https://plotly-r.com.</p>
 ",2021-01-22 02:00,2021-01-22 02:00
-Chelsea Parlett-Pelleriti,,,,2021-01-21 22:00,2021-01-21 22:00
-Colin Rundel,,,,2021-01-22 02:00,2021-01-22 02:00
+Chelsea Parlett-Pelleriti,Chapman University,,"<p>Chelsea Parlett-Pelleriti is a PhD Candidate and full-time instructional faculty teaching Data Science at Chapman University. Her research centers around how we can use statistics and machine learning to improve the way we analyze behavioral (read: psychology) data. In her free time, you can find Chelsea on Twitter making stats memes or #statsTikTok's. She also writes about statistics, machine learning, and using R for various blogs.</p>
+<p class=""speaker-links"">
+  <a href=""https://cmparlettpelleriti.github.io/"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/homepage.png"" alt=""Homepage"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://twitter.com/ChelseaParlett"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/cmparlettpelleriti"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://www.linkedin.com/in/chelseaparlettpelleriti/"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-21 22:00,2021-01-21 22:00
+Colin Rundel,University of Edinburgh & Duke University,,"<p>Colin Rundel is Lecturer in Statistics and Data Science in the School of Mathematics at the University of Edinburgh and an Assistant Professor of the Practice in the Department of Statistical Science at Duke University. He is a long time user R and RStudio and his research interests include statistical computing, bayesian methods for spatial statistics, with a focus on applications in biology and ecology.</p>
+<p class=""speaker-links"">
+  <a href=""https://twitter.com/rundel"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/rundel"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-22 02:00,2021-01-22 02:00
 Danielle Oberdier,,,,2021-01-22 02:00,2021-01-22 02:00
 Danielle Smalls-Perkins,,,,2021-01-21 18:00,2021-01-21 18:00
 Dean Marchiori,,https://rstudio-global-2021.s3.amazonaws.com/speakers/deanmarchiori.jpg,"<p>Dean Marchiori is a Statistician based in Sydney, Australia. He currently works with Endeavour Energy as a Senior Data Scientist modelling bushfire and vegetation risk on the electricity network.<br />
@@ -118,8 +154,30 @@ Eric Gunnar Cronstrom,Central Michigan University,https://rstudio-global-2021.s3
 <p>Prior to joining the Center, Eric was a database administrator for Central Michigan University Libraries. He has also served as a lecturer at Central Michigan University teaching courses in web design, database design and programming. He earned a master’s degree in information systems management and a bachelor’s degree in computer science from Central Michigan University. He is also pursuing an additional master’s degree in applied statistics at Central Michigan University.</p>
 ",2021-01-22 02:00,2021-01-22 02:00
 Garrick Aden-Buie,,,,2021-01-22 02:00,2021-01-22 02:00
-Grant Fleming,Elder Research Inc.,,,2021-01-21 22:00,2021-01-21 22:00
-Irene Steves,Riskified,,,2021-01-21 18:00,2021-01-21 18:00
+Grant Fleming,Elder Research Inc.,https://rstudio-global-2021.s3.amazonaws.com/speakers/grantfleming.jpg,"<p>Grant Fleming is a Data Scientist at Elder Research, co-author of the Wiley book <em>Responsible Data Science</em> (2021), and contributor to the O'Reilly book <em>97 Things About Ethics Everyone in Data Science Should Know</em>. His professional focus is on machine learning for social science applications, model explainability, and building tools for reproducible data science. Previously, Grant was a research contractor for USAID.</p>
+<p class=""speaker-links"">
+  <a href=""https://twitter.com/hearthehearsay"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/Gflemin"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://www.linkedin.com/in/grant-fleming-a1712a131"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-21 22:00,2021-01-21 22:00
+Irene Steves,Riskified,https://rstudio-global-2021.s3.amazonaws.com/speakers/irenesteves.jpg,"<p>Irene holds an M.Sc. in Ecology and a B.A. in Integrative Biology, through which she first discovered R and data science. Her interest in data led her to the Arctic Data Center at the University of California Santa Barbara, a summer internship at RStudio, and ultimately to the Research &amp; Data Science department at Riskified, where she now explores the complex patterns of fraud in eCommerce. In her free time, she studies Hebrew through podcasts and dubbed kids' movies.</p>
+<p class=""speaker-links"">
+  <a href=""https://irene.rbind.io/"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/homepage.png"" alt=""Homepage"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://twitter.com/i_steves"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/isteves"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-21 18:00,2021-01-21 18:00
 Javier Luraschi,,https://rstudio-global-2021.s3.amazonaws.com/speakers/javierluraschi.jpg,"<p>Javier is the author of “Mastering Spark with R”, pins, sparklyr, mlflow and torch. He holds a double degree in Math and Software Engineer and decades of industry experience with a focus on data analysis. Javier is currently working on a project of his own; and previously worked in RStudio, Microsoft Research and SAP.</p>
 <p class=""speaker-links"">
   <a href=""http://about.me/javierluraschi"">
@@ -135,7 +193,18 @@ Javier Luraschi,,https://rstudio-global-2021.s3.amazonaws.com/speakers/javierlur
     <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
   </a>
 </p>",2021-01-21 18:00,2021-01-21 18:00
-Jeroen Ooms,UC Berkeley,,,2021-01-21 22:00,2021-01-21 22:00
+Jeroen Ooms,UC Berkeley,https://rstudio-global-2021.s3.amazonaws.com/speakers/jeroenooms.jpg,"<p>Jeroen Ooms is a researcher and software developer with the rOpenSci group at UC Berkeley. He has written (too) many CRAN packages, and also maintains the compilers and build infrastructure for R on Windows. In this talk he will finally reveal how to pronounce his name.</p>
+<p class=""speaker-links"">
+  <a href=""https://twitter.com/opencpu"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/jeroen"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://www.linkedin.com/in/datajeroen"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-21 22:00,2021-01-21 22:00
 John Helveston,George Washington University,,"<p>John Paul Helveston is an Assistant Professor in the <a href=""https://www.emse.seas.gwu.edu/"">Engineering Management and Systems Engineering Department</a> at the <a href=""https://www.gwu.edu/"">George Washington University</a>. He studies technological change, with a particular interest in accelerating the transition to environmentally sustainable and energy-saving technologies. His research centers around how consumer preferences, market dynamics, and policy affect the emergence of critical technologies, such as electric vehicles and solar energy. He is an expert on China's rapidly emerging electric vehicle industry as well as the critical relationship between the US and China in developing and mass producing low carbon energy technologies. He applies an interdisciplinary approach to research, with expertise in discrete choice modeling and conjoint analysis as well as interview-based case studies. He has conducted extensive fieldwork in China, collaborating with colleagues at Tsinghua university, Beijing Normal University, and China's State Information Center on past projects. He is a fluent speaker of Mandarin Chinese and also an award-winning swing dancer. John holds a Ph.D. and M.S. in <a href=""https://www.cmu.edu/epp/"">Engineering and Public Policy</a> from Carnegie Mellon University and a B.S. in <a href=""http://www.beam.vt.edu/"">Engineering Science and Mechanics</a> from Virginia Tech.</p>
 <p class=""speaker-links"">
   <a href=""http://www.jhelvy.com/"">
@@ -151,7 +220,21 @@ John Helveston,George Washington University,,"<p>John Paul Helveston is an Assis
     <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
   </a>
 </p>",2021-01-21 22:00,2021-01-21 22:00
-JooYoung Seo,The Pennsylvania State University,,,2021-01-21 18:00,2021-01-21 18:00
+JooYoung Seo,The Pennsylvania State University,https://rstudio-global-2021.s3.amazonaws.com/speakers/jooyoungseo.jpg,"<p>JooYoung Seo is a Ph.D candidate in the Learning, Design, and Technology program at the Pennsylvania State University, and internationally certified accessibility professional whose research and development focuses on accessible computing for all. As an RStudio's double-certified data science instructor (i.e., Tidyverse + Shiny), who is blind, he is committed to making data science ecosystem more accessible to people with and without dis/abilities using R. To this end, he has been actively contributing to R open-source projects including <code>{shiny}</code>, <code>{rmarkdown}</code>, <code>{bookdown}</code>, and <code>{distill}</code> for accessibility, and interned on the RStudio IDE and Shiny team as an accessibility engineer in summer 2020.</p>
+<p class=""speaker-links"">
+  <a href=""https://jooyoungseo.com"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/homepage.png"" alt=""Homepage"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://twitter.com/seo_jooyoung"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/jooyoungseo"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://www.linkedin.com/in/jooyoungseo"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-21 18:00,2021-01-21 18:00
 Kara Woo,Sage Bionetworks,https://rstudio-global-2021.s3.amazonaws.com/speakers/karawoo.jpg,"<p>Kara Woo is a principal bioinformatics engineer at Sage Bionetworks. She leads a team of developers building tools and infrastructure for open science. Kara previously worked at Washington State University and at the National Center for Ecological Analysis and Synthesis (NCEAS), where she combined data management with fieldwork in Siberia at Lake Baikal. She has four cats.</p>
 <p class=""speaker-links"">
   <a href=""https://karawoo.com/"">
@@ -215,7 +298,18 @@ Malcolm Barrett,Teladoc Health,https://rstudio-global-2021.s3.amazonaws.com/spea
     <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
   </a>
 </p>",2021-01-21 22:00,2021-01-21 22:00
-Marcus Adams,Merck,,,2021-01-22 02:00,2021-01-22 02:00
+Marcus Adams,Merck,https://rstudio-global-2021.s3.amazonaws.com/speakers/marcusadams.jpg,"<p>Marcus Adams is an Associate Director, Engineering at the biopharmaceutical company Merck. He earned his BEng and MS in Chemical Engineering from the University of Delaware and Villanova University, respectively. His more than decade of experience at Merck spans the bio-pharmaceutical spectrum and includes experience in pre-clinical PK/PD modeling, product commercialization, in-line technology support, procurement, and vaccine distribution technology development. Currently, he works as a part of the Digital Proactive Process Analytics team, leveraging Merck’s Big Data Platform in the development of manufacturing information data models, report automation tools, and integrated-systems analysis applications.  His professional interests include effective digital visualization, reproducible research/analysis, and convincing his coworkers of the diverse, flourishing world beyond Microsoft Excel.</p>
+<p class=""speaker-links"">
+  <a href=""https://twitter.com/mtotheadams"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/adamsma"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://www.linkedin.com/in/marcus-adams-6779852a"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-22 02:00,2021-01-22 02:00
 Marie Vendettuoli,,,,2021-01-21 22:00,2021-01-21 22:00
 Matt Thomas,British Red Cross,https://rstudio-global-2021.s3.amazonaws.com/speakers/mattthomas.jpg,"<p>Dr Matt Thomas is Head of Strategic Insight and Foresight at the British Red Cross. Matt's team aims to help the Red Cross become more anticipatory and proactive by producing insights and tools including the <a href=""https://britishredcrosssociety.github.io/covid-19-vulnerability/"">Vulnerability Index</a> and <a href=""https://britishredcross.shinyapps.io/resilience-index/"">Resilience Index</a>. He holds a PhD in Evolutionary Anthropology and, prior to joining the British Red Cross, was researching topics including reindeer herders in the Arctic, hunter-gatherers in the Philippines, and witches in China. Outside of work, Matt writes a column for <a href=""https://www.sapiens.org/column/machinations/"">an anthropology magazine</a> as well as fiction.</p>
 <p class=""speaker-links"">
@@ -248,11 +342,50 @@ Maya Gans,Atorus Research,https://rstudio-global-2021.s3.amazonaws.com/speakers/
     <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
   </a>
 </p>",2021-01-21 18:00,2021-01-21 18:00
-Megan Beckett,Exegetic Analytics,,,2021-01-21 18:00,2021-01-21 18:00
+Megan Beckett,Exegetic Analytics,https://rstudio-global-2021.s3.amazonaws.com/speakers/meganbeckett.jpg,"<p>Megan Beckett is a Data Scientist at Exegetic Analytics, where she consults, develops and leads several analytical projects across a wide range of fields and industries. <em>&quot;Scientifically creative; creatively scientific.&quot;</em> This aptly describes her philosophy and approach in her work and life. Megan helped co-found and organises the Cape Town R-Ladies chapter and is a co-organiser of the satRday events in South Africa. She loves to paint, with her most recent work exploring the <a href=""https://mappamundi.netlify.app/portfolio/"">biodiversity of southern Africa</a>, and running is her passion, whether on the road or the trail.</p>
+<p class=""speaker-links"">
+  <a href=""https://meganbeckett.github.io/mbeckett_cv"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/homepage.png"" alt=""Homepage"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://twitter.com/mbeckett_za"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/MeganBeckett"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://www.linkedin.com/in/meganbeckett/"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-21 18:00,2021-01-21 18:00
 Michael Chirico,,,,2021-01-21 18:00,2021-01-21 18:00
 Michael Chow,On Sabbatical,,,2021-01-21 18:00,2021-01-21 18:00
-Mike Page,British Red Cross,,,2021-01-22 02:00,2021-01-22 02:00
-Mine Cetinkaya-Rundel,RStudio & University of Edinburgh,,,2021-01-21 22:00,2021-01-21 22:00
+Mike Page,British Red Cross,https://rstudio-global-2021.s3.amazonaws.com/speakers/mikepage.jpg,"<p>Mike Page is a data scientist on the Strategic Insight and Foresight team at the British Red Cross. Here, he helps to develop a suite of open source tools and dashboards including the <a href=""https://britishredcrosssociety.github.io/covid-19-vulnerability/"">Vulnerability Index</a> and <a href=""https://britishredcross.shinyapps.io/resilience-index/"">Resilience Index</a>. Mike is also the author of several R packages including mortyr and newsrivr. In his spare time you can find him rock climbing around the Alps.</p>
+<p class=""speaker-links"">
+  <a href=""https://www.mikejohnpage.com/"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/homepage.png"" alt=""Homepage"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://twitter.com/MikeJohnPage"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/mikejohnpage"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-22 02:00,2021-01-22 02:00
+Mine Çetinkaya-Rundel,RStudio & University of Edinburgh & Duke University,https://rstudio-global-2021.s3.amazonaws.com/speakers/minecetinkayarundel.jpg,"<p>Mine Çetinkaya-Rundel is Professional Educator and Data Scientist at RStudio as well as Senior Lecturer at University of Edinburgh and Associate Professor of the Practice at Duke University. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM. She works on the <a href=""https://www.openintro.org/"">OpenIntro</a> project, is also the creator and maintainer of <a href=""https://datasciencebox.org/"">datasciencebox.org</a>, teaches the popular <a href=""https://www.coursera.org/specializations/statistics"">Statistics with R</a> MOOC on Coursera. She has four cats.</p>
+<p class=""speaker-links"">
+  <a href=""http://mine-cr.com/"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/homepage.png"" alt=""Homepage"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://twitter.com/minebocek"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/mine-cetinkaya-rundel"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://www.linkedin.com/in/minec/"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-21 22:00,2021-01-21 22:00
 Neal Richardson,Ursa Computing,https://rstudio-global-2021.s3.amazonaws.com/speakers/nealrichardson.jpg,"<p>Neal Richardson leads the engineering team at Ursa Computing, a startup working to empower data teams and accelerate data science. He is also the maintainer of several R packages, including <code>arrow</code>, and is a member of Apache Arrow's project management committee. Previously, he received a Ph.D. in Political Science and worked in survey analytics.</p>
 <p class=""speaker-links"">
   <a href=""https://enpiar.com/"">
@@ -292,7 +425,21 @@ Nicole Kramer,University of North Carolina at Chapel Hill,https://rstudio-global
     <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
   </a>
 </p>",2021-01-21 18:00,2021-01-21 18:00
-Pamela E. Pairo,,,,2021-01-21 18:00,2021-01-21 18:00
+Pamela E. Pairo,,https://rstudio-global-2021.s3.amazonaws.com/speakers/pamelapairo.jpg,"<p>Pamela E. Pairo is a Ph.D. in Biological Sciences of the University of Buenos Aires, with expertise in community ecology. One of her research lines focuses on analyzing the impact of human activities on the diversity and composition of biological communities with particular interest in arthropods. In addition, she is interested in studying the spatio-temporal patterns of dengue disease in Argentina. She also is a teaching assistant in statistics at the Argentine University of Enterprise (UADE).</p>
+<p class=""speaker-links"">
+  <a href=""https://pamepairo.netlify.app/"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/homepage.png"" alt=""Homepage"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://twitter.com/PamePairo"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/PamelaPairo"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://www.linkedin.com/in/pamela-e-pairo-5a2004202/"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-21 18:00,2021-01-21 18:00
 Richard Vogg,,https://rstudio-global-2021.s3.amazonaws.com/speakers/richardvogg.jpg,"<p>Richard Vogg studied mathematics at TU Kaiserslautern, Germany, where he focused on statistics and obtained a Master’s degree.
 He worked as a Senior Business Analyst at Evalueserve in Chile for the last years, analyzing data for a major US bank. At the end of 2020, he moved back to Germany.
 Richard is a fan of applied statistics and storytelling with data. Outside of R, he enjoys playing the ukulele, trumpet, and didgeridoo.</p>
@@ -311,7 +458,19 @@ Richard is a fan of applied statistics and storytelling with data. Outside of R,
   </a>
 </p>",2021-01-21 22:00,2021-01-21 22:00
 Rika,Spring Health,,,2021-01-22 02:00,2021-01-22 02:00
-Riva Quiroga,,,,2021-01-21 22:00,2021-01-21 22:00
+Riva Quiroga,Programming Historian,https://rstudio-global-2021.s3.amazonaws.com/speakers/rivaquiroga.jpg,"<p>Riva is a linguist and educator by training. In her day-to-day work she teaches R programming, data visualization, and communication skills. She is also an editor at Programming Historian, an online project that publishes novice-friendly, peer-reviewed tutorials that help humanists learn a wide range of digital tools, techniques and workflows to facilitate research and teaching. She is currently pursuing a PhD in Linguistics, where she uses R to identify and visualize linguistic patterns in political speeches.
+Riva is an active member of the Latin American R community, where she likes to organize events, RLadies chapters, and translation projects. She lives with two cats, another human being, and an absurdly high number of plants.</p>
+<p class=""speaker-links"">
+  <a href=""https://rivaquiroga.cl/"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/homepage.png"" alt=""Homepage"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://twitter.com/rivaquiroga"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/rivaquiroga"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-21 22:00,2021-01-21 22:00
 Sean Lopp,RStudio,https://rstudio-global-2021.s3.amazonaws.com/speakers/seanlopp.png,"<p>Sean Lopp is an engineer, data scientist, and product leader. At RStudio, he helps data science teams uncover better habits and adopt better tools. He has worked with hundreds of organizations in finance, manufacturing, consumer tech, pharma, and healthcare. Sean led the creation of RStudio's Package Manager. Before RStudio Sean worked in NREL's transportation research group. He lives in Colorado and skis and bikes with his family.</p>
 <p class=""speaker-links"">
   <a href=""https://loppsided.blog"">
@@ -357,7 +516,18 @@ Sophie Beiers,American Civil Liberties Union,https://rstudio-global-2021.s3.amaz
   </a>
 </p>",2021-01-21 18:00,2021-01-21 18:00
 Winston Chang,RStudio,,,2021-01-22 02:00,2021-01-22 02:00
-Wolfram King,,,,2021-01-22 02:00,2021-01-22 02:00
+Wolfram King,R Weekly,https://rstudio-global-2021.s3.amazonaws.com/speakers/wolframking.jpg,"<p>Wolfram King is the founder of the R Weekly project. He is an active member of the R community and has several popular R open-source projects on GitHub.</p>
+<p class=""speaker-links"">
+  <a href=""https://rweekly.org"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/homepage.png"" alt=""Homepage"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://twitter.com/rweekly_org"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/rweekly/rweekly.org"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-22 02:00,2021-01-22 02:00
 Yanina Bellini Saibene,INTA - MetaDocencia - R-Ladies,https://rstudio-global-2021.s3.amazonaws.com/speakers/yaninabellinisaibene.jpg,"<p>Yanina Bellini Saibene is a researcher at INTA (National Institute of Agricultural Technology) dedicated to applying data science to the agricultural sector and a professor in several regional specializations about Digital Agriculture and Data Analysis. Yanina is formally trained as a Licenciate in Information System with a Master degree in Data Mining and Knowledge Management. She is an active member of the R Community as an R-Ladies organizer and part of the R-Ladies Global Team. She also is a co-founder and co-chair of LatinR and part of the organizing team of useR!2020 and user!2021 (co-chair).
 She also co-founder of MetaDocencia, an open, free, volunteer-lead, not-for-profit educational organization and part of the teams that translate educational and technical material to Spanish.</p>
 <p class=""speaker-links"">

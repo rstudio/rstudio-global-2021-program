@@ -9,7 +9,7 @@ name: Marcus Adams
 affiliation: Merck
 links:
   homepage: null
-  twitter: @mtotheadams
+  twitter: "@mtotheadams"
   github: https://github.com/adamsma
   linkedin: https://www.linkedin.com/in/marcus-adams-6779852a
 location: United States

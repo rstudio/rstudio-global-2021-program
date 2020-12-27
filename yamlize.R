@@ -9,8 +9,12 @@ blocktimes <- unlist(read_yaml("block-times-gmt.yml"))
 
 normalize_social <- function(x, url_prefix) {
   if (is.null(x)) {
-    NULL
-  } else if (grepl("^[\\da-zA-Z_]+$", x)) {
+    return(NULL)
+  }
+
+  x <- sub("^@", "", x, perl = TRUE)
+
+  if (grepl("^[\\da-zA-Z_]+$", x)) {
     paste0(url_prefix, x)
   } else if (grepl(url_prefix, x, fixed = TRUE)) {
     x
@@ -64,11 +68,15 @@ parse_file <- function(filename) {
     })
   }
 
+  speaker$links$twitter <- normalize_social(speaker$links$twitter, "https://twitter.com/")
+  speaker$links$github <- normalize_social(speaker$links$github, "https://github.com/")
+  speaker$links$linkedin <- normalize_social(speaker$links$linkedin, "https://www.linkedin.com/in/")
+
   links <- list(
     Homepage = speaker$links$homepage,
-    Twitter = normalize_social(speaker$links$twitter, "https://twitter.com/"),
-    GitHub = normalize_social(speaker$links$github, "https://github.com/"),
-    LinkedIn = normalize_social(speaker$links$linkedin, "https://www.linkedin.com/in/")
+    Twitter = speaker$links$twitter,
+    GitHub = speaker$links$github,
+    LinkedIn = speaker$links$linkedin
   )
   links <- links[!vapply(links, is.null, logical(1))]
 
@@ -155,7 +163,7 @@ df <- tibble::tibble(
 
 readr::write_csv(df, "export.csv")
 
-if (FALSE) {
+if (TRUE) {
 
 if (dir.exists("yaml_output")) {
   unlink("yaml_output", recursive = TRUE)
@@ -170,6 +178,7 @@ lapply(parsed_speakers, function(speaker) {
   write_yaml(speaker, file.path("yaml_output/speakers", paste0(speaker$speaker_slug, ".yml")))
 }) %>% invisible()
 
+message("Syncing speaker headshots to S3")
 # Upload speaker headshots to S3
 processx::run("aws", c(
   "s3",
