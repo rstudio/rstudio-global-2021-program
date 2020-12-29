@@ -163,6 +163,19 @@ df <- tibble::tibble(
 
 readr::write_csv(df, "export.csv")
 
+# Resize images if necessary
+jpeg_files <- list.files("speakers", pattern = "*.jpg", full.names = TRUE)
+png_files <- list.files("speakers", pattern = "*.png", full.names = TRUE)
+
+for (file in c(jpeg_files, png_files)) {
+  img <- magick::image_read(file)
+  if (magick::image_info(img)$width != 300) {
+    message("Resizing ", file)
+    img <- magick::image_resize(img, magick::geometry_size_pixels(300, preserve_aspect = TRUE))
+    magick::image_write(img, file)
+  }
+}
+
 if (TRUE) {
 
 if (dir.exists("yaml_output")) {
