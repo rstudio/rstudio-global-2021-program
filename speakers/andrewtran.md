@@ -9,8 +9,8 @@ name: Andrew Ba Tran
 affiliation: The Washington Post
 links:
   homepage: https://www.washingtonpost.com/people/andrew-ba-tran/
-  twitter: https://www.twitter.com/abtran
-  github: https://www.github.com/wpinvestigative
+  twitter: https://twitter.com/abtran
+  github: https://github.com/wpinvestigative
   linkedin: https://www.linkedin.com/in/abtran/
 location: United States
 ---
