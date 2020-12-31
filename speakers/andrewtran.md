@@ -5,27 +5,20 @@ track: A
 blocks:
   - foxtrot
   - lima
-name: Andrew Tran
+name: Andrew Ba Tran
 affiliation: The Washington Post
 links:
-  homepage: null
-  twitter: null
-  github: null
-  linkedin: null
+  homepage: https://www.washingtonpost.com/people/andrew-ba-tran/
+  twitter: https://www.twitter.com/abtran
+  github: https://www.github.com/wpinvestigative
+  linkedin: https://www.linkedin.com/in/abtran/
 location: United States
 ---
 
-# Big pharmacy data: Using R to help turn data over to the public
+# The Opioid Files: Turning big pharmacy data over to the public
 
-This talk will go over how The Washington Post used R to analyze hundreds of gigs of data from the DEA as part of its investigation into the opioid epidemic. 
-
-* Dealing with big data in R with doparallel
-* Exploratory visualizations and mapping with various packages like RLeaflet and geofacet
-* Making an API with janitor for easier data distribution
-* Making an R package on top of the API for documentation and vignettes
-* Inspiring the creation of a Python library on top of the API to access ARCOS data
-* Updating the package so that all parts of the data can be used that will hopefully inspire others to go further than the Post
+Just because data is public doesn't mean it's accessible. It takes more effort, but designing data distribution so it can be analyzed by people with differing levels of data analysis skills opens up the possibility of more stories that can be told. This talk will go over how The Washington Post used R (and Python) to analyze hundreds of gigs of pain pill distribution data from the Drug Enforcement Administration as part of its investigation into the opioid epidemic. And how making the data public and showing their work enabled other journalists and researchers across the country to drill deeper than the Post could ever do on its own.
 
 # Speaker bio
 
-Andrew Tran is a human person.
+Andrew is a data reporter on the rapid-response investigative team at The Washington Post who has analyzed how covid-19 has disproportionately impacted certain communities, the spread of opioids across the country, and the rise of right-wing violence. He shared in winning the Pulitzer Prize for Investigative Reporting in 2018. He's an advocate for open data and reproducibility [in journalism](https://github.com/wpinvestigative).
