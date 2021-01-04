@@ -19,7 +19,7 @@ location: Philadelphia, PA, United States
 
 Last January I left my job to spend a year developing siuba, a python port of dplyr. At its core, this decision was driven by a decade of watching python and R users produce similar analyses, but in very different ways.
 
-In this talk, I'll discuss 3 ways siuba enables R users to transfer their hard-earned programming knowledge to python: (1) leveraging the power of dplyr syntax, (2) generating SQL code, and (3) working with the plotnine plotting library. 
+In this talk, I'll discuss 3 ways siuba enables R users to transfer their hard-earned programming knowledge to python: (1) leveraging the power of dplyr syntax, (2) options to generate SQL code, and (3) working with the plotnine plotting library. 
 
 Looking back, I'll consider two critical pieces that have helped me develop siuba: using it to livecode TidyTuesday analyses, and building an interactive tutorial for absolute beginners.
 
