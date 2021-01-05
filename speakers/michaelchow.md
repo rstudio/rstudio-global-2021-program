@@ -9,8 +9,8 @@ name: Michael Chow
 affiliation: On Sabbatical
 links:
   homepage: http://mchow.com
-  twitter: twitter.com/chowthedog
-  github: github.com/machow
+  twitter: https://twitter.com/chowthedog
+  github: https://github.com/machow
   linkedin: https://www.linkedin.com/in/michael-a-chow
 location: Philadelphia, PA, United States
 ---
