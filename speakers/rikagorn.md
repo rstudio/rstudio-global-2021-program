@@ -9,9 +9,9 @@ name: Rika
 affiliation: Spring Health
 links:
   homepage: null
-  twitter: (https://twitter.com/RikaGorn)
+  twitter: https://twitter.com/RikaGorn
   github: null
-  linkedin: (https://www.linkedin.com/in/rika-gorn/)
+  linkedin: https://www.linkedin.com/in/rika-gorn/
 location: United States
 ---
 
