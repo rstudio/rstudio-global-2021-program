@@ -55,7 +55,21 @@ Allison Horst,UC Santa Barbara / RStudio,https://rstudio-global-2021.s3.amazonaw
     <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
   </a>
 </p>",2021-01-21 18:00,2021-01-21 18:00
-Andrew Tran,The Washington Post,,,2021-01-22 02:00,2021-01-22 02:00
+Andrew Ba Tran,The Washington Post,https://rstudio-global-2021.s3.amazonaws.com/speakers/andrewtran.jpg,"<p>Andrew is a data reporter on the rapid-response investigative team at The Washington Post who has analyzed how covid-19 has disproportionately impacted certain communities, the spread of opioids across the country, and the rise of right-wing violence. He shared in winning the Pulitzer Prize for Investigative Reporting in 2018. He's an advocate for open data and reproducibility <a href=""https://github.com/wpinvestigative"">in journalism</a>.</p>
+<p class=""speaker-links"">
+  <a href=""https://www.washingtonpost.com/people/andrew-ba-tran/"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/homepage.png"" alt=""Homepage"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://twitter.com/abtran"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/wpinvestigative"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://www.linkedin.com/in/abtran/"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-22 02:00,2021-01-22 02:00
 Athanasia M. Mowinckel,[Center for Lifespan Changes in Brain and Cognition](https://www.oslobrains.no/),https://rstudio-global-2021.s3.amazonaws.com/speakers/athanasiamowinckel.png,"<p>Athanasia M. Mowinckel is a staff scientist at the Center for Lifespan Changes in Brain and Cognition, at the University of Oslo.
 She has a background on cognitive psychology, and uses R for almost everything.
 She goes by the nickname &quot;Mo&quot; (closer to 'Mou' than 'Moe'), and is a member of the R-Ladies Global team.</p>
@@ -90,7 +104,7 @@ Barret Schloerke,RStudio,https://rstudio-global-2021.s3.amazonaws.com/speakers/b
 </p>",2021-01-22 02:00,2021-01-22 02:00
 Carson Sievert,,https://rstudio-global-2021.s3.amazonaws.com/speakers/carsonsievert.png,"<p>Carson is a software engineer at RStudio working on projects that bridge R with web technologies, such as <code>{shiny}</code>, <code>{bslib}</code>, <code>{thematic}</code>, and <code>{plotly}</code>. Before joining RStudio in late 2018, Carson worked as consultant, delivering analytical and scientific software to organizations such as the Library of Congress, NOAA, Sandia National Labs, and plotly. Carson began consulting part-time during his PhD in statistics at Iowa State, where his work on the R package <code>{plotly}</code> was recognized by the ASA with the 2017 Chambers Award. His book &quot;Interactive data visualization with R, plotly, and shiny&quot;&quot; is freely available online at https://plotly-r.com.</p>
 ",2021-01-22 02:00,2021-01-22 02:00
-Chelsea Parlett-Pelleriti,Chapman University,,"<p>Chelsea Parlett-Pelleriti is a PhD Candidate and full-time instructional faculty teaching Data Science at Chapman University. Her research centers around how we can use statistics and machine learning to improve the way we analyze behavioral (read: psychology) data. In her free time, you can find Chelsea on Twitter making stats memes or #statsTikTok's. She also writes about statistics, machine learning, and using R for various blogs.</p>
+Chelsea Parlett-Pelleriti,Chapman University,https://rstudio-global-2021.s3.amazonaws.com/speakers/chelseaparlettpelleriti.png,"<p>Chelsea Parlett-Pelleriti is a PhD Candidate and full-time instructional faculty teaching Data Science at Chapman University. Her research centers around how we can use statistics and machine learning to improve the way we analyze behavioral (read: psychology) data. In her free time, you can find Chelsea on Twitter making stats memes or #statsTikTok's. She also writes about statistics, machine learning, and using R for various blogs.</p>
 <p class=""speaker-links"">
   <a href=""https://cmparlettpelleriti.github.io/"">
     <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/homepage.png"" alt=""Homepage"" style=""border: none; width: 20px; height: 20px;""/>
@@ -153,7 +167,18 @@ Emily Riederer,Capital One,https://rstudio-global-2021.s3.amazonaws.com/speakers
 Eric Gunnar Cronstrom,Central Michigan University,https://rstudio-global-2021.s3.amazonaws.com/speakers/ericgunnarcronstrom.jpg,"<p>Eric is responsible for administering a wide range of day to day program functions associated with the performance and accountability of CMU partner schools. He ensures that the data the Center utilizes to evaluate school performance is accurate and stored within a sound data infrastructure. He also leverages his wide range of technical skills to lead the development and production of reports and respond to questions regarding school performance and demographic context.</p>
 <p>Prior to joining the Center, Eric was a database administrator for Central Michigan University Libraries. He has also served as a lecturer at Central Michigan University teaching courses in web design, database design and programming. He earned a master’s degree in information systems management and a bachelor’s degree in computer science from Central Michigan University. He is also pursuing an additional master’s degree in applied statistics at Central Michigan University.</p>
 ",2021-01-22 02:00,2021-01-22 02:00
-Garrick Aden-Buie,,,,2021-01-22 02:00,2021-01-22 02:00
+Garrick Aden-Buie,"RStudio, PBC",https://rstudio-global-2021.s3.amazonaws.com/speakers/garrickadenbuie.jpg,"<p>Garrick is a Data Science Educator at RStudio who lives in sunny St. Petersburg, Florida. His passion is combining creative coding with programming education, using code to build tools that teach coding to new and advanced R users alike. He's developed a number of open source packages and addins for <code>xaringan</code> including <code>xaringanthemer</code> for complete, custom slide themes and <code>xaringanExtra</code> for a variety of advanced additions to complete <code>xaringan</code> slides with live broadcasting, tabbed panels, custom animations, and more.</p>
+<p class=""speaker-links"">
+  <a href=""https://www.garrickadenbuie.com"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/homepage.png"" alt=""Homepage"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://twitter.com/grrrck"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/gadenbuie"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-22 02:00,2021-01-22 02:00
 Grant Fleming,Elder Research Inc.,https://rstudio-global-2021.s3.amazonaws.com/speakers/grantfleming.png,"<p>Grant Fleming is a Data Scientist at Elder Research, co-author of the Wiley book <em>Responsible Data Science</em> (2021), and contributor to the O'Reilly book <em>97 Things About Ethics Everyone in Data Science Should Know</em>. His professional focus is on machine learning for social science applications, model explainability, and building tools for reproducible data science. Previously, Grant was a research contractor for USAID.</p>
 <p class=""speaker-links"">
   <a href=""https://twitter.com/hearthehearsay"">
@@ -310,7 +335,23 @@ Marcus Adams,Merck,https://rstudio-global-2021.s3.amazonaws.com/speakers/marcusa
     <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
   </a>
 </p>",2021-01-22 02:00,2021-01-22 02:00
-Marie Vendettuoli,,,,2021-01-21 22:00,2021-01-21 22:00
+Marie Vendettuoli,Statistical Center for HIV/AIDS Research and Prevention (SCHARP) @ FredHutch,https://rstudio-global-2021.s3.amazonaws.com/speakers/marievendettuoli.jpg,"<p>Marie Vendettuoli is a Senior Statistical Programmer at Statistical Center for HIV/AIDS Research and Prevention (<a href=""https://www.fredhutch.org/en/research/divisions/vaccine-infectious-disease-division/research/biostatistics-bioinformatics-and-epidemiology/statistical-center-for-hiv-aids-research-and-prevention.html"">SCHARP</a>) @ FredHutch.
+She holds a PhD from Iowa State University in Human Computer Interaction and started
+developing R packages for use within regulatory frameworks while working as a Data Scientist at
+<a href=""https://www.aphis.usda.gov/aphis/ourfocus/animalhealth/veterinary-biologics/sa_about_vb/ct_vb_about"">USDA Center for Veterinary Biologics</a>. Before discovering R, Marie worked in a <a href=""https://www.fda.gov/about-fda/fda-organization/center-biologics-evaluation-and-research-cber"">CBER</a>-regulated laboratory.
+Her main interest is developing analytical infrastructure to facilitate scientific analysis
+for fellow data scientists working in a regulatory environment.</p>
+<p class=""speaker-links"">
+  <a href=""http://mariev.github.io/studiousmarie/"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/homepage.png"" alt=""Homepage"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/mariev"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://www.linkedin.com/in/mvendettuoli"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-21 22:00,2021-01-21 22:00
 Matt Thomas,British Red Cross,https://rstudio-global-2021.s3.amazonaws.com/speakers/mattthomas.jpg,"<p>Dr Matt Thomas is Head of Strategic Insight and Foresight at the British Red Cross. Matt's team aims to help the Red Cross become more anticipatory and proactive by producing insights and tools including the <a href=""https://britishredcrosssociety.github.io/covid-19-vulnerability/"">Vulnerability Index</a> and <a href=""https://britishredcross.shinyapps.io/resilience-index/"">Resilience Index</a>. He holds a PhD in Evolutionary Anthropology and, prior to joining the British Red Cross, was researching topics including reindeer herders in the Arctic, hunter-gatherers in the Philippines, and witches in China. Outside of work, Matt writes a column for <a href=""https://www.sapiens.org/column/machinations/"">an anthropology magazine</a> as well as fiction.</p>
 <p class=""speaker-links"">
   <a href=""http://matthewgthomas.co.uk"">
@@ -357,8 +398,34 @@ Megan Beckett,Exegetic Analytics,https://rstudio-global-2021.s3.amazonaws.com/sp
     <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
   </a>
 </p>",2021-01-21 18:00,2021-01-21 18:00
-Michael Chirico,,,,2021-01-21 18:00,2021-01-21 18:00
-Michael Chow,On Sabbatical,,,2021-01-21 18:00,2021-01-21 18:00
+Michael Chirico,"Google, Inc.",https://rstudio-global-2021.s3.amazonaws.com/speakers/michaelchirico.jpg,"<p>Michael Chirico is a data scientist working on compute memory efficiency at Google. Before that he worked at Grab in Singapore and earlier got his PhD in Economics at the University of Pennsylvania.</p>
+<p>He is passionate about making tools to empower others who work with data (most of this energy is directed towards <code>data.table</code>) and loves learning languages (at various middling levels of proficiency in Japanese, Spanish, and Mandarin, with goals to learn Cantonese, Hokkien, Vietnamese and Bahasa).</p>
+<p class=""speaker-links"">
+  <a href=""https://twitter.com/michael_chirico"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/michaelchirico/"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://www.linkedin.com/in/michael-chirico-9b6b0527/"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-21 18:00,2021-01-21 18:00
+Michael Chow,On Sabbatical,https://rstudio-global-2021.s3.amazonaws.com/speakers/michaelchow.jpg,"<p>Michael Chow is a data scientist and learning researcher. He serves as a co-director at Code for Philly. In past lives, he worked on adaptive assessment tools in ed tech, and received a PhD in cognitive psychology from Princeton University.</p>
+<p class=""speaker-links"">
+  <a href=""http://mchow.com"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/homepage.png"" alt=""Homepage"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://twitter.com/chowthedog"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://github.com/machow"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/github.png"" alt=""GitHub"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://www.linkedin.com/in/michael-a-chow"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-21 18:00,2021-01-21 18:00
 Mike Page,British Red Cross,https://rstudio-global-2021.s3.amazonaws.com/speakers/mikepage.jpg,"<p>Mike Page is a data scientist on the Strategic Insight and Foresight team at the British Red Cross. Here, he helps to develop a suite of open source tools and dashboards including the <a href=""https://britishredcrosssociety.github.io/covid-19-vulnerability/"">Vulnerability Index</a> and <a href=""https://britishredcross.shinyapps.io/resilience-index/"">Resilience Index</a>. Mike is also the author of several R packages including mortyr and newsrivr. In his spare time you can find him rock climbing around the Alps.</p>
 <p class=""speaker-links"">
   <a href=""https://www.mikejohnpage.com/"">
@@ -457,7 +524,15 @@ Richard is a fan of applied statistics and storytelling with data. Outside of R,
     <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
   </a>
 </p>",2021-01-21 22:00,2021-01-21 22:00
-Rika,Spring Health,,,2021-01-22 02:00,2021-01-22 02:00
+Rika,Spring Health,,"<p>Rika Gorn is the Manager of Business Intelligence at Spring Health - a mental healthcare tech start-up that provides comprehensive mental healthcare benefits.   Previously, she worked on quality assurance for a mobile mental health team at Coordinated Behavioral Care, data analytics at Covenant House International, strategic management and evaluation at TCC Group, and program analysis at the Vera Institute of Justice. Rika received her Bachelors in Political Science from Hunter College and her Masters in Public Administration at the NYU Wagner School of Public Service. Rika is also a proud board member of R-Ladies NYC.</p>
+<p class=""speaker-links"">
+  <a href=""https://twitter.com/RikaGorn"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://www.linkedin.com/in/rika-gorn/"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-22 02:00,2021-01-22 02:00
 Riva Quiroga,Programming Historian,https://rstudio-global-2021.s3.amazonaws.com/speakers/rivaquiroga.jpg,"<p>Riva is a linguist and educator by training. In her day-to-day work she teaches R programming, data visualization, and communication skills. She is also an editor at Programming Historian, an online project that publishes novice-friendly, peer-reviewed tutorials that help humanists learn a wide range of digital tools, techniques and workflows to facilitate research and teaching. She is currently pursuing a PhD in Linguistics, where she uses R to identify and visualize linguistic patterns in political speeches.
 Riva is an active member of the Latin American R community, where she likes to organize events, RLadies chapters, and translation projects. She lives with two cats, another human being, and an absurdly high number of plants.</p>
 <p class=""speaker-links"">
