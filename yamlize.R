@@ -115,6 +115,7 @@ parse_file <- function(filename) {
   c(
     list(),
     speaker,
+    summary = speaker_bio,
     bio = paste0(speaker_bio, links_html),
     headshot = headshot,
     speaker_slug = slug,
@@ -156,12 +157,14 @@ df <- tibble::tibble(
   name = full_names,
   affiliation = pluck_chr("affiliation"),
   headshot = pluck_chr("headshot"),
+  summary = pluck_chr("summary"),
   bio = pluck_chr("bio"),
   time1,
   time2
 )
 
 readr::write_csv(df, "export.csv")
+# googlesheets4::gs4_create(, sheets = df)
 
 # Resize images if necessary
 jpeg_files <- list.files("speakers", pattern = "*.jpg", full.names = TRUE)
