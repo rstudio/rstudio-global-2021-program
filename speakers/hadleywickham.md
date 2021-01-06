@@ -17,7 +17,7 @@ location: Houston, TX
 
 # Maintaining the house the tidyverse built
 
-Abstract goes here
+Hadley will talk about how the tidyverse has evolved since its creation (just five years ago!). You'll learn about our greatest successes, learn from our biggest failures, and get some hints of what's coming down the pipeline for the future.
 
 # Speaker bio
 

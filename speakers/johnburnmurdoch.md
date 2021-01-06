@@ -17,7 +17,7 @@ location: London
 
 # Reporting on and visualising the pandemic
 
-Abstract goes here
+John will discuss the lessons he's learned reporting on and visualising the pandemic, including the world of difference between making charts for a technical audience and making charts for a mass audience. You'll learn from his experience navigating the highly personal and political context within which people consume and evaluate graphics and data, and how that can help us better design and communicate with visualisations down the pipeline for the future.
 
 # Speaker bio
 

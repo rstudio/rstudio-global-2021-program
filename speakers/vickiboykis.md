@@ -17,7 +17,7 @@ location: Philadelphia, PA
 
 # Just glue it
 
-Abstract goes here
+Vicky will discuss how that as people who can write code and analyze data, we have a lot of input and power over what our digital and work worlds looks like, and therefore can act as agents of change and repair.
 
 # Speaker bio
 
