@@ -46,7 +46,7 @@ parse_file <- function(filename) {
       "]")
   }
 
-  talk_title <- rmd[[2]]$name
+  talk_title <- rmd[[2]]$name %>% markdown_html %>% sub("^<p>", "", .) %>% sub("</p>\n?$", "", .)
   talk_abstract_html <- rmd[[3]] %>% as_document %>% markdown_html
 
   speaker_bio <- rmd[[5]] %>% as_document %>% markdown_html
@@ -146,6 +146,7 @@ pluck_chr <- function(name, default = "") {
 parsed_speakers <- parsed_speakers[order(tolower(pluck_chr("name")))]
 # rm(last_names)
 
+title <- pluck_chr("title")
 full_names <- pluck_chr("name")
 
 talk_type <- pluck_chr("type")
@@ -185,10 +186,24 @@ topic <- paste0(talk_labels[talk_type],
 df2 <- tibble::tibble(
   talk_id = vapply(parsed_speakers, magrittr::extract2, integer(1), i = "talk_id"),
   topic = topic,
-  title = pluck_chr("title"),
+  title,
   abstract = pluck_chr("abstract")
 ) %>% filter(!duplicated(talk_id)) %>% select(-talk_id)
 readr::write_csv(df2, "export_sessions.csv")
+# googlesheets4::gs4_create(, sheets = df2)
+
+session_to_speakers <- tibble::tibble(
+  session = title,
+  name = full_names
+) %>% group_by(session) %>%
+  summarise(name = paste(name, collapse = ", "))
+
+speaker_to_session <- tibble::tibble(
+  name = full_names,
+  session = title
+)
+
+# googlesheets4::gs4_create(sheets = list(session_to_speakers = session_to_speakers, speaker_to_session = speaker_to_session))
 
 # Resize images if necessary
 jpeg_files <- list.files("speakers", pattern = "*.jpg", full.names = TRUE)
