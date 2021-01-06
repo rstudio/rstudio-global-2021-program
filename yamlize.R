@@ -2,10 +2,13 @@ library(magrittr)
 library(parsermd)
 library(commonmark)
 library(yaml)
+library(dplyr)
 
 blocknames <- c("alfa", "bravo", "charlie", "delta", "echo", "foxtrot", "golf",
   "hotel", "india", "juliett", "kilo", "lima")
 blocktimes <- unlist(read_yaml("block-times-gmt.yml"))
+
+sessionnames <- read_yaml("session-names.yml")
 
 normalize_social <- function(x, url_prefix) {
   if (is.null(x)) {
@@ -146,6 +149,7 @@ parsed_speakers <- parsed_speakers[order(tolower(pluck_chr("name")))]
 full_names <- pluck_chr("name")
 
 talk_type <- pluck_chr("type")
+talk_labels = c(lightning = "Lightning Talk", talk = "Talk", keynote = "Keynote")
 location <- pluck_chr("location")
 
 tracks <- pluck_chr("track")
@@ -165,6 +169,26 @@ df <- tibble::tibble(
 
 readr::write_csv(df, "export.csv")
 # googlesheets4::gs4_create(, sheets = df)
+
+session <- vapply(parsed_speakers, function(speaker) {
+  sess <- sessionnames[[ speaker$blocks[[1]] ]]
+  if (is.character(sess)) {
+    sess
+  } else if (is.list(sess)) {
+    sess[[speaker$track]]
+  }
+}, character(1))
+topic <- paste0(talk_labels[talk_type],
+  ifelse(talk_type != "keynote", paste0("/Track ", tracks, "/", session), "")
+)
+
+df2 <- tibble::tibble(
+  talk_id = vapply(parsed_speakers, magrittr::extract2, integer(1), i = "talk_id"),
+  topic = topic,
+  title = pluck_chr("title"),
+  abstract = pluck_chr("abstract")
+) %>% filter(!duplicated(talk_id)) %>% select(-talk_id)
+readr::write_csv(df2, "export_sessions.csv")
 
 # Resize images if necessary
 jpeg_files <- list.files("speakers", pattern = "*.jpg", full.names = TRUE)
