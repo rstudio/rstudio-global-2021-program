@@ -142,7 +142,18 @@ Colin Rundel,University of Edinburgh & Duke University,,"<p>Colin Rundel is Lect
   </a>
 </p>",2021-01-22 02:00,2021-01-22 02:00
 Danielle Oberdier,,,,,2021-01-22 02:00,2021-01-22 02:00
-Danielle Smalls-Perkins,,,,,2021-01-21 18:00,2021-01-21 18:00
+Danielle Smalls-Perkins,,https://rstudio-global-2021.s3.amazonaws.com/speakers/daniellesmallsperkins.jpg,"<p>Danielle Smalls-Perkins co-founded MiR Community with the hope that the R community would continue to encourage the inclusion and recognition of contributions made from R users of diverse backgrounds. She loves to use R for understanding and storytelling.
+Danielle currently works as a Senior Strategist in Google's Trust and Safety Team. She advocates for model fairness, interpretability, and reducing harmful outcomes of algorithmic decision-making on vulnerable populations.</p>
+","<p>Danielle Smalls-Perkins co-founded MiR Community with the hope that the R community would continue to encourage the inclusion and recognition of contributions made from R users of diverse backgrounds. She loves to use R for understanding and storytelling.
+Danielle currently works as a Senior Strategist in Google's Trust and Safety Team. She advocates for model fairness, interpretability, and reducing harmful outcomes of algorithmic decision-making on vulnerable populations.</p>
+<p class=""speaker-links"">
+  <a href=""https://danielle.pizza"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/homepage.png"" alt=""Homepage"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+  <a href=""https://twitter.com/smallperks"">
+    <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/twitter.png"" alt=""Twitter"" style=""border: none; width: 20px; height: 20px;""/>
+  </a>
+</p>",2021-01-21 18:00,2021-01-21 18:00
 Dean Marchiori,,https://rstudio-global-2021.s3.amazonaws.com/speakers/deanmarchiori.jpg,"<p>Dean Marchiori is a Statistician based in Sydney, Australia. He currently works with Endeavour Energy as a Senior Data Scientist modelling bushfire and vegetation risk on the electricity network.<br />
 Dean's career started in finance as an equities trader before moving into advanced analytics, where he has worked with some of Australia’s largest organisations.  His professional interests are in geospatial analysis, time series modelling and the R programming language.<br />
 In 2019, Dean was named one of the top 10 analytics leaders in Australia by IAPA. He is also recognised as an Accredited Statistician with the Statistical Society of Australia. He holds a Bachelor of Science in Mathematics (awarded with University Medal) and a Masters degree in Applied Finance.<br />
@@ -213,7 +224,7 @@ Grant Fleming,Elder Research Inc.,https://rstudio-global-2021.s3.amazonaws.com/s
     <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
   </a>
 </p>",2021-01-21 22:00,2021-01-21 22:00
-Hadley Wickham,RStudio,,"<p>Hadley Wickham is Chief Scientist at RStudio. He's interested in building tools (computational and cognitive) that make data ingest, preparation, manipulation, visualization and analysis easier. He's developed over 30 R packages, for data analysis (ggplot2, dplyr, tidyr), making frustrating parts of R easier to use (lubridate for dates, stringr for strings, httr for accessing web APIs), and for streamlining the R package development (devtools, roxygen2, and testthat).</p>
+Hadley Wickham,RStudio,https://rstudio-global-2021.s3.amazonaws.com/speakers/hadleywickham.jpg,"<p>Hadley Wickham is Chief Scientist at RStudio. He's interested in building tools (computational and cognitive) that make data ingest, preparation, manipulation, visualization and analysis easier. He's developed over 30 R packages, for data analysis (ggplot2, dplyr, tidyr), making frustrating parts of R easier to use (lubridate for dates, stringr for strings, httr for accessing web APIs), and for streamlining the R package development (devtools, roxygen2, and testthat).</p>
 ","<p>Hadley Wickham is Chief Scientist at RStudio. He's interested in building tools (computational and cognitive) that make data ingest, preparation, manipulation, visualization and analysis easier. He's developed over 30 R packages, for data analysis (ggplot2, dplyr, tidyr), making frustrating parts of R easier to use (lubridate for dates, stringr for strings, httr for accessing web APIs), and for streamlining the R package development (devtools, roxygen2, and testthat).</p>
 <p class=""speaker-links"">
   <a href=""http://hadley.nz/"">
@@ -271,7 +282,7 @@ Jeroen Ooms,UC Berkeley,https://rstudio-global-2021.s3.amazonaws.com/speakers/je
     <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
   </a>
 </p>",2021-01-21 22:00,2021-01-21 22:00
-John Burn-Murdoch,Financial Times,,"<p>John Burn-Murdoch is the Financial Times’ senior data visualisation journalist, and creator of the FT’s coronavirus trajectory tracker charts. He has been leading the FT’s data-driven coverage of the pandemic, exploring its impacts on health, the economy and wider society. When pandemics are not happening, he also uses data and graphics to tell stories on topics including politics, economics, climate change and sport, and is a visiting lecturer at the London School of Economics.</p>
+John Burn-Murdoch,Financial Times,https://rstudio-global-2021.s3.amazonaws.com/speakers/johnburnmurdoch.jpg,"<p>John Burn-Murdoch is the Financial Times’ senior data visualisation journalist, and creator of the FT’s coronavirus trajectory tracker charts. He has been leading the FT’s data-driven coverage of the pandemic, exploring its impacts on health, the economy and wider society. When pandemics are not happening, he also uses data and graphics to tell stories on topics including politics, economics, climate change and sport, and is a visiting lecturer at the London School of Economics.</p>
 ","<p>John Burn-Murdoch is the Financial Times’ senior data visualisation journalist, and creator of the FT’s coronavirus trajectory tracker charts. He has been leading the FT’s data-driven coverage of the pandemic, exploring its impacts on health, the economy and wider society. When pandemics are not happening, he also uses data and graphics to tell stories on topics including politics, economics, climate change and sport, and is a visiting lecturer at the London School of Economics.</p>
 <p class=""speaker-links"">
   <a href=""https://ft.com/jbm"">
@@ -694,7 +705,7 @@ Sophie Beiers,American Civil Liberties Union,https://rstudio-global-2021.s3.amaz
     <img src=""https://rstudio-global-2021.s3.amazonaws.com/icons/linkedin.png"" alt=""LinkedIn"" style=""border: none; width: 20px; height: 20px;""/>
   </a>
 </p>",2021-01-21 18:00,2021-01-21 18:00
-Vicki Boykis,Automattic,,"<p>Vicki Boykis is a machine learning engineer at <a href=""https://automattic.com/"">Automattic</a>, the company behind <a href=""https://wordpress.com"">Wordpress.com</a>. She works mostly in Python, R, Spark, and SQL, and really enjoys building end-to-end data products. Outside of work she publishes the <a href=""https://vicki.substack.com"">Normcore Tech newsletter</a> and blogs at <a href=""https://veekaybee.github.io/"">https://veekaybee.github.io/</a>. In her &quot;spare time&quot;, she blogs, reads, and <a href=""https://twitter.com/vboykis"">writes terrible joke tweets about data</a>.</p>
+Vicki Boykis,Automattic,https://rstudio-global-2021.s3.amazonaws.com/speakers/vickiboykis.jpg,"<p>Vicki Boykis is a machine learning engineer at <a href=""https://automattic.com/"">Automattic</a>, the company behind <a href=""https://wordpress.com"">Wordpress.com</a>. She works mostly in Python, R, Spark, and SQL, and really enjoys building end-to-end data products. Outside of work she publishes the <a href=""https://vicki.substack.com"">Normcore Tech newsletter</a> and blogs at <a href=""https://veekaybee.github.io/"">https://veekaybee.github.io/</a>. In her &quot;spare time&quot;, she blogs, reads, and <a href=""https://twitter.com/vboykis"">writes terrible joke tweets about data</a>.</p>
 ","<p>Vicki Boykis is a machine learning engineer at <a href=""https://automattic.com/"">Automattic</a>, the company behind <a href=""https://wordpress.com"">Wordpress.com</a>. She works mostly in Python, R, Spark, and SQL, and really enjoys building end-to-end data products. Outside of work she publishes the <a href=""https://vicki.substack.com"">Normcore Tech newsletter</a> and blogs at <a href=""https://veekaybee.github.io/"">https://veekaybee.github.io/</a>. In her &quot;spare time&quot;, she blogs, reads, and <a href=""https://twitter.com/vboykis"">writes terrible joke tweets about data</a>.</p>
 <p class=""speaker-links"">
   <a href=""http://vickiboykis.com/"">
