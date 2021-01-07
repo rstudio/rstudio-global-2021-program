@@ -8,8 +8,8 @@ blocks:
 name: Danielle Smalls-Perkins
 affiliation: null
 links:
-  homepage: danielle.pizza
-  twitter: @smallperks
+  homepage: https://danielle.pizza
+  twitter: smallperks
   github: null
   linkedin: null
 location: null
