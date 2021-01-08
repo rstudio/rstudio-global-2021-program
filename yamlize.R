@@ -197,17 +197,14 @@ df2 <- tibble::tibble(
   talk_id = talk_id,
   topic = topic,
   title,
-  abstract = pluck_chr("abstract"),
+  abstract = pluck_chr("abstract_text"),
   speaker = full_names,
-  speaker_summary = pluck_chr("summary")) %>%
+  speaker_summary = pluck_chr("summary_text")) %>%
   group_by(talk_id, topic, title, abstract) %>%
   summarise(.groups = "drop",
     speaker_info = paste(collapse = "\n",
       mapply(speaker, speaker_summary, FUN = function(name, summary) {
-        paste(sep = "\n",
-          p("Speaker: ", strong(name)),
-          summary
-        )
+        paste0("Speaker: ", name, "\n\n", summary)
       })
     )
   ) %>%
