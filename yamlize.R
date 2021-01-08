@@ -3,6 +3,7 @@ library(parsermd)
 library(commonmark)
 library(yaml)
 library(dplyr)
+library(htmltools)
 
 blocknames <- c("alfa", "bravo", "charlie", "delta", "echo", "foxtrot", "golf",
   "hotel", "india", "juliett", "kilo", "lima")
@@ -183,12 +184,33 @@ topic <- paste0(talk_labels[talk_type],
   ifelse(talk_type != "keynote", paste0("/Track ", tracks, "/", session), "")
 )
 
+talk_id <- vapply(parsed_speakers, magrittr::extract2, integer(1), i = "talk_id")
+
 df2 <- tibble::tibble(
-  talk_id = vapply(parsed_speakers, magrittr::extract2, integer(1), i = "talk_id"),
+  talk_id = talk_id,
   topic = topic,
   title,
-  abstract = pluck_chr("abstract")
-) %>% filter(!duplicated(talk_id)) %>% select(-talk_id)
+  abstract = pluck_chr("abstract"),
+  speaker = full_names,
+  speaker_summary = pluck_chr("summary")) %>%
+  group_by(talk_id, topic, title, abstract) %>%
+  summarise(.groups = "drop",
+    speaker_info = paste(collapse = "\n",
+      mapply(speaker, speaker_summary, FUN = function(name, summary) {
+        paste(sep = "\n",
+          p("Speaker: ", strong(name)),
+          p(summary)
+        )
+      })
+    )
+  ) %>%
+  mutate(abstract_with_bio = paste(sep = "\n", abstract, speaker_info)) %>%
+  select(-speaker_info)
+
+df2_sorted <- df2[match(unique(talk_id), df2$talk_id),]
+stopifnot(nrow(df2_sorted) == nrow(df2))
+df2 <- df2_sorted
+
 readr::write_csv(df2, "export_sessions.csv")
 # googlesheets4::gs4_create(, sheets = df2)
 

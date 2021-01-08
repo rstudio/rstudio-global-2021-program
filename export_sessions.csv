@@ -1,84 +1,305 @@
-topic,title,abstract
-Talk/Track C/Programming,Introducing xrprof: A New Way to Profile R,"<p>Tracking down performance issues in R code usually means using R's built-in <code>Rprof()</code> profiler or one of the packages built around it. But the changing nature of the R community (towards more deployed applications) makes local profiling workflows frustrating, which is why I have written a new profiler: xrprof.</p>
+talk_id,topic,title,abstract,abstract_with_bio
+293,Talk/Track C/Programming,Introducing xrprof: A New Way to Profile R,"<p>Tracking down performance issues in R code usually means using R's built-in <code>Rprof()</code> profiler or one of the packages built around it. But the changing nature of the R community (towards more deployed applications) makes local profiling workflows frustrating, which is why I have written a new profiler: xrprof.</p>
 <p>xprof is compatible with existing R tools, but unlike them it can be used to profile R code that is already running -- in fact, it is designed to be safe to point at R code running &quot;in production&quot;. xrprof also works seamlessly when R is run inside Docker, and can even be run in complex environments like Kubernetes clusters.</p>
 <p>Taking inspiration from the {jointprof} package, xrprof can also show function calls at the C/C++ level alongside those from R. This can be immensely useful for diagnosing problems in packages that make heavy use of compiled code.</p>
-"
-Talk/Track A/Data for good,Humanitarian Data Science with R,"<p>Humanitarian actors are increasingly using data to drive their decisions. Since the Haiti 2010 earthquake, the volume of data collected and used by humanitarians has been growing exponentially and organizations are now relying on data specialists to turn all this data into life-saving data products.<br />
-These data products are created by teams who use proprietary point and click software. The process from the raw data to the final data product involves a lot of clicking, copying and pasting and is not reproducible.
-Another approach to humanitarian data science is possible using R. In this talk, I will show how to seamlessly develop reproducible, reusable humanitarian data products using {rhdx}, {tidyverse}, {sf} and {shiny}.</p>
-"
-Lightning Talk/Track C/Modelling,Categorical Embeddings: New Ways to Simplify Complex Data,"<p>When building a predictive model in R, many of the functions (such as <code>lm()</code>, <code>glm()</code>, <code>randomForest</code>, <code>xgboost</code>, or neural networks in <code>keras</code>) require that all input variables are numeric.  If your data has categorical variables, you may have to choose between ignoring some of your data and too many new columns.</p>
+","<p>Tracking down performance issues in R code usually means using R's built-in <code>Rprof()</code> profiler or one of the packages built around it. But the changing nature of the R community (towards more deployed applications) makes local profiling workflows frustrating, which is why I have written a new profiler: xrprof.</p>
+<p>xprof is compatible with existing R tools, but unlike them it can be used to profile R code that is already running -- in fact, it is designed to be safe to point at R code running &quot;in production&quot;. xrprof also works seamlessly when R is run inside Docker, and can even be run in complex environments like Kubernetes clusters.</p>
+<p>Taking inspiration from the {jointprof} package, xrprof can also show function calls at the C/C++ level alongside those from R. This can be immensely useful for diagnosing problems in packages that make heavy use of compiled code.</p>
+
+<p>
+  Speaker: 
+  <strong>Aaron Jacobs</strong>
+</p>
+<p>&lt;p&gt;Aaron Jacobs is a Senior Data Scientist on the R&amp;amp;D team at Crescendo, a technology company in the sports betting space with a large internal R ecosystem. Prior to Crescendo he worked in Canadian public policy research. Aaron has a strong interest in the engineering side of data science and the emerging use of R &amp;quot;in production&amp;quot;. He is the author of several CRAN and GitHub packages, as well as xrprof -- a new R profiling tool.&lt;/p&gt;
+</p>"
+291,Talk/Track A/Data for good,Humanitarian Data Science with R,"<p>Humanitarian actors are increasingly using data to drive their decisions. Since the Haiti 2010 earthquake, the volume of data collected and used by humanitarians has been growing exponentially and organizations are now relying on data specialists to turn all this data into life-saving data products.</p>
+<p>These data products are created by teams using proprietary point and click software. The process from the raw data to the final data product involves a lot of clicking, copying and pasting and is usually not reproducible.</p>
+<p>Another approach to humanitarian data science is possible using <code>R</code>. In this talk, I will show how to seamlessly develop reproducible, reusable humanitarian data products using the <code>tidyverse</code>, <code>rmarkdown</code> and some domain-focused <code>R</code> packages.</p>
+","<p>Humanitarian actors are increasingly using data to drive their decisions. Since the Haiti 2010 earthquake, the volume of data collected and used by humanitarians has been growing exponentially and organizations are now relying on data specialists to turn all this data into life-saving data products.</p>
+<p>These data products are created by teams using proprietary point and click software. The process from the raw data to the final data product involves a lot of clicking, copying and pasting and is usually not reproducible.</p>
+<p>Another approach to humanitarian data science is possible using <code>R</code>. In this talk, I will show how to seamlessly develop reproducible, reusable humanitarian data products using the <code>tidyverse</code>, <code>rmarkdown</code> and some domain-focused <code>R</code> packages.</p>
+
+<p>
+  Speaker: 
+  <strong>Ahmadou Dicko</strong>
+</p>
+<p>&lt;p&gt;Ahmadou Dicko is a statistics and data analysis officer at the United Nations High Commissioner for Refugees (UNHCR) where he uses statistics and data science to help safeguard the rights and well-being of refugees in West and Central Africa. He has an extensive experience in the use of statistics and data science in development and humanitarian projects. Ahmadou was the lead of the OCHA Center for Humanitarian Data team for West and Central Africa and has worked with several humanitarian and development organizations such as IFRC, FAO, IAEA, OCHA. Ahmadou is a &lt;a href=""https://education.rstudio.com/trainers/""&gt;Rstudio trainer&lt;/a&gt; and he is passionate about the R community. He is currently co-organizing the &lt;a href=""https://www.meetup.com/DakaR-R-User-Group/""&gt;Dakar R User Group&lt;/a&gt; and co-leading the &lt;a href=""https://africa-r.org/""&gt;AfricaR initiative&lt;/a&gt;.&lt;/p&gt;
+</p>"
+224,Lightning Talk/Track C/Modelling,Categorical Embeddings: New Ways to Simplify Complex Data,"<p>When building a predictive model in R, many of the functions (such as <code>lm()</code>, <code>glm()</code>, <code>randomForest</code>, <code>xgboost</code>, or neural networks in <code>keras</code>) require that all input variables are numeric.  If your data has categorical variables, you may have to choose between ignoring some of your data and too many new columns.</p>
 <p>Categorical embeddings are a relative new method, utilizing methods popularized in Natural Language Processing that help models solve this problem and can help you understand more about the categories themselves.</p>
 <p>While there are a number of online tutorials on how to use Keras (usually in Python) to create these embeddings, this talk will use <a href=""https://embed.tidymodels.org/reference/step_embed.html""><code>embed::step_embed()</code></a>, an extension of the <code>recipes</code> package, to create the embeddings.</p>
-"
-Lightning Talk/Track B/Package dev,The Power of Great Datasets,"<p>There are a few classic datasets, like mtcars, nycflights, or Titanic passengers. They're okay, but they leave something to be desired for folks learning R: they're kind of boring.</p>
+","<p>When building a predictive model in R, many of the functions (such as <code>lm()</code>, <code>glm()</code>, <code>randomForest</code>, <code>xgboost</code>, or neural networks in <code>keras</code>) require that all input variables are numeric.  If your data has categorical variables, you may have to choose between ignoring some of your data and too many new columns.</p>
+<p>Categorical embeddings are a relative new method, utilizing methods popularized in Natural Language Processing that help models solve this problem and can help you understand more about the categories themselves.</p>
+<p>While there are a number of online tutorials on how to use Keras (usually in Python) to create these embeddings, this talk will use <a href=""https://embed.tidymodels.org/reference/step_embed.html""><code>embed::step_embed()</code></a>, an extension of the <code>recipes</code> package, to create the embeddings.</p>
+
+<p>
+  Speaker: 
+  <strong>Alan Feder</strong>
+</p>
+<p>&lt;p&gt;Alan Feder is a Principal Data Scientist at Invesco, where he uses as much R as possible to solve problems and build products throughout the company.  Previously, he worked as a data scientist at AIG and an actuary at Swiss Re.  He studied statistics and mathematics at Columbia University.  He is unreasonably excited to spread the word about categorical embeddings.&lt;/p&gt;
+&lt;p&gt;Alan lives in New York City with his wife, Ashira, and two children, Matan and Sarit.&lt;/p&gt;
+</p>"
+307,Lightning Talk/Track B/Package dev,The Power of Great Datasets,"<p>There are a few classic datasets, like mtcars, nycflights, or Titanic passengers. They're okay, but they leave something to be desired for folks learning R: they're kind of boring.</p>
 <p>There's a big difference between &quot;Okay Datasets&quot; and &quot;Great Datasets&quot;. Great Datasets prompt you to exclaim, &quot;That's so cool!&quot; They get your blood pumping and mind racing with questions you want answered. They give tremendous motivation to answer those questions. And in answering those questions, you'll probably learn some R.</p>
 <p>I want you to curate Great Datasets. You'll contribute to the richness of our community, you'll learn some R yourself, and you'll feel fantastic when someone finds your Great Dataset and exclaims, &quot;That's so cool!&quot;</p>
-"
-Talk/Track A/Learning,Art Lessons: One Year as RStudio’s Artist-in-Residence,"<p>Art can be a welcoming bridge for learners and users to engage with and learn tools and skills in R. As RStudio’s first Artist-in-Residence, my goal has been to make the R landscape more welcoming for a broader community of users through engaging, didactic artwork. In this R, art, and heart-filled talk, I’ll share the motivation behind my R artwork and some lessons learned over the past year as Artist-in-Residence, including:</p>
+","<p>There are a few classic datasets, like mtcars, nycflights, or Titanic passengers. They're okay, but they leave something to be desired for folks learning R: they're kind of boring.</p>
+<p>There's a big difference between &quot;Okay Datasets&quot; and &quot;Great Datasets&quot;. Great Datasets prompt you to exclaim, &quot;That's so cool!&quot; They get your blood pumping and mind racing with questions you want answered. They give tremendous motivation to answer those questions. And in answering those questions, you'll probably learn some R.</p>
+<p>I want you to curate Great Datasets. You'll contribute to the richness of our community, you'll learn some R yourself, and you'll feel fantastic when someone finds your Great Dataset and exclaims, &quot;That's so cool!&quot;</p>
+
+<p>
+  Speaker: 
+  <strong>Alex Cookson</strong>
+</p>
+<p>&lt;p&gt;Alex Cookson helps the Customer Intelligence team at the Royal Canadian Mint make the most of their data. When he's not working on A/B testing, recommendation engines, or exploratory data analysis at the Mint, he can be found participating in Tidy Tuesday or thinking up cool datasets to explore. And when he's not doing that, he's probably cycling around Toronto or doting on his two cats, Tom Tom and Ruby.&lt;/p&gt;
+</p>"
+308,Talk/Track A/Learning,Art Lessons: One Year as RStudio’s Artist-in-Residence,"<p>Art can be a welcoming bridge for learners and users to engage with and learn tools and skills in R. As RStudio’s first Artist-in-Residence, my goal has been to make the R landscape more welcoming for a broader community of users through engaging, didactic artwork. In this R, art, and heart-filled talk, I’ll share the motivation behind my R artwork and some lessons learned over the past year as Artist-in-Residence, including:</p>
 <ul>
 <li>Learning to embrace cute <em>and</em> credible artwork</li>
 <li>Art to help students engage with, learn and remember R skills</li>
 <li>Art for community building and support</li>
 </ul>
 <p>I hope this talk inspires viewers to use, create and share more artwork, so that together we can make the R landscape feel even brighter.</p>
-"
-Talk/Track A/Data for good,The Opioid Files: Turning big pharmacy data over to the public,"<p>Just because data is public doesn't mean it's accessible. It takes more effort, but designing data distribution so it can be analyzed by people with differing levels of data analysis skills opens up the possibility of more stories that can be told. This talk will go over how The Washington Post used R (and Python) to analyze hundreds of gigs of pain pill distribution data from the Drug Enforcement Administration as part of its investigation into the opioid epidemic. And how making the data public and showing their work enabled other journalists and researchers across the country to drill deeper than the Post could ever do on its own.</p>
-"
-Lightning Talk/Track B/Package dev,Make a package - Make some friends,"<p>In 2017, I had never exposed my code to anyone other than a select few before, and I was terrified. I had some functions made from a colleagues script that I thought might be useful for others, and dared myself to make a package and push it to github.</p>
+","<p>Art can be a welcoming bridge for learners and users to engage with and learn tools and skills in R. As RStudio’s first Artist-in-Residence, my goal has been to make the R landscape more welcoming for a broader community of users through engaging, didactic artwork. In this R, art, and heart-filled talk, I’ll share the motivation behind my R artwork and some lessons learned over the past year as Artist-in-Residence, including:</p>
+<ul>
+<li>Learning to embrace cute <em>and</em> credible artwork</li>
+<li>Art to help students engage with, learn and remember R skills</li>
+<li>Art for community building and support</li>
+</ul>
+<p>I hope this talk inspires viewers to use, create and share more artwork, so that together we can make the R landscape feel even brighter.</p>
+
+<p>
+  Speaker: 
+  <strong>Allison Horst</strong>
+</p>
+<p>&lt;p&gt;Allison is an Assistant Teaching Professor at the Bren School of Environmental Science and Management (UC Santa Barbara), where she teaches environmental data science, math, and statistics courses. She has been an Artist-in-Residence with the National Center for Ecological Analysis and Synthesis (NCEAS) (2018 - 2019) and RStudio (2019 - 2020). Allison's background is in engineering (BS in Chemical Engineering, MS in Mechanical Engineering) and environmental science (PhD Environmental Science and Management). She is a co-founder and member of R-Ladies Santa Barbara, and co-founded and organizes the weekly UCSB TidyTuesday coding club.&lt;/p&gt;
+</p>"
+290,Talk/Track A/Data for good,The Opioid Files: Turning big pharmacy data over to the public,"<p>Just because data is public doesn't mean it's accessible. It takes more effort, but designing data distribution so it can be analyzed by people with differing levels of data analysis skills opens up the possibility of more stories that can be told. This talk will go over how The Washington Post used R (and Python) to analyze hundreds of gigs of pain pill distribution data from the Drug Enforcement Administration as part of its investigation into the opioid epidemic. And how making the data public and showing their work enabled other journalists and researchers across the country to drill deeper than the Post could ever do on its own.</p>
+","<p>Just because data is public doesn't mean it's accessible. It takes more effort, but designing data distribution so it can be analyzed by people with differing levels of data analysis skills opens up the possibility of more stories that can be told. This talk will go over how The Washington Post used R (and Python) to analyze hundreds of gigs of pain pill distribution data from the Drug Enforcement Administration as part of its investigation into the opioid epidemic. And how making the data public and showing their work enabled other journalists and researchers across the country to drill deeper than the Post could ever do on its own.</p>
+
+<p>
+  Speaker: 
+  <strong>Andrew Ba Tran</strong>
+</p>
+<p>&lt;p&gt;Andrew is a data reporter on the rapid-response investigative team at The Washington Post who has analyzed how covid-19 has disproportionately impacted certain communities, the spread of opioids across the country, and the rise of right-wing violence. He shared in winning the Pulitzer Prize for Investigative Reporting in 2018. He's an advocate for open data and reproducibility &lt;a href=""https://github.com/wpinvestigative""&gt;in journalism&lt;/a&gt;.&lt;/p&gt;
+</p>"
+128,Lightning Talk/Track B/Package dev,Make a package - Make some friends,"<p>In 2017, I had never exposed my code to anyone other than a select few before, and I was terrified. I had some functions made from a colleagues script that I thought might be useful for others, and dared myself to make a package and push it to github.</p>
 <p>In stead of the dreaded ridiculing of poor code and development, people embraced the package and helped us make it better. Within just a couple of days, pull requests came from others to help us improve the code, implement tests, and improve documentation. I learned so much just by looking through the PRs and seeing how others worked.</p>
 <p>Rather than make me shy off development, the R neuro community's positive feedback has helped me find a new interest and joy in developing tools.</p>
-"
-Talk/Track C/Programming,<code>plumber</code> + <code>future</code>: Async Web APIs,"<p><code>plumber</code> is an R package that allows users to create web APIs by decorating R functions using <code>roxygen2</code>-like comments. In the latest release, asynchronous code (using <code>future</code> or <code>promises</code>) may be inserted at any stage of a <code>plumber</code> route execution, enabling parallel processing using multiple workers.  In this talk, I will go through how you can set up your own asynchronous <code>plumber</code> API to leverage your full computing potential.</p>
-"
-Lightning Talk/Track B/Organisational tooling,Custom theming in Shiny &amp; R Markdown with bslib &amp; thematic,"<p>Custom theming in Shiny and R Markdown often requires writing styling rules in both CSS and R. In particular, styles for HTML content (e.g., <code>actionButton()</code>, <code>tabsetPanel()</code>, <code>titlePanel()</code>, etc) derive from Bootstrap CSS, so customization is traditionally done by overwriting that CSS, which is difficult to do 100% correctly. The <code>{bslib}</code> package helps solve this problem by making it easy to customize (any version of) Bootstrap CSS defaults from R. However, this only solves part of the problem since CSS doesn't necessarily effect output(s) rendered by R, such as <code>plotOutput()</code>. The thematic package helps solve this problem by providing auto theming of <code>plotOutput()</code>s (based on CSS) as well as a simple interface for styling any R graphic for any output format.</p>
-"
-Lightning Talk/Track C/Modelling,Using Guided Simulation Exercises to Teach Data Science with R,"<p>With more learning occurring virtually or in hybrid mode, hands-on ways to remotely teach DS are invaluable. Guided simulation exercises in R allow learners to explore concepts deeply, on their own time, and with others. They can also experiment with the simulations, try out edge cases, and challenge their assumptions, leading to more fruitful discussions. The comparison between coefficient estimates in regular, LASSO, and RIDGE regression, or how PCA performs when data are related are great examples of concepts where guided simulations can encourage learners to build intuitive knowledge. This talk explores how to use simulation exercises in R to help learners explore DS concepts and provides examples.</p>
-"
-Lightning Talk/Track C/Programming,<code>parsermd</code> - parsing R Markdown for fun <s>and profit</s>,"<p><code>parsermd</code> is a new R package for parsing and programmatically interacting with R Markdown (Rmd) documents. This package implements a formal grammar for Rmd documents in C++ using Boost's Spirit X3 library and provides additional user facing functions for the resulting abstract syntax tree. In this talk we will provide background on the structure and grammar of Rmd documents as well as discuss the ways in which the parsing of these documents enables a variety of automatable tasks. Specifically, we will focus on demonstrating how these tools can be used to provide automated feedback on student submissions in a statisical programming course.</p>
-"
-Lightning Talk/Track B/Organisational tooling,How Content Makes the Data Go 'Round,"<p>What makes a successful data science community thrive across industries? A recent Aflac WorkForces Report showed that professionals who are engaged in a community within their industry are 70% more likely to be satisfied with their work.
+","<p>In 2017, I had never exposed my code to anyone other than a select few before, and I was terrified. I had some functions made from a colleagues script that I thought might be useful for others, and dared myself to make a package and push it to github.</p>
+<p>In stead of the dreaded ridiculing of poor code and development, people embraced the package and helped us make it better. Within just a couple of days, pull requests came from others to help us improve the code, implement tests, and improve documentation. I learned so much just by looking through the PRs and seeing how others worked.</p>
+<p>Rather than make me shy off development, the R neuro community's positive feedback has helped me find a new interest and joy in developing tools.</p>
+
+<p>
+  Speaker: 
+  <strong>Athanasia M. Mowinckel</strong>
+</p>
+<p>&lt;p&gt;Athanasia M. Mowinckel is a staff scientist at the Center for Lifespan Changes in Brain and Cognition, at the University of Oslo.
+She has a background on cognitive psychology, and uses R for almost everything.
+She goes by the nickname &amp;quot;Mo&amp;quot; (closer to 'Mou' than 'Moe'), and is a member of the R-Ladies Global team.&lt;/p&gt;
+</p>"
+312,Talk/Track C/Programming,<code>plumber</code> + <code>future</code>: Async Web APIs,"<p><code>plumber</code> is an R package that allows users to create web APIs by decorating R functions using <code>roxygen2</code>-like comments. In the latest release, asynchronous code (using <code>future</code> or <code>promises</code>) may be inserted at any stage of a <code>plumber</code> route execution, enabling parallel processing using multiple workers.  In this talk, I will go through how you can set up your own asynchronous <code>plumber</code> API to leverage your full computing potential.</p>
+","<p><code>plumber</code> is an R package that allows users to create web APIs by decorating R functions using <code>roxygen2</code>-like comments. In the latest release, asynchronous code (using <code>future</code> or <code>promises</code>) may be inserted at any stage of a <code>plumber</code> route execution, enabling parallel processing using multiple workers.  In this talk, I will go through how you can set up your own asynchronous <code>plumber</code> API to leverage your full computing potential.</p>
+
+<p>
+  Speaker: 
+  <strong>Barret Schloerke</strong>
+</p>
+<p>&lt;p&gt;&lt;code&gt;hello()&lt;/code&gt;! Dr. Barret Schloerke is a Software Engineer on the Shiny team at RStudio. He currently maintains and creates many R packages surrounding the Shiny ecosystem, including &lt;code&gt;shiny&lt;/code&gt;, &lt;code&gt;reactlog&lt;/code&gt;, &lt;code&gt;plumber&lt;/code&gt;, and &lt;code&gt;learnr&lt;/code&gt;. Dr. Schloerke received his PhD in Statistics from Purdue University under the direction of Dr. Ryan Hafen and Dr. William Cleveland, specializing in Large Data Visualization (using R!).&lt;/p&gt;
+</p>"
+163,Lightning Talk/Track B/Organisational tooling,Custom theming in Shiny &amp; R Markdown with bslib &amp; thematic,"<p>Custom theming in Shiny and R Markdown often requires writing styling rules in both CSS and R. In particular, styles for HTML content (e.g., <code>actionButton()</code>, <code>tabsetPanel()</code>, <code>titlePanel()</code>, etc) derive from Bootstrap CSS, so customization is traditionally done by overwriting that CSS, which is difficult to do 100% correctly. The <code>{bslib}</code> package helps solve this problem by making it easy to customize (any version of) Bootstrap CSS defaults from R. However, this only solves part of the problem since CSS doesn't necessarily effect output(s) rendered by R, such as <code>plotOutput()</code>. The thematic package helps solve this problem by providing auto theming of <code>plotOutput()</code>s (based on CSS) as well as a simple interface for styling any R graphic for any output format.</p>
+","<p>Custom theming in Shiny and R Markdown often requires writing styling rules in both CSS and R. In particular, styles for HTML content (e.g., <code>actionButton()</code>, <code>tabsetPanel()</code>, <code>titlePanel()</code>, etc) derive from Bootstrap CSS, so customization is traditionally done by overwriting that CSS, which is difficult to do 100% correctly. The <code>{bslib}</code> package helps solve this problem by making it easy to customize (any version of) Bootstrap CSS defaults from R. However, this only solves part of the problem since CSS doesn't necessarily effect output(s) rendered by R, such as <code>plotOutput()</code>. The thematic package helps solve this problem by providing auto theming of <code>plotOutput()</code>s (based on CSS) as well as a simple interface for styling any R graphic for any output format.</p>
+
+<p>
+  Speaker: 
+  <strong>Carson Sievert</strong>
+</p>
+<p>&lt;p&gt;Carson is a software engineer at RStudio working on projects that bridge R with web technologies, such as &lt;code&gt;{shiny}&lt;/code&gt;, &lt;code&gt;{bslib}&lt;/code&gt;, &lt;code&gt;{thematic}&lt;/code&gt;, and &lt;code&gt;{plotly}&lt;/code&gt;. Before joining RStudio in late 2018, Carson worked as consultant, delivering analytical and scientific software to organizations such as the Library of Congress, NOAA, Sandia National Labs, and plotly. Carson began consulting part-time during his PhD in statistics at Iowa State, where his work on the R package &lt;code&gt;{plotly}&lt;/code&gt; was recognized by the ASA with the 2017 Chambers Award. His book &amp;quot;Interactive data visualization with R, plotly, and shiny&amp;quot;&amp;quot; is freely available online at https://plotly-r.com.&lt;/p&gt;
+</p>"
+193,Lightning Talk/Track C/Modelling,Using Guided Simulation Exercises to Teach Data Science with R,"<p>With more learning occurring virtually or in hybrid mode, hands-on ways to remotely teach DS are invaluable. Guided simulation exercises in R allow learners to explore concepts deeply, on their own time, and with others. They can also experiment with the simulations, try out edge cases, and challenge their assumptions, leading to more fruitful discussions. The comparison between coefficient estimates in regular, LASSO, and RIDGE regression, or how PCA performs when data are related are great examples of concepts where guided simulations can encourage learners to build intuitive knowledge. This talk explores how to use simulation exercises in R to help learners explore DS concepts and provides examples.</p>
+","<p>With more learning occurring virtually or in hybrid mode, hands-on ways to remotely teach DS are invaluable. Guided simulation exercises in R allow learners to explore concepts deeply, on their own time, and with others. They can also experiment with the simulations, try out edge cases, and challenge their assumptions, leading to more fruitful discussions. The comparison between coefficient estimates in regular, LASSO, and RIDGE regression, or how PCA performs when data are related are great examples of concepts where guided simulations can encourage learners to build intuitive knowledge. This talk explores how to use simulation exercises in R to help learners explore DS concepts and provides examples.</p>
+
+<p>
+  Speaker: 
+  <strong>Chelsea Parlett-Pelleriti</strong>
+</p>
+<p>&lt;p&gt;Chelsea Parlett-Pelleriti is a PhD Candidate and full-time instructional faculty teaching Data Science at Chapman University. Her research centers around how we can use statistics and machine learning to improve the way we analyze behavioral (read: psychology) data. In her free time, you can find Chelsea on Twitter making stats memes or #statsTikTok's. She also writes about statistics, machine learning, and using R for various blogs.&lt;/p&gt;
+</p>"
+303,Lightning Talk/Track C/Programming,<code>parsermd</code> - parsing R Markdown for fun <s>and profit</s>,"<p><code>parsermd</code> is a new R package for parsing and programmatically interacting with R Markdown (Rmd) documents. This package implements a formal grammar for Rmd documents in C++ using Boost's Spirit X3 library and provides additional user facing functions for the resulting abstract syntax tree. In this talk we will provide background on the structure and grammar of Rmd documents as well as discuss the ways in which the parsing of these documents enables a variety of automatable tasks. Specifically, we will focus on demonstrating how these tools can be used to provide automated feedback on student submissions in a statisical programming course.</p>
+","<p><code>parsermd</code> is a new R package for parsing and programmatically interacting with R Markdown (Rmd) documents. This package implements a formal grammar for Rmd documents in C++ using Boost's Spirit X3 library and provides additional user facing functions for the resulting abstract syntax tree. In this talk we will provide background on the structure and grammar of Rmd documents as well as discuss the ways in which the parsing of these documents enables a variety of automatable tasks. Specifically, we will focus on demonstrating how these tools can be used to provide automated feedback on student submissions in a statisical programming course.</p>
+
+<p>
+  Speaker: 
+  <strong>Colin Rundel</strong>
+</p>
+<p>&lt;p&gt;Colin Rundel is Lecturer in Statistics and Data Science in the School of Mathematics at the University of Edinburgh and an Assistant Professor of the Practice in the Department of Statistical Science at Duke University. He is a long time user R and RStudio and his research interests include statistical computing, bayesian methods for spatial statistics, with a focus on applications in biology and ecology.&lt;/p&gt;
+</p>"
+185,Lightning Talk/Track B/Organisational tooling,How Content Makes the Data Go 'Round,"<p>What makes a successful data science community thrive across industries? A recent Aflac WorkForces Report showed that professionals who are engaged in a community within their industry are 70% more likely to be satisfied with their work.
 I believe anyone can and should create content about data. In this talk, I will direct your attention towards 1) the ways that content creation can lead to heightened data science opportunities 2) how to know which type/s of content mediums (podcasts, blogs, video) are right for you 3) how to leverage social media and networking connections to make your content reach the right audiences. I hope to inspire listeners to create their own content and online brands as resources for fellow R community members.</p>
-"
-Lightning Talk/Track C/Visualisation,Your R is My R too:  Reflections on creating the Mi-R community,"<p>While the R community has made strides in increasing the representation and participation for women and users from underrepresented regions, there are still members of the R community that have expressed desires for a more inclusive space in addition to these strides.  In addition, there are unique challenges that underrepresented R users experience in their respective workspaces or academic environments. In late February of 2020, Danielle Smalls-Perkins and Dorris Scott created Mi-R (Minorities in R) as a result of their various experiences both in and outside the R community. The purpose of this talk is to reflect on the challenges, highlights, and future directions of the first six months since the creation of Mi-R.</p>
-"
-Lightning Talk/Track B/Organisational tooling,How reproducible am I? A retrospective on a year of commercial data science projects in R,"<p>Reproducibility is a critical aspect in science to enable trust &amp; communication. In R, many tools exist to bring in the best practices of reproducibility into the hands of data scientists. However, outside of a research setting, how does reproducibility hold up in commercial data science projects? In this talk I take an honest retrospective of my own commercial R projects in the last year. I look at the various types of analyses completed, and which workflows were selected and why. Through this process we can learn how workflow choices may help in the short term but hinder in the long term. More importantly what can be done strike the balance between progress and perfection when doing data science in the wild?</p>
-"
-Talk/Track B/Package dev,oRganization: How to make internal R packages part of your team,"<p>Many case studies demonstrate the benefits of organizations developing internal R packages. But how do you move your organization from individual internal packages to a coherent internal ecosystem?</p>
+","<p>What makes a successful data science community thrive across industries? A recent Aflac WorkForces Report showed that professionals who are engaged in a community within their industry are 70% more likely to be satisfied with their work.
+I believe anyone can and should create content about data. In this talk, I will direct your attention towards 1) the ways that content creation can lead to heightened data science opportunities 2) how to know which type/s of content mediums (podcasts, blogs, video) are right for you 3) how to leverage social media and networking connections to make your content reach the right audiences. I hope to inspire listeners to create their own content and online brands as resources for fellow R community members.</p>
+
+<p>
+  Speaker: 
+  <strong>Danielle Oberdier</strong>
+</p>
+<p></p>"
+180,Lightning Talk/Track C/Visualisation,Your R is My R too:  Reflections on creating the Mi-R community,"<p>While the R community has made strides in increasing the representation and participation for women and users from underrepresented regions, there are still members of the R community that have expressed desires for a more inclusive space in addition to these strides.  In addition, there are unique challenges that underrepresented R users experience in their respective workspaces or academic environments. In late February of 2020, Danielle Smalls-Perkins and Dorris Scott created Mi-R (Minorities in R)  as a result of their various experiences both in and outside the R community. The purpose of this talk is to reflect on the challenges, highlights, and future directions of the first six months since the creation of Mi-R.</p>
+","<p>While the R community has made strides in increasing the representation and participation for women and users from underrepresented regions, there are still members of the R community that have expressed desires for a more inclusive space in addition to these strides.  In addition, there are unique challenges that underrepresented R users experience in their respective workspaces or academic environments. In late February of 2020, Danielle Smalls-Perkins and Dorris Scott created Mi-R (Minorities in R)  as a result of their various experiences both in and outside the R community. The purpose of this talk is to reflect on the challenges, highlights, and future directions of the first six months since the creation of Mi-R.</p>
+
+<p>
+  Speaker: 
+  <strong>Danielle Smalls-Perkins</strong>
+</p>
+<p>&lt;p&gt;Danielle Smalls-Perkins co-founded MiR Community with the hope that the R community would continue to encourage the inclusion and recognition of contributions made from R users of diverse backgrounds. She loves to use R for understanding and storytelling.
+Danielle currently works as a Senior Strategist in Google's Trust and Safety Team. She advocates for model fairness, interpretability, and reducing harmful outcomes of algorithmic decision-making on vulnerable populations.&lt;/p&gt;
+</p>
+<p>
+  Speaker: 
+  <strong>Dorris Scott</strong>
+</p>
+<p></p>"
+100,Lightning Talk/Track B/Organisational tooling,How reproducible am I? A retrospective on a year of commercial data science projects in R,"<p>Reproducibility is a critical aspect in science to enable trust &amp; communication. In R, many tools exist to bring in the best practices of reproducibility into the hands of data scientists. However, outside of a research setting, how does reproducibility hold up in commercial data science projects? In this talk I take an honest retrospective of my own commercial R projects in the last year. I look at the various types of analyses completed, and which workflows were selected and why. Through this process we can learn how workflow choices may help in the short term but hinder in the long term. More importantly what can be done strike the balance between progress and perfection when doing data science in the wild?</p>
+","<p>Reproducibility is a critical aspect in science to enable trust &amp; communication. In R, many tools exist to bring in the best practices of reproducibility into the hands of data scientists. However, outside of a research setting, how does reproducibility hold up in commercial data science projects? In this talk I take an honest retrospective of my own commercial R projects in the last year. I look at the various types of analyses completed, and which workflows were selected and why. Through this process we can learn how workflow choices may help in the short term but hinder in the long term. More importantly what can be done strike the balance between progress and perfection when doing data science in the wild?</p>
+
+<p>
+  Speaker: 
+  <strong>Dean Marchiori</strong>
+</p>
+<p>&lt;p&gt;Dean Marchiori is a Statistician based in Sydney, Australia. He currently works with Endeavour Energy as a Senior Data Scientist modelling bushfire and vegetation risk on the electricity network.&lt;br /&gt;
+Dean's career started in finance as an equities trader before moving into advanced analytics, where he has worked with some of Australia’s largest organisations.  His professional interests are in geospatial analysis, time series modelling and the R programming language.&lt;br /&gt;
+In 2019, Dean was named one of the top 10 analytics leaders in Australia by IAPA. He is also recognised as an Accredited Statistician with the Statistical Society of Australia. He holds a Bachelor of Science in Mathematics (awarded with University Medal) and a Masters degree in Applied Finance.&lt;br /&gt;
+Outside of work Dean enjoys bodysurfing, running and spending time with his wife and two boys.&lt;/p&gt;
+</p>"
+125,Talk/Track B/Package dev,oRganization: How to make internal R packages part of your team,"<p>Many case studies demonstrate the benefits of organizations developing internal R packages. But how do you move your organization from individual internal packages to a coherent internal ecosystem?</p>
 <p>This talk applies the jobs-to-be-done framework to consider the different roles that internal tools can play, from unblocking IT challenges to democratizing tribal knowledge. Beyond technical functionality, we will explore design principles and practice that make internal packages good teammates and consider how these deviate from open-source standards.</p>
 <p>Finally, we will consider how to exploit the unique challenges and opportunities of developing within an organization to make packages that collaborate well -- both with other packages and their human teammates.</p>
-"
-Talk/Track B/Organisational tooling,How we made the switch: a case study on automating a complex report.,"<p>The Center for Charter Schools at Central Michigan University produces annual reports for about 60 schools. The reporting process used to be a cumbersome blend of many technologies. The Center used to use a blend of SQL, Excel, inDesign, and VBScript that would all culminate in a nice looking, branded report for each school. 2 years ago, staff turnover allowed the data team to rethink the process, having had experience in R from graduate work the team at the Center decided to go all in on R Studio and R Markdown for report production a mere 1 month before the reports were due to be published.
+","<p>Many case studies demonstrate the benefits of organizations developing internal R packages. But how do you move your organization from individual internal packages to a coherent internal ecosystem?</p>
+<p>This talk applies the jobs-to-be-done framework to consider the different roles that internal tools can play, from unblocking IT challenges to democratizing tribal knowledge. Beyond technical functionality, we will explore design principles and practice that make internal packages good teammates and consider how these deviate from open-source standards.</p>
+<p>Finally, we will consider how to exploit the unique challenges and opportunities of developing within an organization to make packages that collaborate well -- both with other packages and their human teammates.</p>
+
+<p>
+  Speaker: 
+  <strong>Emily Riederer</strong>
+</p>
+<p>&lt;p&gt;Emily Riederer is a Senior Analytics Manager at Capital One where she leads a team building innersource data products, tools, and applications in R. Emily is an active member of the R community; she is the developer of the &lt;code&gt;projmgr&lt;/code&gt; and &lt;code&gt;convo&lt;/code&gt; R packages, a founding co-organizer of the annual satRday Chicago conference, and frequently writes about R and data science on Twitter and her blog (emily.rbind.io). Most recently, she coauthored the &lt;em&gt;R Markdown Cookbook&lt;/em&gt; from CRC Press and contributed essays to the forthcoming O'Reilly book &lt;em&gt;97 Things Data Engineers Should Know&lt;/em&gt;.&lt;/p&gt;
+</p>"
+246,Talk/Track B/Organisational tooling,How we made the switch: a case study on automating a complex report.,"<p>The Center for Charter Schools at Central Michigan University produces annual reports for about 60 schools. The reporting process used to be a cumbersome blend of many technologies. The Center used to use a blend of SQL, Excel, inDesign, and VBScript that would all culminate in a nice looking, branded report for each school. 2 years ago, staff turnover allowed the data team to rethink the process, having had experience in R from graduate work the team at the Center decided to go all in on R Studio and R Markdown for report production a mere 1 month before the reports were due to be published.
 This talk will be a case study of how we as an organization adopted RStudio tools to streamline a cumbersome process to fantastic results.</p>
-"
-Lightning Talk/Track C/Programming,xaringan Playground: Using xaringan to learn web development,"<p><code>xaringan</code> is a quirky package that extends R Markdown to create beautiful web-based HTML slides. Some of <code>xaringan</code>’s quirks come from the JavaScript library it uses, remarkjs, and some of it from the unusual naming scheme <code>xaringan</code> uses for its functions. But under this quirky exterior lies a powerful tool for learning and practicing web development, especially when combined with <code>infinite_moon_reader()</code> for immediate feedback. In this talk I'll cover some basic web concepts that illustrate how fun and rewarding it can to learn HTML, CSS and JavaScript while building awesome slides in R Markdown.</p>
-"
-Talk/Track C/Modelling,"Fairness and Data Science: Failures, Factors, and Futures","<p>In recent years, numerous highly publicized failures in data science have made evident that biases or issues of fairness in training data can sneak into, and be magnified by, our models, leading to harmful, incorrect predictions being made once the models are deployed into the real world. But what actually constitutes an unfiar or biased model, and how can we diagnose and address these issues within our own work? In this talk, I will present a framework for better understanding how issues of fairness overlap with data science as well as how we can improve our modeling pipelines to make them more interpretable, reproducible, and fair to the groups that they are intended to serve. We will explore this new framework together through an analysis of ProPublica's COMPAS recidivism dataset using the tidymodels, drake, and iml packages.</p>
-"
-Keynote,Maintaining the house the tidyverse built,"<p>Hadley will talk about how the tidyverse has evolved since its creation (just five years ago!). You'll learn about our greatest successes, learn from our biggest failures, and get some hints of what's coming down the pipeline for the future.</p>
-"
-Talk/Track B/Language interop,The dynamic duo: SQL &amp; R,"<p>There's a point in every data wranglers' career in which their full dataset can no longer fit into just CSV files, and the journey to database-world begins. I reached this point about two years ago, when I transitioned from ecological research to the world of eCommerce fraud prevention. My calls to read_csv became scarcer as I came to rely more and more on databases. In this talk, I'll demonstrate how I use R and SQL to access database tables, and how I incorporate both into my daily workflow, aided by features in RStudio IDE. I'll also discuss our company’s &quot;riskiconn&quot; package for handling database connections and queries, which includes customizations to simplify day-to-day data querying.</p>
-"
-Talk/Track B/Language interop,Using pins with Python and JavaScript,"<p>Last year, <a href=""https://pins.rstudio.com"">pins</a> got released as a brand new R package to pin, discover and cache remote resources for R users. This package has matured to support many use cases; from caching remote URLs, and easily sharing datasets with other R users, to building automated pipelines.</p>
+","<p>The Center for Charter Schools at Central Michigan University produces annual reports for about 60 schools. The reporting process used to be a cumbersome blend of many technologies. The Center used to use a blend of SQL, Excel, inDesign, and VBScript that would all culminate in a nice looking, branded report for each school. 2 years ago, staff turnover allowed the data team to rethink the process, having had experience in R from graduate work the team at the Center decided to go all in on R Studio and R Markdown for report production a mere 1 month before the reports were due to be published.
+This talk will be a case study of how we as an organization adopted RStudio tools to streamline a cumbersome process to fantastic results.</p>
+
+<p>
+  Speaker: 
+  <strong>Eric Gunnar Cronstrom</strong>
+</p>
+<p>&lt;p&gt;Eric is responsible for administering a wide range of day to day program functions associated with the performance and accountability of CMU partner schools. He ensures that the data the Center utilizes to evaluate school performance is accurate and stored within a sound data infrastructure. He also leverages his wide range of technical skills to lead the development and production of reports and respond to questions regarding school performance and demographic context.&lt;/p&gt;
+&lt;p&gt;Prior to joining the Center, Eric was a database administrator for Central Michigan University Libraries. He has also served as a lecturer at Central Michigan University teaching courses in web design, database design and programming. He earned a master’s degree in information systems management and a bachelor’s degree in computer science from Central Michigan University. He is also pursuing an additional master’s degree in applied statistics at Central Michigan University.&lt;/p&gt;
+</p>"
+245,Lightning Talk/Track C/Programming,xaringan Playground: Using xaringan to learn web development,"<p><code>xaringan</code> is a quirky package that extends R Markdown to create beautiful web-based HTML slides. Some of <code>xaringan</code>’s quirks come from the JavaScript library it uses, remarkjs, and some of it from the unusual naming scheme <code>xaringan</code> uses for its functions. But under this quirky exterior lies a powerful tool for learning and practicing web development, especially when combined with <code>infinite_moon_reader()</code> for immediate feedback. In this talk I'll cover some basic web concepts that illustrate how fun and rewarding it can to learn HTML, CSS and JavaScript while building awesome slides in R Markdown.</p>
+","<p><code>xaringan</code> is a quirky package that extends R Markdown to create beautiful web-based HTML slides. Some of <code>xaringan</code>’s quirks come from the JavaScript library it uses, remarkjs, and some of it from the unusual naming scheme <code>xaringan</code> uses for its functions. But under this quirky exterior lies a powerful tool for learning and practicing web development, especially when combined with <code>infinite_moon_reader()</code> for immediate feedback. In this talk I'll cover some basic web concepts that illustrate how fun and rewarding it can to learn HTML, CSS and JavaScript while building awesome slides in R Markdown.</p>
+
+<p>
+  Speaker: 
+  <strong>Garrick Aden-Buie</strong>
+</p>
+<p>&lt;p&gt;Garrick is a Data Science Educator at RStudio who lives in sunny St. Petersburg, Florida. His passion is combining creative coding with programming education, using code to build tools that teach coding to new and advanced R users alike. He's developed a number of open source packages and addins for &lt;code&gt;xaringan&lt;/code&gt; including &lt;code&gt;xaringanthemer&lt;/code&gt; for complete, custom slide themes and &lt;code&gt;xaringanExtra&lt;/code&gt; for a variety of advanced additions to complete &lt;code&gt;xaringan&lt;/code&gt; slides with live broadcasting, tabbed panels, custom animations, and more.&lt;/p&gt;
+</p>"
+315,Talk/Track C/Modelling,"Fairness and Data Science: Failures, Factors, and Futures","<p>In recent years, numerous highly publicized failures in data science have made evident that biases or issues of fairness in training data can sneak into, and be magnified by, our models, leading to harmful, incorrect predictions being made once the models are deployed into the real world. But what actually constitutes an unfiar or biased model, and how can we diagnose and address these issues within our own work? In this talk, I will present a framework for better understanding how issues of fairness overlap with data science as well as how we can improve our modeling pipelines to make them more interpretable, reproducible, and fair to the groups that they are intended to serve. We will explore this new framework together through an analysis of ProPublica's COMPAS recidivism dataset using the tidymodels, drake, and iml packages.</p>
+","<p>In recent years, numerous highly publicized failures in data science have made evident that biases or issues of fairness in training data can sneak into, and be magnified by, our models, leading to harmful, incorrect predictions being made once the models are deployed into the real world. But what actually constitutes an unfiar or biased model, and how can we diagnose and address these issues within our own work? In this talk, I will present a framework for better understanding how issues of fairness overlap with data science as well as how we can improve our modeling pipelines to make them more interpretable, reproducible, and fair to the groups that they are intended to serve. We will explore this new framework together through an analysis of ProPublica's COMPAS recidivism dataset using the tidymodels, drake, and iml packages.</p>
+
+<p>
+  Speaker: 
+  <strong>Grant Fleming</strong>
+</p>
+<p>&lt;p&gt;Grant Fleming is a Data Scientist at Elder Research, co-author of the Wiley book &lt;em&gt;Responsible Data Science&lt;/em&gt; (2021), and contributor to the O'Reilly book &lt;em&gt;97 Things About Ethics Everyone in Data Science Should Know&lt;/em&gt;. His professional focus is on machine learning for social science applications, model explainability, and building tools for reproducible data science. Previously, Grant was a research contractor for USAID.&lt;/p&gt;
+</p>"
+1,Keynote,Maintaining the house the tidyverse built,"<p>Hadley will talk about how the tidyverse has evolved since its creation (just five years ago!). You'll learn about our greatest successes, learn from our biggest failures, and get some hints of what's coming down the pipeline for the future.</p>
+","<p>Hadley will talk about how the tidyverse has evolved since its creation (just five years ago!). You'll learn about our greatest successes, learn from our biggest failures, and get some hints of what's coming down the pipeline for the future.</p>
+
+<p>
+  Speaker: 
+  <strong>Hadley Wickham</strong>
+</p>
+<p>&lt;p&gt;Hadley Wickham is Chief Scientist at RStudio. He's interested in building tools (computational and cognitive) that make data ingest, preparation, manipulation, visualization and analysis easier. He's developed over 30 R packages, for data analysis (ggplot2, dplyr, tidyr), making frustrating parts of R easier to use (lubridate for dates, stringr for strings, httr for accessing web APIs), and for streamlining the R package development (devtools, roxygen2, and testthat).&lt;/p&gt;
+</p>"
+273,Talk/Track B/Language interop,The dynamic duo: SQL &amp; R,"<p>There's a point in every data wranglers' career in which their full dataset can no longer fit into just CSV files, and the journey to database-world begins. I reached this point about two years ago, when I transitioned from ecological research to the world of eCommerce fraud prevention. My calls to read_csv became scarcer as I came to rely more and more on databases. In this talk, I'll demonstrate how I use R and SQL to access database tables, and how I incorporate both into my daily workflow, aided by features in RStudio IDE. I'll also discuss our company’s &quot;riskiconn&quot; package for handling database connections and queries, which includes customizations to simplify day-to-day data querying.</p>
+","<p>There's a point in every data wranglers' career in which their full dataset can no longer fit into just CSV files, and the journey to database-world begins. I reached this point about two years ago, when I transitioned from ecological research to the world of eCommerce fraud prevention. My calls to read_csv became scarcer as I came to rely more and more on databases. In this talk, I'll demonstrate how I use R and SQL to access database tables, and how I incorporate both into my daily workflow, aided by features in RStudio IDE. I'll also discuss our company’s &quot;riskiconn&quot; package for handling database connections and queries, which includes customizations to simplify day-to-day data querying.</p>
+
+<p>
+  Speaker: 
+  <strong>Irene Steves</strong>
+</p>
+<p>&lt;p&gt;Irene holds an M.Sc. in Ecology and a B.A. in Integrative Biology, through which she first discovered R and data science. Her interest in data led her to the Arctic Data Center at the University of California Santa Barbara, a summer internship at RStudio, and ultimately to the Research &amp;amp; Data Science department at Riskified, where she now explores the complex patterns of fraud in eCommerce. In her free time, she studies Hebrew through podcasts and dubbed kids' movies.&lt;/p&gt;
+</p>"
+112,Talk/Track B/Language interop,Using pins with Python and JavaScript,"<p>Last year, <a href=""https://pins.rstudio.com"">pins</a> got released as a brand new R package to pin, discover and cache remote resources for R users. This package has matured to support many use cases; from caching remote URLs, and easily sharing datasets with other R users, to building automated pipelines.</p>
 <p>However, in order to truly collaborate in multi-disciplinary data-driven teams, one needs to consider how to collaborate beyond R? How can we share resources with designers and machine learning experts who happen to use different programming languages like Python and JavaScript?</p>
 <p>This talk will introduce the <a href=""https://pinsjs.github.io/"">pinsjs</a> project, a cross-language community project which has the goal of bringing <code>pins</code> to the broader open source community to enable rich workflows across larger data-driven teams.</p>
-"
-Talk/Track B/Package dev,Monitoring health and impact of open-source projects,"<p>At rOpenSci, we have come to realize that in order to help researchers get the most out of R, we need better tooling to monitor the quality, health, and impact of R packages. This applies both to our internal projects, as well as other packages in the R ecosystem. But what exactly makes a good R package?</p>
+","<p>Last year, <a href=""https://pins.rstudio.com"">pins</a> got released as a brand new R package to pin, discover and cache remote resources for R users. This package has matured to support many use cases; from caching remote URLs, and easily sharing datasets with other R users, to building automated pipelines.</p>
+<p>However, in order to truly collaborate in multi-disciplinary data-driven teams, one needs to consider how to collaborate beyond R? How can we share resources with designers and machine learning experts who happen to use different programming languages like Python and JavaScript?</p>
+<p>This talk will introduce the <a href=""https://pinsjs.github.io/"">pinsjs</a> project, a cross-language community project which has the goal of bringing <code>pins</code> to the broader open source community to enable rich workflows across larger data-driven teams.</p>
+
+<p>
+  Speaker: 
+  <strong>Javier Luraschi</strong>
+</p>
+<p>&lt;p&gt;Javier is the author of “Mastering Spark with R”, pins, sparklyr, mlflow and torch. He holds a double degree in Math and Software Engineer and decades of industry experience with a focus on data analysis. Javier is currently working on a project of his own; and previously worked in RStudio, Microsoft Research and SAP.&lt;/p&gt;
+</p>"
+239,Talk/Track B/Package dev,Monitoring health and impact of open-source projects,"<p>At rOpenSci, we have come to realize that in order to help researchers get the most out of R, we need better tooling to monitor the quality, health, and impact of R packages. This applies both to our internal projects, as well as other packages in the R ecosystem. But what exactly makes a good R package?</p>
 <p>In this talk we discuss various aspects of open-source software that are not always immediately obvious, and that you may want to consider when depending on an R package. We identify several categories of indicators you could look for, ranging from the role in the dependency network, to expectations around maintenance and participation.</p>
 <p>Finally we introduce an ambitious new rOpenSci project called <a href=""https://r-universe.dev"">R-universe</a>: an open platform, where we will experiment with showing metrics and other background information about packages, that may reveal something about the health and the impact of the project, and also facilitate discovery of other software.</p>
-"
-Keynote,Reporting on and visualising the pandemic,"<p>John will discuss the lessons he's learned reporting on and visualising the pandemic, including the world of difference between making charts for a technical audience and making charts for a mass audience. You'll learn from his experience navigating the highly personal and political context within which people consume and evaluate graphics and data, and how that can help us better design and communicate with visualisations down the pipeline for the future.</p>
-"
-Lightning Talk/Track B/Package dev,Using formr to create R-powered surveys with individualized feedback,"<p>This talk demonstrates how the formr study framework extends the power and flexibility of R to surveys. Using R and RMarkdown code, researchers and teachers can use the formr platform to generate both simple surveys and complex studies with individualized feedback. The platform is built on a web-based application programming interface for R via OpenCPU, enabling complex features such as automated email and text message reminders, adaptive testing, graphical and interactive feedback, and integration with external data sources. In this talk, I introduce some of the formr basics and showcase two examples of how I have used it, including making conjoint surveys with randomized images and timed, randomized quizzes for my students.</p>
-"
-Talk/Track C/Visualisation,Accessible Data Science Beyond Visual Models: Non-Visual Interactions with R and RStudio Packages,"<p>Data science is full of vision-dominant practices, and most data scientists rely heavily on visual models.</p>
+","<p>At rOpenSci, we have come to realize that in order to help researchers get the most out of R, we need better tooling to monitor the quality, health, and impact of R packages. This applies both to our internal projects, as well as other packages in the R ecosystem. But what exactly makes a good R package?</p>
+<p>In this talk we discuss various aspects of open-source software that are not always immediately obvious, and that you may want to consider when depending on an R package. We identify several categories of indicators you could look for, ranging from the role in the dependency network, to expectations around maintenance and participation.</p>
+<p>Finally we introduce an ambitious new rOpenSci project called <a href=""https://r-universe.dev"">R-universe</a>: an open platform, where we will experiment with showing metrics and other background information about packages, that may reveal something about the health and the impact of the project, and also facilitate discovery of other software.</p>
+
+<p>
+  Speaker: 
+  <strong>Jeroen Ooms</strong>
+</p>
+<p>&lt;p&gt;Jeroen Ooms is a researcher and software developer with the rOpenSci group at UC Berkeley. He has written (too) many CRAN packages, and also maintains the compilers and build infrastructure for R on Windows. In this talk he will finally reveal how to pronounce his name.&lt;/p&gt;
+</p>"
+3,Keynote,Reporting on and visualising the pandemic,"<p>John will discuss the lessons he's learned reporting on and visualising the pandemic, including the world of difference between making charts for a technical audience and making charts for a mass audience. You'll learn from his experience navigating the highly personal and political context within which people consume and evaluate graphics and data, and how that can help us better design and communicate with visualisations down the pipeline for the future.</p>
+","<p>John will discuss the lessons he's learned reporting on and visualising the pandemic, including the world of difference between making charts for a technical audience and making charts for a mass audience. You'll learn from his experience navigating the highly personal and political context within which people consume and evaluate graphics and data, and how that can help us better design and communicate with visualisations down the pipeline for the future.</p>
+
+<p>
+  Speaker: 
+  <strong>John Burn-Murdoch</strong>
+</p>
+<p>&lt;p&gt;John Burn-Murdoch is the Financial Times’ senior data visualisation journalist, and creator of the FT’s coronavirus trajectory tracker charts. He has been leading the FT’s data-driven coverage of the pandemic, exploring its impacts on health, the economy and wider society. When pandemics are not happening, he also uses data and graphics to tell stories on topics including politics, economics, climate change and sport, and is a visiting lecturer at the London School of Economics.&lt;/p&gt;
+</p>"
+134,Lightning Talk/Track B/Package dev,Using formr to create R-powered surveys with individualized feedback,"<p>This talk demonstrates how the formr study framework extends the power and flexibility of R to surveys. Using R and RMarkdown code, researchers and teachers can use the formr platform to generate both simple surveys and complex studies with individualized feedback. The platform is built on a web-based application programming interface for R via OpenCPU, enabling complex features such as automated email and text message reminders, adaptive testing, graphical and interactive feedback, and integration with external data sources. In this talk, I introduce some of the formr basics and showcase two examples of how I have used it, including making conjoint surveys with randomized images and timed, randomized quizzes for my students.</p>
+","<p>This talk demonstrates how the formr study framework extends the power and flexibility of R to surveys. Using R and RMarkdown code, researchers and teachers can use the formr platform to generate both simple surveys and complex studies with individualized feedback. The platform is built on a web-based application programming interface for R via OpenCPU, enabling complex features such as automated email and text message reminders, adaptive testing, graphical and interactive feedback, and integration with external data sources. In this talk, I introduce some of the formr basics and showcase two examples of how I have used it, including making conjoint surveys with randomized images and timed, randomized quizzes for my students.</p>
+
+<p>
+  Speaker: 
+  <strong>John Helveston</strong>
+</p>
+<p>&lt;p&gt;John Paul Helveston is an Assistant Professor in the &lt;a href=""https://www.emse.seas.gwu.edu/""&gt;Engineering Management and Systems Engineering Department&lt;/a&gt; at the &lt;a href=""https://www.gwu.edu/""&gt;George Washington University&lt;/a&gt;. He studies technological change, with a particular interest in accelerating the transition to environmentally sustainable and energy-saving technologies. His research centers around how consumer preferences, market dynamics, and policy affect the emergence of critical technologies, such as electric vehicles and solar energy. He is an expert on China's rapidly emerging electric vehicle industry as well as the critical relationship between the US and China in developing and mass producing low carbon energy technologies. He applies an interdisciplinary approach to research, with expertise in discrete choice modeling and conjoint analysis as well as interview-based case studies. He has conducted extensive fieldwork in China, collaborating with colleagues at Tsinghua university, Beijing Normal University, and China's State Information Center on past projects. He is a fluent speaker of Mandarin Chinese and also an award-winning swing dancer. John holds a Ph.D. and M.S. in &lt;a href=""https://www.cmu.edu/epp/""&gt;Engineering and Public Policy&lt;/a&gt; from Carnegie Mellon University and a B.S. in &lt;a href=""http://www.beam.vt.edu/""&gt;Engineering Science and Mechanics&lt;/a&gt; from Virginia Tech.&lt;/p&gt;
+</p>"
+314,Talk/Track C/Visualisation,Accessible Data Science Beyond Visual Models: Non-Visual Interactions with R and RStudio Packages,"<p>Data science is full of vision-dominant practices, and most data scientists rely heavily on visual models.</p>
 <p>However, data science itself should require insight and computational thinking beyond what is just seen by eyes.</p>
 <p>JooYoung Seo, who is a blind data scientist and who was working for RStudio's accessibility projects over the summer 2020, will talk about his experience with some non-visual techniques to interact with data.</p>
 <p>If you would like to know more about various ways of making data science accessible via R, and new accessibility features introduced in RStudio IDE and Shiny, his demonstration without sight will be thought-provoking.</p>
-"
-Talk/Track A/Learning,Always look on the bright side of plots,"<p>Everyone who creates visualizations in R is bound to make mistakes that prevent their plots from looking as they should. Sometimes, these mistakes create beautiful &quot;accidental aRt&quot;, though other times they're just plain frustrating. Either way, however, there's something to be learned. This talk will draw on years of watching both the ggplot2 issue tracker and the @accidental__aRt twitter account to highlight some common plot foibles and explain what they can teach us about how ggplot2 works.</p>
-"
-Talk/Track A/Teaching,Making the jump from learning to applying: R training and documentation for different levels of expertise,"<p>How does someone make the leap from learning R to actively applying R in professional work?
+","<p>Data science is full of vision-dominant practices, and most data scientists rely heavily on visual models.</p>
+<p>However, data science itself should require insight and computational thinking beyond what is just seen by eyes.</p>
+<p>JooYoung Seo, who is a blind data scientist and who was working for RStudio's accessibility projects over the summer 2020, will talk about his experience with some non-visual techniques to interact with data.</p>
+<p>If you would like to know more about various ways of making data science accessible via R, and new accessibility features introduced in RStudio IDE and Shiny, his demonstration without sight will be thought-provoking.</p>
+
+<p>
+  Speaker: 
+  <strong>JooYoung Seo</strong>
+</p>
+<p>&lt;p&gt;JooYoung Seo is a Ph.D candidate in the Learning, Design, and Technology program at the Pennsylvania State University, and internationally certified accessibility professional whose research and development focuses on accessible computing for all. As an RStudio's double-certified data science instructor (i.e., Tidyverse + Shiny), who is blind, he is committed to making data science ecosystem more accessible to people with and without dis/abilities using R. To this end, he has been actively contributing to R open-source projects including &lt;code&gt;{shiny}&lt;/code&gt;, &lt;code&gt;{rmarkdown}&lt;/code&gt;, &lt;code&gt;{bookdown}&lt;/code&gt;, and &lt;code&gt;{distill}&lt;/code&gt; for accessibility, and interned on the RStudio IDE and Shiny team as an accessibility engineer in summer 2020.&lt;/p&gt;
+</p>"
+286,Talk/Track A/Learning,Always look on the bright side of plots,"<p>Everyone who creates visualizations in R is bound to make mistakes that prevent their plots from looking as they should. Sometimes, these mistakes create beautiful &quot;accidental aRt&quot;, though other times they're just plain frustrating. Either way, however, there's something to be learned. This talk will draw on years of watching both the ggplot2 issue tracker and the @accidental__aRt twitter account to highlight some common plot foibles and explain what they can teach us about how ggplot2 works.</p>
+","<p>Everyone who creates visualizations in R is bound to make mistakes that prevent their plots from looking as they should. Sometimes, these mistakes create beautiful &quot;accidental aRt&quot;, though other times they're just plain frustrating. Either way, however, there's something to be learned. This talk will draw on years of watching both the ggplot2 issue tracker and the @accidental__aRt twitter account to highlight some common plot foibles and explain what they can teach us about how ggplot2 works.</p>
+
+<p>
+  Speaker: 
+  <strong>Kara Woo</strong>
+</p>
+<p>&lt;p&gt;Kara Woo is a principal bioinformatics engineer at Sage Bionetworks. She leads a team of developers building tools and infrastructure for open science. Kara previously worked at Washington State University and at the National Center for Ecological Analysis and Synthesis (NCEAS), where she combined data management with fieldwork in Siberia at Lake Baikal. She has four cats.&lt;/p&gt;
+</p>"
+262,Talk/Track A/Teaching,Making the jump from learning to applying: R training and documentation for different levels of expertise,"<p>How does someone make the leap from learning R to actively applying R in professional work?
 At what point (if ever!) do we get to call ourselves &quot;experts&quot; in R?
 This talk explores what differentiates novice, practitioner, and expert R programmers,
 and how transitions
@@ -88,74 +309,315 @@ and how different types of training and documentation can support R users at eac
 Understanding variable levels of education among R practitioners supports our own professional work,
 from collaborative coding to package development,
 and helps build a bigger, more inclusive R community.</p>
-"
-Lightning Talk/Track C/Programming,Designing Randomized Studies using Shiny,"<p>This talk will walk through building a self-contained randomized study using Shiny and learnr modules. We will discuss building informed consent, the randomization process, demographic surveys, and R-based studies into a single online framework to allow users to seamlessly enroll and participate in randomized studies via a single URL. The talk will include both practical recommendations as well as technical code snippets.</p>
-"
-Talk/Track B/Package dev,You're Already Ready: Zen and the Art of R Package Development,"<p>R packages make it easier to write robust, reproducible code, and modern tools in R development like usethis make it easy to work with packages. When you write R packages, you also unlock a whole ecosystem of tools that will make it easier to test, document, and share your code. Despite these benefits, many believe package development is too advanced for them or that they have nothing to offer. A fundamental belief in Zen is that you are already complete, that you already have everything you need. I’ll talk about why your project is already an R package, why you’re already an R package developer, and why you already have the skills to walk the path of development.</p>
-"
-Talk/Track B/Organisational tooling,Not The App We Deserve. The App We Need: Putting a GMP Shiny App into Production,"<p>In February 2020, the Digital Proactive Process Analytics (DPPA) group within Merck’s manufacturing division officially launched a Shiny app to automate the creation of Continuous Process Verification (CPV) reports into production. That’s right – the almighty, mysterious, coveted production.  From a technical perspective, the app is nothing particularly special (except other than getting LaTeX successfully installed to support the use of R Markdown). Users enter a few parameters and out pops a PDF with a series statistical analyses of a product’s quality testing data. The R blogosphere is filled with examples of similar Shiny apps.</p>
+","<p>How does someone make the leap from learning R to actively applying R in professional work?
+At what point (if ever!) do we get to call ourselves &quot;experts&quot; in R?
+This talk explores what differentiates novice, practitioner, and expert R programmers,
+and how transitions
+between these stages occur.
+I'll discuss the type of support required for R users to move from one level of expertise to the next,
+and how different types of training and documentation can support R users at each level.
+Understanding variable levels of education among R practitioners supports our own professional work,
+from collaborative coding to package development,
+and helps build a bigger, more inclusive R community.</p>
+
+<p>
+  Speaker: 
+  <strong>Kate Hertweck</strong>
+</p>
+<p>&lt;p&gt;Kate Hertweck is a scientist and educator
+who endeavors to uphold core values like:
+diversity/equity/inclusion,
+accessibility of information, and
+learning over knowing.
+Kate’s graduate training at University of Missouri focused on genomic evolution of plants,
+and was followed by a postdoctoral fellowship at the National Evolutionary Synthesis Center (NESCent, Duke University)
+where they began working exclusively in computational biology.
+Kate then spent four years as an assistant professor teaching
+bioinformatics, genomics, plant taxonomy,
+and scientific communication.
+Kate is currently bioinformatics training manager at Fred Hutchinson Cancer Research Center,
+where they lead and implement training and community building to support the data-intensive biomedical research community.
+Kate is an instructor and trainer for The Carpentries (serving as a leader in community governance from 2016-2019),
+and is an advisor for Metadocencia.
+These non-profit groups support best practices in teaching
+for data/computational skills and Spanish-speaking educators, respectively.
+Kate likes to spend their time enjoying all things science fiction
+and knitting sweaters from handspun yarn for their tiny, grumpy, elderly rescue dog, Loki.
+Kate uses perceived pronouns,
+so any pronoun you think fits also works for them.&lt;/p&gt;
+</p>"
+334,Lightning Talk/Track C/Programming,Designing Randomized Studies using Shiny,"<p>This talk will walk through building a self-contained randomized study using Shiny and learnr modules. We will discuss building informed consent, the randomization process, demographic surveys, and R-based studies into a single online framework to allow users to seamlessly enroll and participate in randomized studies via a single URL. The talk will include both practical recommendations as well as technical code snippets.</p>
+","<p>This talk will walk through building a self-contained randomized study using Shiny and learnr modules. We will discuss building informed consent, the randomization process, demographic surveys, and R-based studies into a single online framework to allow users to seamlessly enroll and participate in randomized studies via a single URL. The talk will include both practical recommendations as well as technical code snippets.</p>
+
+<p>
+  Speaker: 
+  <strong>Lucy D'Agostino McGowan</strong>
+</p>
+<p></p>"
+279,Talk/Track B/Package dev,You're Already Ready: Zen and the Art of R Package Development,"<p>R packages make it easier to write robust, reproducible code, and modern tools in R development like usethis make it easy to work with packages. When you write R packages, you also unlock a whole ecosystem of tools that will make it easier to test, document, and share your code. Despite these benefits, many believe package development is too advanced for them or that they have nothing to offer. A fundamental belief in Zen is that you are already complete, that you already have everything you need. I’ll talk about why your project is already an R package, why you’re already an R package developer, and why you already have the skills to walk the path of development.</p>
+","<p>R packages make it easier to write robust, reproducible code, and modern tools in R development like usethis make it easy to work with packages. When you write R packages, you also unlock a whole ecosystem of tools that will make it easier to test, document, and share your code. Despite these benefits, many believe package development is too advanced for them or that they have nothing to offer. A fundamental belief in Zen is that you are already complete, that you already have everything you need. I’ll talk about why your project is already an R package, why you’re already an R package developer, and why you already have the skills to walk the path of development.</p>
+
+<p>
+  Speaker: 
+  <strong>Malcolm Barrett</strong>
+</p>
+<p>&lt;p&gt;Malcolm Barrett is Clinical Research Data Scientist at Teladoc Health, an epidemiologist, and an R developer. He is also an organizer for the Los Angeles R Users Group. Malcolm is the author of several R packages, including ggdag and precisely. Previousy, he was an intern at RStudio and spent two years of service in AmeriCorps. In 2013 and 2014, while serving in AmeriCorps, Malcolm lived in the Zen Center of New York City, where he is still a student.&lt;/p&gt;
+</p>"
+187,Talk/Track B/Organisational tooling,Not The App We Deserve. The App We Need: Putting a GMP Shiny App into Production,"<p>In February 2020, the Digital Proactive Process Analytics (DPPA) group within Merck’s manufacturing division officially launched a Shiny app to automate the creation of Continuous Process Verification (CPV) reports into production. That’s right – the almighty, mysterious, coveted production.  From a technical perspective, the app is nothing particularly special (except other than getting LaTeX successfully installed to support the use of R Markdown). Users enter a few parameters and out pops a PDF with a series statistical analyses of a product’s quality testing data. The R blogosphere is filled with examples of similar Shiny apps.</p>
 <p>What mattered was the app was in production, and furthermore it was approved for GMP use.  This meant these reports could be submitted to the FDA and other regulatory agencies. This meant the data could be used to support product release decisions. This meant Merck’s engineers were about to save thousands of hours per year in compiling data, generating charts, and calculating summary statistics. This was the app manufacturing sites needed.</p>
 <p>Most of the work in getting this app into production was not implementing the top-level features. Sorry, no discussion of fancy statistical process control methods here. Instead this talk will discuss some of the many things the development team (none of which came from a software development background) needed to learn in order to create a robust, secure, and maintainable production application.</p>
-"
-Lightning Talk/Track B/Package dev,Towards an integrated {verse}: lessons learned developing a library of validated packages,"<p>Developing R packages as a unified {verse} – a set of packages that work well together but with each focusing on individual tasks – is an efficient strategy to structure support for complex workflows. The ongoing challenge becomes managing the growth of related packages in a holistic manner. This is especially problematic in industries with a heavy emphasis on stability, for example if packages need to be validated prior to use in production. In this talk, I will discuss a paradigm for developing and maintaining validated R packages, emphasizing the following areas: (1) strategies for organizing packages to prevent excessive re-work (2) facilitating responsive, iterative development and (3) empathy for developer and user experiences.</p>
-"
-Talk/Track A/Data for good,Cognitive speed: How the Tidyverse helped the British Red Cross respond quickly to COVID-19,"<p>We will discuss the importance of cognitive speed, defined here as the rate in which an idea can be translated into code, and why the Tidyverse excels in this domain. We will demonstrate this idea in relation to a suite of tools we were required to rapidly develop at the British Red Cross in order to respond effectively to the COVID-19 pandemic. To do this, we will exhibit how elements of the unifying design principles outlined in the ‘tidyverse design guide - Tidyverse team’ relate to the notion of cognitive speed, giving specific examples for various design considerations. We believe this talk will encourage reflection on better design practices for future R developers, using the design principles of the tidyverse as the guiding beacon.</p>
-"
-Talk/Track C/Modelling,What's new in tidymodels?,"<p>tidymodels is a collection of packages for modeling using a tidy interface. In the last year there have been numerous improvements and extensions. This talk gives an overview of additional tuning methods, new extension packages for models and recipes, and other features.</p>
-"
-Talk/Track A/Learning,Starting an R Book Club: Cooking Up Friendships in Isolation,"<p>Amidst a global pandemic there’s been one consistency in my life: every Tuesday a group of friends meet to discuss Hadley Wickham’s Advanced R. I crowdsourced interest using the R4DS Slack and the results were magical: a group of incredibly curious and generous people motivated to learn and teach one another emerged. The meetings evolved from a group of strangers giving timid presentations to a safe space where we share and improve upon personal applications. The 1 club has grown to 3 regional cohorts, and became a model for discussing other books too. This talk will go over the structure of our meetings in hopes of empowering others to start their own book clubs, showcasing a different way people can create and engage in communities.</p>
-"
-Talk/Track A/Learning,Aesthetically automated figure production,"<p>Automation, reproducibility, data driven. These are not normally concepts one would associate with the traditional publishing industry, where designers normally manually produce every artefact in proprietary software. And, when you have 1000s of figures to produce and update for a single textbook, this becomes an insurmountable task, meaning our textbooks quickly become outdated, especially in our rapidly advancing world.</p>
+","<p>In February 2020, the Digital Proactive Process Analytics (DPPA) group within Merck’s manufacturing division officially launched a Shiny app to automate the creation of Continuous Process Verification (CPV) reports into production. That’s right – the almighty, mysterious, coveted production.  From a technical perspective, the app is nothing particularly special (except other than getting LaTeX successfully installed to support the use of R Markdown). Users enter a few parameters and out pops a PDF with a series statistical analyses of a product’s quality testing data. The R blogosphere is filled with examples of similar Shiny apps.</p>
+<p>What mattered was the app was in production, and furthermore it was approved for GMP use.  This meant these reports could be submitted to the FDA and other regulatory agencies. This meant the data could be used to support product release decisions. This meant Merck’s engineers were about to save thousands of hours per year in compiling data, generating charts, and calculating summary statistics. This was the app manufacturing sites needed.</p>
+<p>Most of the work in getting this app into production was not implementing the top-level features. Sorry, no discussion of fancy statistical process control methods here. Instead this talk will discuss some of the many things the development team (none of which came from a software development background) needed to learn in order to create a robust, secure, and maintainable production application.</p>
+
+<p>
+  Speaker: 
+  <strong>Marcus Adams</strong>
+</p>
+<p>&lt;p&gt;Marcus Adams is an Associate Director, Engineering at the biopharmaceutical company Merck. He earned his BEng and MS in Chemical Engineering from the University of Delaware and Villanova University, respectively. His more than decade of experience at Merck spans the bio-pharmaceutical spectrum and includes experience in pre-clinical PK/PD modeling, product commercialization, in-line technology support, procurement, and vaccine distribution technology development. Currently, he works as a part of the Digital Proactive Process Analytics team, leveraging Merck’s Big Data Platform in the development of manufacturing information data models, report automation tools, and integrated-systems analysis applications.  His professional interests include effective digital visualization, reproducible research/analysis, and convincing his coworkers of the diverse, flourishing world beyond Microsoft Excel.&lt;/p&gt;
+</p>"
+254,Lightning Talk/Track B/Package dev,Towards an integrated {verse}: lessons learned developing a library of validated packages,"<p>Developing R packages as a unified {verse} – a set of packages that work well together but with each focusing on individual tasks – is an efficient strategy to structure support for complex workflows. The ongoing challenge becomes managing the growth of related packages in a holistic manner. This is especially problematic in industries with a heavy emphasis on stability, for example if packages need to be validated prior to use in production. In this talk, I will discuss a paradigm for developing and maintaining validated R packages, emphasizing the following areas: (1) strategies for organizing packages to prevent excessive re-work (2) facilitating responsive, iterative development and (3) empathy for developer and user experiences.</p>
+","<p>Developing R packages as a unified {verse} – a set of packages that work well together but with each focusing on individual tasks – is an efficient strategy to structure support for complex workflows. The ongoing challenge becomes managing the growth of related packages in a holistic manner. This is especially problematic in industries with a heavy emphasis on stability, for example if packages need to be validated prior to use in production. In this talk, I will discuss a paradigm for developing and maintaining validated R packages, emphasizing the following areas: (1) strategies for organizing packages to prevent excessive re-work (2) facilitating responsive, iterative development and (3) empathy for developer and user experiences.</p>
+
+<p>
+  Speaker: 
+  <strong>Marie Vendettuoli</strong>
+</p>
+<p>&lt;p&gt;Marie Vendettuoli is a Senior Statistical Programmer at Statistical Center for HIV/AIDS Research and Prevention (&lt;a href=""https://www.fredhutch.org/en/research/divisions/vaccine-infectious-disease-division/research/biostatistics-bioinformatics-and-epidemiology/statistical-center-for-hiv-aids-research-and-prevention.html""&gt;SCHARP&lt;/a&gt;) @ FredHutch.
+She holds a PhD from Iowa State University in Human Computer Interaction and started
+developing R packages for use within regulatory frameworks while working as a Data Scientist at
+&lt;a href=""https://www.aphis.usda.gov/aphis/ourfocus/animalhealth/veterinary-biologics/sa_about_vb/ct_vb_about""&gt;USDA Center for Veterinary Biologics&lt;/a&gt;. Before discovering R, Marie worked in a &lt;a href=""https://www.fda.gov/about-fda/fda-organization/center-biologics-evaluation-and-research-cber""&gt;CBER&lt;/a&gt;-regulated laboratory.
+Her main interest is developing analytical infrastructure to facilitate scientific analysis
+for fellow data scientists working in a regulatory environment.&lt;/p&gt;
+</p>"
+179,Talk/Track A/Data for good,Cognitive speed: How the Tidyverse helped the British Red Cross respond quickly to COVID-19,"<p>We will discuss the importance of cognitive speed, defined here as the rate in which an idea can be translated into code, and why the Tidyverse excels in this domain. We will demonstrate this idea in relation to a suite of tools we were required to rapidly develop at the British Red Cross in order to respond effectively to the COVID-19 pandemic. To do this, we will exhibit how elements of the unifying design principles outlined in the ‘tidyverse design guide - Tidyverse team’ relate to the notion of cognitive speed, giving specific examples for various design considerations. We believe this talk will encourage reflection on better design practices for future R developers, using the design principles of the tidyverse as the guiding beacon.</p>
+","<p>We will discuss the importance of cognitive speed, defined here as the rate in which an idea can be translated into code, and why the Tidyverse excels in this domain. We will demonstrate this idea in relation to a suite of tools we were required to rapidly develop at the British Red Cross in order to respond effectively to the COVID-19 pandemic. To do this, we will exhibit how elements of the unifying design principles outlined in the ‘tidyverse design guide - Tidyverse team’ relate to the notion of cognitive speed, giving specific examples for various design considerations. We believe this talk will encourage reflection on better design practices for future R developers, using the design principles of the tidyverse as the guiding beacon.</p>
+
+<p>
+  Speaker: 
+  <strong>Matt Thomas</strong>
+</p>
+<p>&lt;p&gt;Dr Matt Thomas is Head of Strategic Insight and Foresight at the British Red Cross. Matt's team aims to help the Red Cross become more anticipatory and proactive by producing insights and tools including the &lt;a href=""https://britishredcrosssociety.github.io/covid-19-vulnerability/""&gt;Vulnerability Index&lt;/a&gt; and &lt;a href=""https://britishredcross.shinyapps.io/resilience-index/""&gt;Resilience Index&lt;/a&gt;. He holds a PhD in Evolutionary Anthropology and, prior to joining the British Red Cross, was researching topics including reindeer herders in the Arctic, hunter-gatherers in the Philippines, and witches in China. Outside of work, Matt writes a column for &lt;a href=""https://www.sapiens.org/column/machinations/""&gt;an anthropology magazine&lt;/a&gt; as well as fiction.&lt;/p&gt;
+</p>
+<p>
+  Speaker: 
+  <strong>Mike Page</strong>
+</p>
+<p>&lt;p&gt;Mike Page is a data scientist on the Strategic Insight and Foresight team at the British Red Cross. Here, he helps to develop a suite of open source tools and dashboards including the &lt;a href=""https://britishredcrosssociety.github.io/covid-19-vulnerability/""&gt;Vulnerability Index&lt;/a&gt; and &lt;a href=""https://britishredcross.shinyapps.io/resilience-index/""&gt;Resilience Index&lt;/a&gt;. Mike is also the author of several R packages including mortyr and newsrivr. In his spare time you can find him rock climbing around the Alps.&lt;/p&gt;
+</p>"
+222,Talk/Track C/Modelling,What's new in tidymodels?,"<p>tidymodels is a collection of packages for modeling using a tidy interface. In the last year there have been numerous improvements and extensions. This talk gives an overview of additional tuning methods, new extension packages for models and recipes, and other features.</p>
+","<p>tidymodels is a collection of packages for modeling using a tidy interface. In the last year there have been numerous improvements and extensions. This talk gives an overview of additional tuning methods, new extension packages for models and recipes, and other features.</p>
+
+<p>
+  Speaker: 
+  <strong>Max Kuhn</strong>
+</p>
+<p></p>"
+148,Talk/Track A/Learning,Starting an R Book Club: Cooking Up Friendships in Isolation,"<p>Amidst a global pandemic there’s been one consistency in my life: every Tuesday a group of friends meet to discuss Hadley Wickham’s Advanced R. I crowdsourced interest using the R4DS Slack and the results were magical: a group of incredibly curious and generous people motivated to learn and teach one another emerged. The meetings evolved from a group of strangers giving timid presentations to a safe space where we share and improve upon personal applications. The 1 club has grown to 3 regional cohorts, and became a model for discussing other books too. This talk will go over the structure of our meetings in hopes of empowering others to start their own book clubs, showcasing a different way people can create and engage in communities.</p>
+","<p>Amidst a global pandemic there’s been one consistency in my life: every Tuesday a group of friends meet to discuss Hadley Wickham’s Advanced R. I crowdsourced interest using the R4DS Slack and the results were magical: a group of incredibly curious and generous people motivated to learn and teach one another emerged. The meetings evolved from a group of strangers giving timid presentations to a safe space where we share and improve upon personal applications. The 1 club has grown to 3 regional cohorts, and became a model for discussing other books too. This talk will go over the structure of our meetings in hopes of empowering others to start their own book clubs, showcasing a different way people can create and engage in communities.</p>
+
+<p>
+  Speaker: 
+  <strong>Maya Gans</strong>
+</p>
+<p>&lt;p&gt;Maya is an R and JavaScript developer mainly focused on data visulaization and user experience. She currently works for Atorus Research where she is a web and Shiny developer. During her time as an intern at RStudio, she created a blocks-based programming language called TidyBlocks and co-authored “JavaScript for Data Science.” Passionate about data science education, Maya has given multiple trainings and workshops.&lt;/p&gt;
+</p>"
+261,Talk/Track A/Learning,Aesthetically automated figure production,"<p>Automation, reproducibility, data driven. These are not normally concepts one would associate with the traditional publishing industry, where designers normally manually produce every artefact in proprietary software. And, when you have 1000s of figures to produce and update for a single textbook, this becomes an insurmountable task, meaning our textbooks quickly become outdated, especially in our rapidly advancing world.</p>
 <p>With R and the tidyverse in our back pocket, we rose to the challenge to revolutionize this workflow. I will explain how we collaborated with a publishing group to develop a system to aesthetically automate the production of figures for a textbook including translations into several languages.</p>
 <p>I think you’ll find this talk interesting as it shows how we applied tools that are familiar to us, but in an unconventional way to fundamentally transform a conventional process.</p>
-"
-Lightning Talk/Track C/Visualisation,Making .pot-ery with R: Translations in R Packages,"<p>The R community is globally distributed and R itself is available with messages in 14 languages. Adding translations for non-native English-speaking users of your package can ease their experience and empower them to build better things with less frustration (though please note that &quot;object of type 'closure' is not subsettable&quot; is equally inscrutable in all human languages).</p>
+","<p>Automation, reproducibility, data driven. These are not normally concepts one would associate with the traditional publishing industry, where designers normally manually produce every artefact in proprietary software. And, when you have 1000s of figures to produce and update for a single textbook, this becomes an insurmountable task, meaning our textbooks quickly become outdated, especially in our rapidly advancing world.</p>
+<p>With R and the tidyverse in our back pocket, we rose to the challenge to revolutionize this workflow. I will explain how we collaborated with a publishing group to develop a system to aesthetically automate the production of figures for a textbook including translations into several languages.</p>
+<p>I think you’ll find this talk interesting as it shows how we applied tools that are familiar to us, but in an unconventional way to fundamentally transform a conventional process.</p>
+
+<p>
+  Speaker: 
+  <strong>Megan Beckett</strong>
+</p>
+<p>&lt;p&gt;Megan Beckett is a Data Scientist at Exegetic Analytics, where she consults, develops and leads several analytical projects across a wide range of fields and industries. &lt;em&gt;&amp;quot;Scientifically creative; creatively scientific.&amp;quot;&lt;/em&gt; This aptly describes her philosophy and approach in her work and life. Megan helped co-found and organises the Cape Town R-Ladies chapter and is a co-organiser of the satRday events in South Africa. She loves to paint, with her most recent work exploring the &lt;a href=""https://mappamundi.netlify.app/portfolio/""&gt;biodiversity of southern Africa&lt;/a&gt;, and running is her passion, whether on the road or the trail.&lt;/p&gt;
+</p>"
+328,Lightning Talk/Track C/Visualisation,Making .pot-ery with R: Translations in R Packages,"<p>The R community is globally distributed and R itself is available with messages in 14 languages. Adding translations for non-native English-speaking users of your package can ease their experience and empower them to build better things with less frustration (though please note that &quot;object of type 'closure' is not subsettable&quot; is equally inscrutable in all human languages).</p>
 <p>In this talk, I will cover translations in R packages -- how to implement them, why to do so, and how to maintain them. This will summarize and extend learnings based on our experience adding Mandarin translations to data.table and culminating in the potools package.</p>
-"
-Talk/Track B/Language interop,Bringing the Tidyverse to Python with Siuba,"<p>Last January I left my job to spend a year developing siuba, a python port of dplyr. At its core, this decision was driven by a decade of watching python and R users produce similar analyses, but in very different ways.</p>
+","<p>The R community is globally distributed and R itself is available with messages in 14 languages. Adding translations for non-native English-speaking users of your package can ease their experience and empower them to build better things with less frustration (though please note that &quot;object of type 'closure' is not subsettable&quot; is equally inscrutable in all human languages).</p>
+<p>In this talk, I will cover translations in R packages -- how to implement them, why to do so, and how to maintain them. This will summarize and extend learnings based on our experience adding Mandarin translations to data.table and culminating in the potools package.</p>
+
+<p>
+  Speaker: 
+  <strong>Michael Chirico</strong>
+</p>
+<p>&lt;p&gt;Michael Chirico is a data scientist working on compute memory efficiency at Google. Before that he worked at Grab in Singapore and earlier got his PhD in Economics at the University of Pennsylvania.&lt;/p&gt;
+&lt;p&gt;He is passionate about making tools to empower others who work with data (most of this energy is directed towards &lt;code&gt;data.table&lt;/code&gt;) and loves learning languages (at various middling levels of proficiency in Japanese, Spanish, and Mandarin, with goals to learn Cantonese, Hokkien, Vietnamese and Bahasa).&lt;/p&gt;
+</p>"
+322,Talk/Track B/Language interop,Bringing the Tidyverse to Python with Siuba,"<p>Last January I left my job to spend a year developing siuba, a python port of dplyr. At its core, this decision was driven by a decade of watching python and R users produce similar analyses, but in very different ways.</p>
 <p>In this talk, I'll discuss 3 ways siuba enables R users to transfer their hard-earned programming knowledge to python: (1) leveraging the power of dplyr syntax, (2) options to generate SQL code, and (3) working with the plotnine plotting library.</p>
 <p>Looking back, I'll consider two critical pieces that have helped me develop siuba: using it to livecode TidyTuesday analyses, and building an interactive tutorial for absolute beginners.</p>
-"
-Talk/Track A/Teaching,Feedback at scale,"<p>As enrolments in statistics and data science courses grow and as these courses become more computational, educators are faced with an interesting challenge -- providing timely and meaningful feedback, particularly with online delivery of courses. The simplest solution is using assignments that are easier to auto-grade, e.g. multiple-choice questions, simplistic coding exercises, but it is impossible to assess mastery of the entire data science cycle using only these types of exercises. In this talk I will discuss writing effective learnr exercises, providing useful and motivating feedback with gradethis, distributing them at scale online and as an R package, and collecting student data for formative assessment with learnrhash.</p>
-"
-Talk/Track C/Programming,Bigger Data With Ease Using Apache Arrow,"<p>The Apache Arrow project enables data scientists using R, Python, and other languages to work with large datasets efficiently and with interactive speed. Arrow is so fast at some workflows that it seems to defy reality--or at least the limits of R's capabilities. This talk examines the unique characteristics of the Arrow project that enable it to redefine what is possible in R. The talk also highlights some of the latest developments in the <code>arrow</code> R package, including how you can query and manipulate multi-file datasets, and it presents strategies for speeding up workflows by up to 100x.</p>
-"
-Lightning Talk/Track C/Visualisation,Racial Equity Dashboard: Unpacking Systemic Inequity,"<p>At Cape Fear Collective, we’re redefining what a town square looks like in our community, serving as a place where all people, organizations, and ideas can come together to effect real, lasting, and systemic change. By merging cutting edge data science with an emphasis on equity and the lived experience of our most marginalized communities, Cape Fear Collective supports Southeastern North Carolina’s front line organizations in combating poverty, racism, poor health and education outcomes, and socio-economic disparities. This talk is about how we bring that model to life through our <a href=""https://cape-fear-collective.shinyapps.io/racial-equity/"">Racial Equity Dashboard</a>, from data sourcing, to modeling and, ultimately, action.</p>
-"
-Talk/Track C/Visualisation,"A New Paradigm for Multifigure, Coordinate-Based Plotting in R","<p>R is unparalleled in its ability to transform raw data into a wide array of beautiful graphics, all within the same environment. However, when it comes to complex, multi-paneled plots, users rely on 3rd party graphic design software to arrange plots. Here I present the new world of programmatic, coordinate-based multi-figure plotting in R. Employing grid Graphics and drawing from the paradigms of base plotting and ggplot2, I am developing a package that will revolutionize the way plots are laid out in R. Not only will individual plots be aesthetically customizable and tailored for speed, users will also be offered exquisite control over all aspects of page layout, plot placement, and arrangements. Come join me in changing how we plot in R!</p>
-"
-Lightning Talk/Track C/Visualisation,An easy and friendly way to build your multilingual website,"<p>Having a personal website is a great way to share our experiences with other people, that also allows us to improve our communication skills and expand our networking groups. Besides, if the website is multilingual, the scope will be extended considerably by facilitating the exchange of ideas. I will give the key steps, some tips, and important considerations to bear in mind when creating a multilingual website using Blogdown, Hugo, and Netlify. Although having a multilingual website demands more effort, R enables us to build a website easily and keep it updated. I aim to help and encourage others to build their website to promote exchange experiences among people from different native languages.</p>
-"
-Lightning Talk/Track C/Modelling,How I became a Data Composer – examples of simulated datasets that bring value to a data-driven company,"<p>How can I get the buy-in from business partners to use more advanced techniques? What can I do to make a data project involving several teams more efficient? And how can I train analysts who do not (yet) have access to sensitive data?
+","<p>Last January I left my job to spend a year developing siuba, a python port of dplyr. At its core, this decision was driven by a decade of watching python and R users produce similar analyses, but in very different ways.</p>
+<p>In this talk, I'll discuss 3 ways siuba enables R users to transfer their hard-earned programming knowledge to python: (1) leveraging the power of dplyr syntax, (2) options to generate SQL code, and (3) working with the plotnine plotting library.</p>
+<p>Looking back, I'll consider two critical pieces that have helped me develop siuba: using it to livecode TidyTuesday analyses, and building an interactive tutorial for absolute beginners.</p>
+
+<p>
+  Speaker: 
+  <strong>Michael Chow</strong>
+</p>
+<p>&lt;p&gt;Michael Chow is a data scientist and learning researcher. He serves as a co-director at Code for Philly. In past lives, he worked on adaptive assessment tools in ed tech, and received a PhD in cognitive psychology from Princeton University.&lt;/p&gt;
+</p>"
+309,Talk/Track A/Teaching,Feedback at scale,"<p>As enrolments in statistics and data science courses grow and as these courses become more computational, educators are faced with an interesting challenge -- providing timely and meaningful feedback, particularly with online delivery of courses. The simplest solution is using assignments that are easier to auto-grade, e.g. multiple-choice questions, simplistic coding exercises, but it is impossible to assess mastery of the entire data science cycle using only these types of exercises. In this talk I will discuss writing effective learnr exercises, providing useful and motivating feedback with gradethis, distributing them at scale online and as an R package, and collecting student data for formative assessment with learnrhash.</p>
+","<p>As enrolments in statistics and data science courses grow and as these courses become more computational, educators are faced with an interesting challenge -- providing timely and meaningful feedback, particularly with online delivery of courses. The simplest solution is using assignments that are easier to auto-grade, e.g. multiple-choice questions, simplistic coding exercises, but it is impossible to assess mastery of the entire data science cycle using only these types of exercises. In this talk I will discuss writing effective learnr exercises, providing useful and motivating feedback with gradethis, distributing them at scale online and as an R package, and collecting student data for formative assessment with learnrhash.</p>
+
+<p>
+  Speaker: 
+  <strong>Mine Çetinkaya-Rundel</strong>
+</p>
+<p>&lt;p&gt;Mine Çetinkaya-Rundel is Professional Educator and Data Scientist at RStudio as well as Senior Lecturer at University of Edinburgh and Associate Professor of the Practice at Duke University. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM. She works on the &lt;a href=""https://www.openintro.org/""&gt;OpenIntro&lt;/a&gt; project, is also the creator and maintainer of &lt;a href=""https://datasciencebox.org/""&gt;datasciencebox.org&lt;/a&gt;, teaches the popular &lt;a href=""https://www.coursera.org/specializations/statistics""&gt;Statistics with R&lt;/a&gt; MOOC on Coursera. She has four cats.&lt;/p&gt;
+</p>"
+278,Talk/Track C/Programming,Bigger Data With Ease Using Apache Arrow,"<p>The Apache Arrow project enables data scientists using R, Python, and other languages to work with large datasets efficiently and with interactive speed. Arrow is so fast at some workflows that it seems to defy reality--or at least the limits of R's capabilities. This talk examines the unique characteristics of the Arrow project that enable it to redefine what is possible in R. The talk also highlights some of the latest developments in the <code>arrow</code> R package, including how you can query and manipulate multi-file datasets, and it presents strategies for speeding up workflows by up to 100x.</p>
+","<p>The Apache Arrow project enables data scientists using R, Python, and other languages to work with large datasets efficiently and with interactive speed. Arrow is so fast at some workflows that it seems to defy reality--or at least the limits of R's capabilities. This talk examines the unique characteristics of the Arrow project that enable it to redefine what is possible in R. The talk also highlights some of the latest developments in the <code>arrow</code> R package, including how you can query and manipulate multi-file datasets, and it presents strategies for speeding up workflows by up to 100x.</p>
+
+<p>
+  Speaker: 
+  <strong>Neal Richardson</strong>
+</p>
+<p>&lt;p&gt;Neal Richardson leads the engineering team at Ursa Computing, a startup working to empower data teams and accelerate data science. He is also the maintainer of several R packages, including &lt;code&gt;arrow&lt;/code&gt;, and is a member of Apache Arrow's project management committee. Previously, he received a Ph.D. in Political Science and worked in survey analytics.&lt;/p&gt;
+</p>"
+167,Lightning Talk/Track C/Visualisation,Racial Equity Dashboard: Unpacking Systemic Inequity,"<p>At Cape Fear Collective, we’re redefining what a town square looks like in our community, serving as a place where all people, organizations, and ideas can come together to effect real, lasting, and systemic change. By merging cutting edge data science with an emphasis on equity and the lived experience of our most marginalized communities, Cape Fear Collective supports Southeastern North Carolina’s front line organizations in combating poverty, racism, poor health and education outcomes, and socio-economic disparities. This talk is about how we bring that model to life through our <a href=""https://cape-fear-collective.shinyapps.io/racial-equity/"">Racial Equity Dashboard</a>, from data sourcing, to modeling and, ultimately, action.</p>
+","<p>At Cape Fear Collective, we’re redefining what a town square looks like in our community, serving as a place where all people, organizations, and ideas can come together to effect real, lasting, and systemic change. By merging cutting edge data science with an emphasis on equity and the lived experience of our most marginalized communities, Cape Fear Collective supports Southeastern North Carolina’s front line organizations in combating poverty, racism, poor health and education outcomes, and socio-economic disparities. This talk is about how we bring that model to life through our <a href=""https://cape-fear-collective.shinyapps.io/racial-equity/"">Racial Equity Dashboard</a>, from data sourcing, to modeling and, ultimately, action.</p>
+
+<p>
+  Speaker: 
+  <strong>Nicholas Pylypiw</strong>
+</p>
+<p>&lt;p&gt;Nick is the Director of Data Science at Cape Fear Collective, a non profit which supports Southeastern North Carolina’s front line organizations in combating poverty, racism, poor health and education outcomes, and socio-economic disparities. Prior to CFC, he honed his data science and consulting skills in the marketing analytics space, transforming the way Fortune 500+ companies (Lowe's Southwest Airlines, P&amp;amp;G, and many others) think about their customer strategy and value proposition. He lives in Raleigh, North Carolina.&lt;/p&gt;
+</p>"
+182,Talk/Track C/Visualisation,"A New Paradigm for Multifigure, Coordinate-Based Plotting in R","<p>R is unparalleled in its ability to transform raw data into a wide array of beautiful graphics, all within the same environment. However, when it comes to complex, multi-paneled plots, users rely on 3rd party graphic design software to arrange plots. Here I present the new world of programmatic, coordinate-based multi-figure plotting in R. Employing grid Graphics and drawing from the paradigms of base plotting and ggplot2, I am developing a package that will revolutionize the way plots are laid out in R. Not only will individual plots be aesthetically customizable and tailored for speed, users will also be offered exquisite control over all aspects of page layout, plot placement, and arrangements. Come join me in changing how we plot in R!</p>
+","<p>R is unparalleled in its ability to transform raw data into a wide array of beautiful graphics, all within the same environment. However, when it comes to complex, multi-paneled plots, users rely on 3rd party graphic design software to arrange plots. Here I present the new world of programmatic, coordinate-based multi-figure plotting in R. Employing grid Graphics and drawing from the paradigms of base plotting and ggplot2, I am developing a package that will revolutionize the way plots are laid out in R. Not only will individual plots be aesthetically customizable and tailored for speed, users will also be offered exquisite control over all aspects of page layout, plot placement, and arrangements. Come join me in changing how we plot in R!</p>
+
+<p>
+  Speaker: 
+  <strong>Nicole Kramer</strong>
+</p>
+<p>&lt;p&gt;Nicole Kramer is a third year &lt;a href=""https://bcb.unc.edu/""&gt;Bioinformatics and Computational Biology&lt;/a&gt; graduate student at the University of North Carolina at Chapel Hill. She works in the &lt;a href=""http://phanstiel-lab.med.unc.edu/""&gt;lab of Dr. Doug Phanstiel&lt;/a&gt;, where her and her colleagues use experimental and computational techniques to study human genomics. Prior to grad school, Nicole received her B.S. in Biological Engineering from MIT in 2018. When not doing science, you can find Nicole petting dogs, admiring giraffes, or knitting tiny animals!&lt;/p&gt;
+</p>"
+251,Lightning Talk/Track C/Visualisation,An easy and friendly way to build your multilingual website,"<p>Having a personal website is a great way to share our experiences with other people, that also allows us to improve our communication skills and expand our networking groups. Besides, if the website is multilingual, the scope will be extended considerably by facilitating the exchange of ideas. I will give the key steps, some tips, and important considerations to bear in mind when creating a multilingual website using Blogdown, Hugo, and Netlify. Although having a multilingual website demands more effort, R enables us to build a website easily and keep it updated. I aim to help and encourage others to build their website to promote exchange experiences among people from different native languages.</p>
+","<p>Having a personal website is a great way to share our experiences with other people, that also allows us to improve our communication skills and expand our networking groups. Besides, if the website is multilingual, the scope will be extended considerably by facilitating the exchange of ideas. I will give the key steps, some tips, and important considerations to bear in mind when creating a multilingual website using Blogdown, Hugo, and Netlify. Although having a multilingual website demands more effort, R enables us to build a website easily and keep it updated. I aim to help and encourage others to build their website to promote exchange experiences among people from different native languages.</p>
+
+<p>
+  Speaker: 
+  <strong>Pamela E. Pairo</strong>
+</p>
+<p>&lt;p&gt;Pamela E. Pairo is a Ph.D. in Biological Sciences of the University of Buenos Aires, with expertise in community ecology. One of her research lines focuses on analyzing the impact of human activities on the diversity and composition of biological communities with particular interest in arthropods. In addition, she is interested in studying the spatio-temporal patterns of dengue disease in Argentina. She also is a teaching assistant in statistics at the Argentine University of Enterprise (UADE).&lt;/p&gt;
+</p>"
+225,Lightning Talk/Track C/Modelling,How I became a Data Composer – examples of simulated datasets that bring value to a data-driven company,"<p>How can I get the buy-in from business partners to use more advanced techniques? What can I do to make a data project involving several teams more efficient? And how can I train analysts who do not (yet) have access to sensitive data?
 A good data composer is skilled at creating suitable data quickly and efficiently. R has many functions and packages that help with simulating independent variables and composing those in a meaningful way.
 In this talk, I will share how I started creating data and how this skill helped me with solving some of the issues described above. Showing a few examples – of small, medium-sized, and large data composition – I want to encourage attendees to simulate data and enrich their data skillset.</p>
-"
-Talk/Track B/Organisational tooling,From Zero to Hero: Best practices for setting up Rstudio Team in the Cloud,"<p>Learn best practices for setting up the entire Rstudio team infrastructure - Server Pro, Connect, Package Manager from the perspective of a data scientist and for a data science audience - especially those who have never worked with servers, AWS, or bash. This talk will also be applicable to data scientists looking to start on an engineering project outside of Rstudio as well.</p>
+","<p>How can I get the buy-in from business partners to use more advanced techniques? What can I do to make a data project involving several teams more efficient? And how can I train analysts who do not (yet) have access to sensitive data?
+A good data composer is skilled at creating suitable data quickly and efficiently. R has many functions and packages that help with simulating independent variables and composing those in a meaningful way.
+In this talk, I will share how I started creating data and how this skill helped me with solving some of the issues described above. Showing a few examples – of small, medium-sized, and large data composition – I want to encourage attendees to simulate data and enrich their data skillset.</p>
+
+<p>
+  Speaker: 
+  <strong>Richard Vogg</strong>
+</p>
+<p>&lt;p&gt;Richard Vogg studied mathematics at TU Kaiserslautern, Germany, where he focused on statistics and obtained a Master’s degree.
+He worked as a Senior Business Analyst at Evalueserve in Chile for the last years, analyzing data for a major US bank. At the end of 2020, he moved back to Germany.
+Richard is a fan of applied statistics and storytelling with data. Outside of R, he enjoys playing the ukulele, trumpet, and didgeridoo.&lt;/p&gt;
+</p>"
+186,Talk/Track B/Organisational tooling,From Zero to Hero: Best practices for setting up Rstudio Team in the Cloud,"<p>Learn best practices for setting up the entire Rstudio team infrastructure - Server Pro, Connect, Package Manager from the perspective of a data scientist and for a data science audience - especially those who have never worked with servers, AWS, or bash. This talk will also be applicable to data scientists looking to start on an engineering project outside of Rstudio as well.</p>
 <p>I started out as a complete novice, &amp; throughout my learning experience I noticed a distinct lack of resources for non-engineers. This talk will focus on best practices for AWS architecture and cloud formation, key security issues such as SSL and https, server configurations, deployment errors, and most importantly resources that are understandable for data scientists just getting into the data engineering or devops space.</p>
-"
-Talk/Track A/Teaching,How to do things with words: learning to program in R with a &quot;communicative approach&quot;,"<p>Textbooks for learning a new language always start the same: you learn to say hello, to introduce yourself, and some simple and useful sentences to communicate with others. In language teaching, this is called a “communicative approach”, and is based on the idea that learning a language successfully comes through having to communicate real meaning to real people. This is what I expected to find when I first tried to learn R seven years ago. Sadly, I got stuck in resources that started with definitions of abstract concepts and no real examples of how to say things with data. In this talk I will discuss the benefits of adopting a communicative approach and how to implement it when teaching/learning R, writing documentation, and writing code that will be read by other human beings.</p>
-"
-Talk/Track B/Language interop,R &amp; Python: Going Steady,"<p>While there has been a lot of excitement about the R and Python love story, there are still misconceptions that individuals, teams, or organizations must pick between R or Python. This talk will explain why this false choice exists, debunk the myths that cause teams to be stuck with only one tool, and clarify how data scientists can use both languages to be more effective. We will explore this love story's blossoming relationship by looking at updates to RStudio's packages and products that make it easier to develop and collaborate in R and Python. This talk is for individuals who want to uncover the benefits of multilingual data science, IT professionals who are skeptical their life can get better by supporting more languages, and data science managers interested in enabling their teams instead of forcing their data superheros to be subservient to particular tools.</p>
-"
-Talk/Track A/Data for good,rKenyaCensus Package,"<p>The rKenyaCensus package contains the results of the 2109 Kenya Population Census.The data was published in PDF files, and hence there was a need to make it accessible. This data has been used by the Kenya Red Cross team to examine counties that are Covid19 high risk areas. It can also be used by the government for data driven policy making.I used the data to develop a shiny dashboard that tracks the progress that Kenya has made towards achieving the SDGs. During the exercise, I learnt how to develop a robust package and  enhance the UI of a shiny dashboard using html and CSS. I believe that this package will encourage national statistical organisations to enhance the spirit of open data through publishing their data openly (and easily).</p>
-"
-Talk/Track C/Modelling,Using R to Up Your Experimentation Game,"<p>Have you ever cut an A/B test short? Maybe because of traffic constraints, your antsy boss, or early successful results. In reality, cutting your test short can be catastrophic, making your business decision no better than a coin flip.  Learn some R-driven tips &amp; tricks to get meaningful results quickly with a statistically rigorous methodology called sequential testing, an A/B testing enhancement my team employs at Intuit.</p>
+","<p>Learn best practices for setting up the entire Rstudio team infrastructure - Server Pro, Connect, Package Manager from the perspective of a data scientist and for a data science audience - especially those who have never worked with servers, AWS, or bash. This talk will also be applicable to data scientists looking to start on an engineering project outside of Rstudio as well.</p>
+<p>I started out as a complete novice, &amp; throughout my learning experience I noticed a distinct lack of resources for non-engineers. This talk will focus on best practices for AWS architecture and cloud formation, key security issues such as SSL and https, server configurations, deployment errors, and most importantly resources that are understandable for data scientists just getting into the data engineering or devops space.</p>
+
+<p>
+  Speaker: 
+  <strong>Rika</strong>
+</p>
+<p>&lt;p&gt;Rika Gorn is the Manager of Business Intelligence at Spring Health - a mental healthcare tech start-up that provides comprehensive mental healthcare benefits.   Previously, she worked on quality assurance for a mobile mental health team at Coordinated Behavioral Care, data analytics at Covenant House International, strategic management and evaluation at TCC Group, and program analysis at the Vera Institute of Justice. Rika received her Bachelors in Political Science from Hunter College and her Masters in Public Administration at the NYU Wagner School of Public Service. Rika is also a proud board member of R-Ladies NYC.&lt;/p&gt;
+</p>"
+327,Talk/Track A/Teaching,How to do things with words: learning to program in R with a &quot;communicative approach&quot;,"<p>Textbooks for learning a new language always start the same: you learn to say hello, to introduce yourself, and some simple and useful sentences to communicate with others. In language teaching, this is called a “communicative approach”, and is based on the idea that learning a language successfully comes through having to communicate real meaning to real people. This is what I expected to find when I first tried to learn R seven years ago. Sadly, I got stuck in resources that started with definitions of abstract concepts and no real examples of how to say things with data. In this talk I will discuss the benefits of adopting a communicative approach and how to implement it when teaching/learning R, writing documentation, and writing code that will be read by other human beings.</p>
+","<p>Textbooks for learning a new language always start the same: you learn to say hello, to introduce yourself, and some simple and useful sentences to communicate with others. In language teaching, this is called a “communicative approach”, and is based on the idea that learning a language successfully comes through having to communicate real meaning to real people. This is what I expected to find when I first tried to learn R seven years ago. Sadly, I got stuck in resources that started with definitions of abstract concepts and no real examples of how to say things with data. In this talk I will discuss the benefits of adopting a communicative approach and how to implement it when teaching/learning R, writing documentation, and writing code that will be read by other human beings.</p>
+
+<p>
+  Speaker: 
+  <strong>Riva Quiroga</strong>
+</p>
+<p>&lt;p&gt;Riva is a linguist and educator by training. In her day-to-day work she teaches R programming, data visualization, and communication skills. She is also an editor at Programming Historian, an online project that publishes novice-friendly, peer-reviewed tutorials that help humanists learn a wide range of digital tools, techniques and workflows to facilitate research and teaching. She is currently pursuing a PhD in Linguistics, where she uses R to identify and visualize linguistic patterns in political speeches.
+Riva is an active member of the Latin American R community, where she likes to organize events, RLadies chapters, and translation projects. She lives with two cats, another human being, and an absurdly high number of plants.&lt;/p&gt;
+</p>"
+218,Talk/Track B/Language interop,R &amp; Python: Going Steady,"<p>While there has been a lot of excitement about the R and Python love story, there are still misconceptions that individuals, teams, or organizations must pick between R or Python. This talk will explain why this false choice exists, debunk the myths that cause teams to be stuck with only one tool, and clarify how data scientists can use both languages to be more effective. We will explore this love story's blossoming relationship by looking at updates to RStudio's packages and products that make it easier to develop and collaborate in R and Python. This talk is for individuals who want to uncover the benefits of multilingual data science, IT professionals who are skeptical their life can get better by supporting more languages, and data science managers interested in enabling their teams instead of forcing their data superheros to be subservient to particular tools.</p>
+","<p>While there has been a lot of excitement about the R and Python love story, there are still misconceptions that individuals, teams, or organizations must pick between R or Python. This talk will explain why this false choice exists, debunk the myths that cause teams to be stuck with only one tool, and clarify how data scientists can use both languages to be more effective. We will explore this love story's blossoming relationship by looking at updates to RStudio's packages and products that make it easier to develop and collaborate in R and Python. This talk is for individuals who want to uncover the benefits of multilingual data science, IT professionals who are skeptical their life can get better by supporting more languages, and data science managers interested in enabling their teams instead of forcing their data superheros to be subservient to particular tools.</p>
+
+<p>
+  Speaker: 
+  <strong>Sean Lopp</strong>
+</p>
+<p>&lt;p&gt;Sean Lopp is an engineer, data scientist, and product leader. At RStudio, he helps data science teams uncover better habits and adopt better tools. He has worked with hundreds of organizations in finance, manufacturing, consumer tech, pharma, and healthcare. Sean led the creation of RStudio's Package Manager. Before RStudio Sean worked in NREL's transportation research group. He lives in Colorado and skis and bikes with his family.&lt;/p&gt;
+</p>"
+221,Talk/Track A/Data for good,rKenyaCensus Package,"<p>The rKenyaCensus package contains the results of the 2109 Kenya Population Census. The census exercise was carried out in August 2019, and the results were released in February 2020. Kenya leveraged on technology to capture data during cartographic mapping, enumeration and data transmission, making the 2019 Census the first paperless census to be conducted in Kenya.
+The data was published in four different pdf files (Volume 1 - Volume 4) which can be found in the Kenya National Bureau of statistics. The data in its current form was open and accessible, but not usable and so there was need to convert it into a machine readable format. This data can be used by the government, non-governmental organizations and any other entities for data driven policy making and development. During the talk, I will explain the reasons behind development of the package, take you through the steps I took during the process and finally showcase analysis of certain aspects of the data.</p>
+","<p>The rKenyaCensus package contains the results of the 2109 Kenya Population Census. The census exercise was carried out in August 2019, and the results were released in February 2020. Kenya leveraged on technology to capture data during cartographic mapping, enumeration and data transmission, making the 2019 Census the first paperless census to be conducted in Kenya.
+The data was published in four different pdf files (Volume 1 - Volume 4) which can be found in the Kenya National Bureau of statistics. The data in its current form was open and accessible, but not usable and so there was need to convert it into a machine readable format. This data can be used by the government, non-governmental organizations and any other entities for data driven policy making and development. During the talk, I will explain the reasons behind development of the package, take you through the steps I took during the process and finally showcase analysis of certain aspects of the data.</p>
+
+<p>
+  Speaker: 
+  <strong>Shelmith Kariuki</strong>
+</p>
+<p>&lt;p&gt;Shelmith Kariuki is a Senior Data Analyst based in Nairobi, Kenya. She is an &lt;a href=""https://education.rstudio.com/trainers/""&gt;RStudio Certified Tidyverse trainer&lt;/a&gt;, currently working as a Data Analytics consultant with UN DESA. She previously worked as a Research Manager at Geopoll, and as a Data Analyst at Busara Center for Behavioral Economics. She also worked as an assistant lecturer in various Kenyan universities, teaching units in Statistics and Actuarial Science. She has  extensive experience in data analysis using R. She co-organizes a community of R users in Nairobi &lt;a href=""https://www.linkedin.com/feed/hashtag/nairobir/""&gt;#NairobiR&lt;/a&gt; and in Africa &lt;a href=""https://twitter.com/AfricaRUsers""&gt;#AfricaR&lt;/a&gt;. One of the missions of her community work is to make sure that there is an increased number of R adopters, in Africa. She is very passionate about training and using data analytics to drive development projects in Africa.&lt;/p&gt;
+</p>"
+323,Talk/Track C/Modelling,Using R to Up Your Experimentation Game,"<p>Have you ever cut an A/B test short? Maybe because of traffic constraints, your antsy boss, or early successful results. In reality, cutting your test short can be catastrophic, making your business decision no better than a coin flip.  Learn some R-driven tips &amp; tricks to get meaningful results quickly with a statistically rigorous methodology called sequential testing, an A/B testing enhancement my team employs at Intuit.</p>
 <p>Key Takeaways.</p>
 <ol>
 <li>What is sequential testing and how to use it.</li>
 <li>How to learn (and fail!) quickly by taking big metric swings</li>
 <li>How I used R to share my learnings &amp; make them useful for anyone (even non-data scientists!) at my company.</li>
 </ol>
-"
-Lightning Talk/Track C/Modelling,"tidymodels/stacks, Or, In Preparation for Pesto: A Grammar for Stacked Ensemble Modeling","<p>Through a community survey conducted over the summer, the RStudio tidymodels team learned that users felt the #1 priority for future development in the tidymodels package ecosystem should be ensembling, a statistical modeling technique involving the synthesis of multiple learning algorithms to improve predictive performance. This December, we were delighted to announce the initial release of stacks, a package for tidymodels-aligned ensembling. A particularly statistically-involved pesto recipe will help us get a sense for how the package works and how it advances the tidymodels package ecosystem as a whole.</p>
-"
-Talk/Track C/Visualisation,Trial and Error in Data Viz at the ACLU,"<p>Visualizing data the “right” way requires many considerations — the topic, the quality of your data, your audience, your time frame, and the various channels of (sometimes conflicting) feedback you received. In this presentation, I’ll introduce some reflections on these considerations and ways I’ve incorporated feedback (or not) into my work as Data Journalist at the ACLU. Lastly, I’ll present some of the sillier trials and errors I’ve made that were arguably necessary to my process in creating effective data visualizations using R.</p>
-"
-Keynote,Just glue it,"<p>Vicky will discuss how that as people who can write code and analyze data, we have a lot of input and power over what our digital and work worlds looks like, and therefore can act as agents of change and repair.</p>
-"
-Talk/Track C/Programming,Making Shiny apps faster with caching,"<p>Shiny's 1.6 has a new function, <code>bindCache()</code>, which makes it easy to dramatically speed up reactive expressions and output rendering functions. This allows many applications to scale up to serve several times more users without an increase in server resources.</p>
-"
-Lightning Talk/Track B/Organisational tooling,Lifelong Learning with R Weekly,"<p>R Weekly is a weekly newsletter with many great R blogs post, tutorials, and other formats of resources. https://rweekly.org</p>
+","<p>Have you ever cut an A/B test short? Maybe because of traffic constraints, your antsy boss, or early successful results. In reality, cutting your test short can be catastrophic, making your business decision no better than a coin flip.  Learn some R-driven tips &amp; tricks to get meaningful results quickly with a statistically rigorous methodology called sequential testing, an A/B testing enhancement my team employs at Intuit.</p>
+<p>Key Takeaways.</p>
+<ol>
+<li>What is sequential testing and how to use it.</li>
+<li>How to learn (and fail!) quickly by taking big metric swings</li>
+<li>How I used R to share my learnings &amp; make them useful for anyone (even non-data scientists!) at my company.</li>
+</ol>
+
+<p>
+  Speaker: 
+  <strong>Shirbi Ish-Shalom</strong>
+</p>
+<p></p>"
+117,Lightning Talk/Track C/Modelling,"tidymodels/stacks, Or, In Preparation for Pesto: A Grammar for Stacked Ensemble Modeling","<p>Through a community survey conducted over the summer, the RStudio tidymodels team learned that users felt the #1 priority for future development in the tidymodels package ecosystem should be ensembling, a statistical modeling technique involving the synthesis of multiple learning algorithms to improve predictive performance. This December, we were delighted to announce the initial release of stacks, a package for tidymodels-aligned ensembling. A particularly statistically-involved pesto recipe will help us get a sense for how the package works and how it advances the tidymodels package ecosystem as a whole.</p>
+","<p>Through a community survey conducted over the summer, the RStudio tidymodels team learned that users felt the #1 priority for future development in the tidymodels package ecosystem should be ensembling, a statistical modeling technique involving the synthesis of multiple learning algorithms to improve predictive performance. This December, we were delighted to announce the initial release of stacks, a package for tidymodels-aligned ensembling. A particularly statistically-involved pesto recipe will help us get a sense for how the package works and how it advances the tidymodels package ecosystem as a whole.</p>
+
+<p>
+  Speaker: 
+  <strong>Simon Couch</strong>
+</p>
+<p>&lt;p&gt;Simon Couch is an R developer and statistics student at Reed College, where he is entering the final semester of his undergraduate degree. He co-authors and maintains R packages including broom, infer, and stacks, leads trainings and workshops as an RStudio-certified tidyverse trainer, and researches in algorithmic data privacy. He interned on the RStudio tidymodels team in summer 2020, and is currently applying to doctoral programs in statistics.&lt;/p&gt;
+</p>"
+274,Talk/Track C/Visualisation,Trial and Error in Data Viz at the ACLU,"<p>Visualizing data the “right” way requires many considerations — the topic, the quality of your data, your audience, your time frame, and the various channels of (sometimes conflicting) feedback you received. In this presentation, I’ll introduce some reflections on these considerations and ways I’ve incorporated feedback (or not) into my work as Data Journalist at the ACLU. Lastly, I’ll present some of the sillier trials and errors I’ve made that were arguably necessary to my process in creating effective data visualizations using R.</p>
+","<p>Visualizing data the “right” way requires many considerations — the topic, the quality of your data, your audience, your time frame, and the various channels of (sometimes conflicting) feedback you received. In this presentation, I’ll introduce some reflections on these considerations and ways I’ve incorporated feedback (or not) into my work as Data Journalist at the ACLU. Lastly, I’ll present some of the sillier trials and errors I’ve made that were arguably necessary to my process in creating effective data visualizations using R.</p>
+
+<p>
+  Speaker: 
+  <strong>Sophie Beiers</strong>
+</p>
+<p>&lt;p&gt;Sophie Beiers works on the ACLU's Analytics team as a Data Journalist where she analyzes and visualizes data for their lawyers’ legal arguments and for external advocacy pieces. Prior to her time at the ACLU, she received her master’s degree in Quantitative Methods in Social Sciences at Columbia University where she also TA’d at the Lede Program for Data Journalism. Before NYC, she kicked off her career in analytics in San Francisco at the education nonprofit &amp;quot;YouthTruth.&amp;quot; Sophie is a Bay Area native but currently lives in Portland, OR and enjoys running, hiking, and making pottery in her free time.&lt;/p&gt;
+</p>"
+2,Keynote,Just glue it,"<p>Vicky will discuss how that as people who can write code and analyze data, we have a lot of input and power over what our digital and work worlds looks like, and therefore can act as agents of change and repair.</p>
+","<p>Vicky will discuss how that as people who can write code and analyze data, we have a lot of input and power over what our digital and work worlds looks like, and therefore can act as agents of change and repair.</p>
+
+<p>
+  Speaker: 
+  <strong>Vicki Boykis</strong>
+</p>
+<p>&lt;p&gt;Vicki Boykis is a machine learning engineer at &lt;a href=""https://automattic.com/""&gt;Automattic&lt;/a&gt;, the company behind &lt;a href=""https://wordpress.com""&gt;Wordpress.com&lt;/a&gt;. She works mostly in Python, R, Spark, and SQL, and really enjoys building end-to-end data products. Outside of work she publishes the &lt;a href=""https://vicki.substack.com""&gt;Normcore Tech newsletter&lt;/a&gt; and blogs at &lt;a href=""https://veekaybee.github.io/""&gt;https://veekaybee.github.io/&lt;/a&gt;. In her &amp;quot;spare time&amp;quot;, she blogs, reads, and &lt;a href=""https://twitter.com/vboykis""&gt;writes terrible joke tweets about data&lt;/a&gt;.&lt;/p&gt;
+</p>"
+335,Talk/Track C/Programming,Making Shiny apps faster with caching,"<p>Shiny's 1.6 has a new function, <code>bindCache()</code>, which makes it easy to dramatically speed up reactive expressions and output rendering functions. This allows many applications to scale up to serve several times more users without an increase in server resources.</p>
+","<p>Shiny's 1.6 has a new function, <code>bindCache()</code>, which makes it easy to dramatically speed up reactive expressions and output rendering functions. This allows many applications to scale up to serve several times more users without an increase in server resources.</p>
+
+<p>
+  Speaker: 
+  <strong>Winston Chang</strong>
+</p>
+<p>&lt;p&gt;Winston Chang is a software engineer at RStudio. He maintains several R packages, from web-related packages like &lt;code&gt;shiny&lt;/code&gt;, to lower-level packages like &lt;code&gt;R6&lt;/code&gt; and &lt;code&gt;profvis&lt;/code&gt;. Winston has a Ph.D. in psychology from Northwestern University, and is the author of &lt;em&gt;R Graphics Cookbook&lt;/em&gt;, published by O'Reilly Media.&lt;/p&gt;
+</p>"
+162,Lightning Talk/Track B/Organisational tooling,Lifelong Learning with R Weekly,"<p>R Weekly is a weekly newsletter with many great R blogs post, tutorials, and other formats of resources. https://rweekly.org</p>
 <p>R Weekly wants to keep track of these great things in the R community and make it more accessible to everyone.</p>
 <p>This is a warm and welcoming place. The team welcomes everyone who wants to contribute to the R community.</p>
 <p>In this talk I will cover these 6 topics:</p>
@@ -167,10 +629,45 @@ Lightning Talk/Track B/Organisational tooling,Lifelong Learning with R Weekly,"<
 <li>How to join the team</li>
 <li>Learning from building the community</li>
 </ol>
-"
-Talk/Track A/Teaching,"On programming, teaching, and building interactive tutorials with learnr::","<p>Teaching R is part of my activities as a community organizer, an RStudio Certified Instructor, a conference chair, and a researcher. Since 2019, I use the learnr package to generate interactive tutorials to teach R synchronously and asynchronously. The addition of the Tutorials panel in RStudio IDE and the need for virtual classes made the use of this package even more interesting. In this talk, I will tell you how to generate interactive tutorials, how to add pedagogical tools to them, what other packages you can use with {learnr} and show multilingual examples.</p>
-"
-Lightning Talk/Track C/Programming,Easy larger-than-RAM data manipulation with {disk.frame},"<p>Learn how to handle 100GBs of data with ease using {disk.frame} - the larger-than-RAM-data manipulation package.</p>
+","<p>R Weekly is a weekly newsletter with many great R blogs post, tutorials, and other formats of resources. https://rweekly.org</p>
+<p>R Weekly wants to keep track of these great things in the R community and make it more accessible to everyone.</p>
+<p>This is a warm and welcoming place. The team welcomes everyone who wants to contribute to the R community.</p>
+<p>In this talk I will cover these 6 topics:</p>
+<ol>
+<li>How to use the R Weekly website</li>
+<li>Why I created R Weekly</li>
+<li>How to Contribute to R Weekly</li>
+<li>How to release a new post</li>
+<li>How to join the team</li>
+<li>Learning from building the community</li>
+</ol>
+
+<p>
+  Speaker: 
+  <strong>Wolfram King</strong>
+</p>
+<p>&lt;p&gt;Wolfram King is the founder of the R Weekly project. He is an active member of the R community and has several popular R open-source projects on GitHub.&lt;/p&gt;
+</p>"
+214,Talk/Track A/Teaching,"On programming, teaching, and building interactive tutorials with learnr::","<p>Teaching R is part of my activities as a community organizer, an RStudio Certified Instructor, a conference chair, and a researcher. Since 2019, I use the learnr package to generate interactive tutorials to teach R synchronously and asynchronously. The addition of the Tutorials panel in RStudio IDE and the need for virtual classes made the use of this package even more interesting. In this talk, I will tell you how to generate interactive tutorials, how to add pedagogical tools to them, what other packages you can use with {learnr} and show multilingual examples.</p>
+","<p>Teaching R is part of my activities as a community organizer, an RStudio Certified Instructor, a conference chair, and a researcher. Since 2019, I use the learnr package to generate interactive tutorials to teach R synchronously and asynchronously. The addition of the Tutorials panel in RStudio IDE and the need for virtual classes made the use of this package even more interesting. In this talk, I will tell you how to generate interactive tutorials, how to add pedagogical tools to them, what other packages you can use with {learnr} and show multilingual examples.</p>
+
+<p>
+  Speaker: 
+  <strong>Yanina Bellini Saibene</strong>
+</p>
+<p>&lt;p&gt;Yanina Bellini Saibene is a researcher at INTA (National Institute of Agricultural Technology) dedicated to applying data science to the agricultural sector and a professor in several regional specializations about Digital Agriculture and Data Analysis. Yanina is formally trained as a Licenciate in Information System with a Master degree in Data Mining and Knowledge Management. She is an active member of the R Community as an R-Ladies organizer and part of the R-Ladies Global Team. She also is a co-founder and co-chair of LatinR and part of the organizing team of useR!2020 and user!2021 (co-chair).
+She also co-founder of MetaDocencia, an open, free, volunteer-lead, not-for-profit educational organization and part of the teams that translate educational and technical material to Spanish.&lt;/p&gt;
+</p>"
+114,Lightning Talk/Track C/Programming,Easy larger-than-RAM data manipulation with {disk.frame},"<p>Learn how to handle 100GBs of data with ease using {disk.frame} - the larger-than-RAM-data manipulation package.</p>
 <p>R loads data in its entirety into RAM. However, RAM is a precious resource and often do run out. That's why most R user would have run into the &quot;cannot allocate vector of size xxB.&quot; error at some point.</p>
 <p>However, the need to handle larger-than-RAM data doesn't go away just because RAM isn't large enough. So many useRs turn to big data tools like Spark for the task. In this talk, I will make the case that {disk.frame} is sufficient and often preferable for manipulating larger-than-RAM data that fit on disk. I will show how you can apply familiar {dplyr}-verbs to manipulate larger-than-RAM data with {disk.frame}.</p>
-"
+","<p>Learn how to handle 100GBs of data with ease using {disk.frame} - the larger-than-RAM-data manipulation package.</p>
+<p>R loads data in its entirety into RAM. However, RAM is a precious resource and often do run out. That's why most R user would have run into the &quot;cannot allocate vector of size xxB.&quot; error at some point.</p>
+<p>However, the need to handle larger-than-RAM data doesn't go away just because RAM isn't large enough. So many useRs turn to big data tools like Spark for the task. In this talk, I will make the case that {disk.frame} is sufficient and often preferable for manipulating larger-than-RAM data that fit on disk. I will show how you can apply familiar {dplyr}-verbs to manipulate larger-than-RAM data with {disk.frame}.</p>
+
+<p>
+  Speaker: 
+  <strong>ZJ</strong>
+</p>
+<p>&lt;p&gt;ZJ is a machine learning developer based in Melbourne, Australia. He regularly contributes to open source projects. He has more than 10 years of experience in banking before joining the tech sector. In his free time, he enjoys playing Go/Baduk/Weiqi.&lt;/p&gt;
+</p>"
