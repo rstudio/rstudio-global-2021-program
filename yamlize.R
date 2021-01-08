@@ -49,10 +49,15 @@ parse_file <- function(filename) {
 
   talk_title <- rmd[[2]]$name %>% markdown_html %>% sub("^<p>", "", .) %>% sub("</p>\n?$", "", .)
   talk_abstract_html <- rmd[[3]] %>% as_document %>% markdown_html
+  talk_abstract_text <- rmd[[3]] %>% as_document %>% markdown_text
 
   speaker_bio <- rmd[[5]] %>% as_document %>% markdown_html
   if (grepl("is a human person.</p>", speaker_bio)) {
     speaker_bio <- ""
+  }
+  speaker_bio_text <- rmd[[5]] %>% as_document %>% markdown_text
+  if (grepl("is a human person.", speaker_bio_text)) {
+    speaker_bio_text <- ""
   }
 
   speaker <- unclass(rmd[[1]])
@@ -120,11 +125,13 @@ parse_file <- function(filename) {
     list(),
     speaker,
     summary = speaker_bio,
+    summary_text = speaker_bio_text,
     bio = paste0(speaker_bio, links_html),
     headshot = headshot,
     speaker_slug = slug,
     title = talk_title,
-    abstract = talk_abstract_html
+    abstract = talk_abstract_html,
+    abstract_text = talk_abstract_text
   )
 }
 
@@ -199,7 +206,7 @@ df2 <- tibble::tibble(
       mapply(speaker, speaker_summary, FUN = function(name, summary) {
         paste(sep = "\n",
           p("Speaker: ", strong(name)),
-          p(summary)
+          summary
         )
       })
     )
