@@ -5,6 +5,8 @@ library(yaml)
 library(dplyr)
 library(htmltools)
 
+source("_session_helpers.R")
+
 `%||%` <- function(a, b) {
   if (is.null(a)) b else a
 }
@@ -174,21 +176,11 @@ df <- speakers %>%
 readr::write_csv(df, "export.csv")
 # googlesheets4::gs4_create(, sheets = df)
 
-session <- mapply(speakers$block_1, speakers$track, FUN = function(block, track) {
-  sess <- sessionnames[[block]]
-  if (is.character(sess)) {
-    sess
-  } else if (is.list(sess)) {
-    sess[[track]]
-  }
-}, USE.NAMES = FALSE)
-
-topic <- paste0(talk_labels[speakers$type],
-  ifelse(speakers$type != "keynote", paste0("/Track ", speakers$track, "/", session), "")
-)
-
 df2 <- speakers %>%
-  mutate(topic = topic) %>%
+  left_join(session_df, by = c("block_1" = "block", "track")) %>%
+  mutate(topic = paste0(talk_labels[type],
+    ifelse(type != "keynote", paste0("/Track ", track, "/", session), "")
+  )) %>%
   select(
     talk_id,
     topic,
