@@ -5,6 +5,10 @@ library(yaml)
 library(dplyr)
 library(htmltools)
 
+`%||%` <- function(a, b) {
+  if (is.null(a)) b else a
+}
+
 blocknames <- c("alfa", "bravo", "charlie", "delta", "echo", "foxtrot", "golf",
   "hotel", "india", "juliett", "kilo", "lima")
 blocktimes <- unlist(read_yaml("block-times-gmt.yml"))
@@ -13,7 +17,7 @@ sessionnames <- read_yaml("session-names.yml")
 
 normalize_social <- function(x, url_prefix) {
   if (is.null(x)) {
-    return(NULL)
+    return(NA_character_)
   }
 
   x <- sub("^@", "", x, perl = TRUE)
@@ -77,6 +81,7 @@ parse_file <- function(filename) {
     })
   }
 
+  speaker$links$homepage <- if (!is.null(speaker$links$homepage)) speaker$links$homepage else NA_character_
   speaker$links$twitter <- normalize_social(speaker$links$twitter, "https://twitter.com/")
   speaker$links$github <- normalize_social(speaker$links$github, "https://github.com/")
   speaker$links$linkedin <- normalize_social(speaker$links$linkedin, "https://www.linkedin.com/in/")
@@ -87,12 +92,12 @@ parse_file <- function(filename) {
     GitHub = speaker$links$github,
     LinkedIn = speaker$links$linkedin
   )
-  links <- links[!vapply(links, is.null, logical(1))]
+  links <- links[!vapply(links, is.na, logical(1))]
 
   links_html <- if (length(links) > 0) {
     htmltools::p(class = "speaker-links",
       mapply(names(links), links, FUN = function(nm, url) {
-        if (!is.null(url)) {
+        if (!is.na(url)) {
           htmltools::tags$a(href = url,
             htmltools::tags$img(
               src = paste0("https://rstudio-global-2021.s3.amazonaws.com/icons/", tolower(nm), ".png"),
@@ -121,8 +126,17 @@ parse_file <- function(filename) {
     ""
   }
 
-  c(
-    list(),
+  # Flatten structure so all members are single-element vectors. This will make
+  # data framing everything easier.
+  speaker$block_1 <- speaker$blocks[[1]]
+  speaker$block_2 <- speaker$blocks[[2]]
+  speaker$blocks <- NULL
+  speaker <- c(speaker, speaker$links)
+  speaker$links <- NULL
+
+  speaker <- lapply(speaker, `%||%`, b = "")
+
+  as_tibble(c(
     speaker,
     summary = speaker_bio,
     summary_text = speaker_bio_text,
@@ -132,74 +146,45 @@ parse_file <- function(filename) {
     title = talk_title,
     abstract = talk_abstract_html,
     abstract_text = talk_abstract_text
-  )
+  ))
 }
 
-parsed_speakers <- list.files("speakers", pattern = "*.md", full.names = TRUE) %>%
-  lapply(parse_file)
-pluck_chr <- function(name, default = "") {
-  vapply(parsed_speakers, function(x) {
-    res <- x[[name]]
-    if (is.null(res)) {
-      default
-    } else if (is.character(res) && length(res) == 1) {
-      res
-    } else {
-      stop("Unexpected value: ", deparse(res))
-    }
-  }, character(1))
-}
+speakers <- list.files("speakers", pattern = "*.md", full.names = TRUE) %>%
+  lapply(parse_file) %>%
+  bind_rows() %>%
+  arrange(tolower(name))
 
-# last_names <- full_names %>% strsplit(" ") %>% lapply(tail, n = 1) %>% unlist()
-parsed_speakers <- parsed_speakers[order(tolower(pluck_chr("name")))]
-# rm(last_names)
+talk_labels <- c(lightning = "Lightning Talk", talk = "Talk", keynote = "Keynote")
 
-title <- pluck_chr("title")
-full_names <- pluck_chr("name")
-
-talk_type <- pluck_chr("type")
-talk_labels = c(lightning = "Lightning Talk", talk = "Talk", keynote = "Keynote")
-location <- pluck_chr("location")
-
-tracks <- pluck_chr("track")
-blocks <- vapply(parsed_speakers, magrittr::extract2, character(2), i = "blocks")
-time1 <- blocktimes[blocks[1,,drop=TRUE]] %>% unname()
-time2 <- blocktimes[blocks[1,,drop=TRUE]] %>% unname()
-
-df <- tibble::tibble(
-  name = full_names,
-  affiliation = pluck_chr("affiliation"),
-  headshot = pluck_chr("headshot"),
-  summary = pluck_chr("summary"),
-  bio = pluck_chr("bio"),
-  time1,
-  time2
-)
+df <- speakers %>%
+  mutate(time1 = blocktimes[block_1], time2 = blocktimes[block_2]) %>%
+  select(name, affiliation, headshot, summary, bio, time1, time2)
 
 readr::write_csv(df, "export.csv")
 # googlesheets4::gs4_create(, sheets = df)
 
-session <- vapply(parsed_speakers, function(speaker) {
-  sess <- sessionnames[[ speaker$blocks[[1]] ]]
+session <- mapply(speakers$block_1, speakers$track, FUN = function(block, track) {
+  sess <- sessionnames[[block]]
   if (is.character(sess)) {
     sess
   } else if (is.list(sess)) {
-    sess[[speaker$track]]
+    sess[[track]]
   }
-}, character(1))
-topic <- paste0(talk_labels[talk_type],
-  ifelse(talk_type != "keynote", paste0("/Track ", tracks, "/", session), "")
+}, USE.NAMES = FALSE)
+
+topic <- paste0(talk_labels[speakers$type],
+  ifelse(speakers$type != "keynote", paste0("/Track ", speakers$track, "/", session), "")
 )
 
-talk_id <- vapply(parsed_speakers, magrittr::extract2, integer(1), i = "talk_id")
-
-df2 <- tibble::tibble(
-  talk_id = talk_id,
-  topic = topic,
-  title,
-  abstract = pluck_chr("abstract_text"),
-  speaker = full_names,
-  speaker_summary = pluck_chr("summary_text")) %>%
+df2 <- speakers %>%
+  mutate(topic = topic) %>%
+  select(
+    talk_id,
+    topic,
+    title,
+    abstract = abstract_text,
+    speaker = name,
+    speaker_summary = summary_text) %>%
   group_by(talk_id, topic, title, abstract) %>%
   summarise(.groups = "drop",
     speaker_info = paste(collapse = "\n",
@@ -211,23 +196,20 @@ df2 <- tibble::tibble(
   mutate(abstract_with_bio = paste(sep = "\n", abstract, speaker_info)) %>%
   select(-speaker_info)
 
-df2_sorted <- df2[match(unique(talk_id), df2$talk_id),]
+df2_sorted <- df2[match(unique(speakers$talk_id), df2$talk_id),]
 stopifnot(nrow(df2_sorted) == nrow(df2))
 df2 <- df2_sorted
 
 readr::write_csv(df2, "export_sessions.csv")
 # googlesheets4::gs4_create(, sheets = df2)
 
-session_to_speakers <- tibble::tibble(
-  session = title,
-  name = full_names
-) %>% group_by(session) %>%
+session_to_speakers <- speakers %>%
+  select(session = title, name) %>%
+  group_by(session) %>%
   summarise(name = paste(name, collapse = ", "))
 
-speaker_to_session <- tibble::tibble(
-  name = full_names,
-  session = title
-)
+speaker_to_session <- speakers %>%
+  select(name, session = title)
 
 # googlesheets4::gs4_create(sheets = list(session_to_speakers = session_to_speakers, speaker_to_session = speaker_to_session))
 
@@ -245,19 +227,6 @@ for (file in c(jpeg_files, png_files)) {
 }
 
 if (TRUE) {
-
-if (dir.exists("yaml_output")) {
-  unlink("yaml_output", recursive = TRUE)
-}
-dir.create("yaml_output")
-
-write_yaml(parsed_speakers[talk_type == "talk"], "yaml_output/talks.yml")
-write_yaml(parsed_speakers[talk_type == "lightning"], "yaml_output/lightning.yml")
-
-dir.create("yaml_output/speakers")
-lapply(parsed_speakers, function(speaker) {
-  write_yaml(speaker, file.path("yaml_output/speakers", paste0(speaker$speaker_slug, ".yml")))
-}) %>% invisible()
 
 message("Syncing speaker headshots to S3")
 # Upload speaker headshots to S3
