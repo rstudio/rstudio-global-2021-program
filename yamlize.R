@@ -230,12 +230,12 @@ if (TRUE) {
 
 message("Syncing speaker headshots to S3")
 # Upload speaker headshots to S3
-processx::run("aws", c(
+print(processx::run("aws", c(
   "s3",
   "sync",
   "--exclude=*.md",
   rprojroot::find_rstudio_root_file("speakers"),
   "s3://rstudio-global-2021/speakers/"
-))
+)))
 
 }
