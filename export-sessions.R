@@ -4,6 +4,7 @@ library(commonmark)
 library(yaml)
 library(dplyr)
 library(htmltools)
+library(tidyr)
 
 source("_helpers.R")
 
@@ -60,6 +61,7 @@ parse_file <- function(filename) {
   }
 
   talk_title <- rmd[[2]]$name %>% markdown_html %>% sub("^<p>", "", .) %>% sub("</p>\n?$", "", .)
+  talk_title_text <- rmd[[2]]$name %>% markdown_text %>% sub("\n+$", "", .)
   talk_abstract_html <- rmd[[3]] %>% as_document %>% markdown_html
   talk_abstract_text <- rmd[[3]] %>% as_document %>% markdown_text
 
@@ -152,6 +154,7 @@ parse_file <- function(filename) {
     headshot = headshot,
     speaker_slug = slug,
     title = talk_title,
+    title_text = talk_title_text,
     abstract = talk_abstract_html,
     abstract_text = talk_abstract_text
   ))
@@ -239,3 +242,18 @@ print(processx::run("aws", c(
 )))
 
 }
+
+
+simple_schedule <- speakers %>%
+  pivot_longer(starts_with("block_"), names_to = "block_num", values_to = "block") %>%
+  mutate(time = ifelse(block_num == "block_1", format(time1), format(time2)), .after = "time2") %>%
+  select(talk_id, type, block, track, name, title_text, time, duration) %>%
+  # Group by everything but name
+  group_by(talk_id, type, block, track, title_text, time, duration) %>%
+  summarise(.groups = "drop", name = paste(name, collapse = "\n")) %>%
+  relocate(name, .before = title_text) %>%
+  arrange(block, track)
+
+googlesheets4::write_sheet(simple_schedule,
+  "https://docs.google.com/spreadsheets/d/1wYf7w-Elg5vSeZkKjRFeWzShVPXqDXJzy6vrYUyJm0c/edit#gid=0",
+  "Sheet1")

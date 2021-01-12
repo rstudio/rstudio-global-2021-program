@@ -68,7 +68,7 @@ df5 <- df3 %>%
     TRUE ~ paste0("Discussion: ", session, " ", sub_block)
   )) %>%
   mutate(description = case_when(
-    is.na(track) ~ paste0("Join Jenny Bryan for audience Q&A with keynote speaker ", name, "."),
+    is.na(track) ~ paste0("Join ", hosts, " for audience Q&A with keynote speaker ", name, "."),
     TRUE ~ paste0("Join ", hosts, " for audience Q&A with the preceding speakers in this session.")
   )) %>%
   select(topic, title, description, start_time = discuss_start, duration = discuss_duration)
