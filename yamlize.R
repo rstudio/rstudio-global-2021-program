@@ -5,7 +5,7 @@ library(yaml)
 library(dplyr)
 library(htmltools)
 
-source("_session_helpers.R")
+source("_helpers.R")
 
 `%||%` <- function(a, b) {
   if (is.null(a)) b else a
@@ -17,7 +17,7 @@ blocktimes <- unlist(read_yaml("block-times-gmt.yml"))
 
 talk_times <- readr::read_csv("talk_times.csv") %>%
   group_by(talk_id) %>%
-  summarise(.groups = "drop_last",
+  summarise(.groups = "drop",
     time1 = start[[1]], time2 = start[[2]], duration = mean(duration)
   )
 
@@ -156,10 +156,6 @@ parse_file <- function(filename) {
     abstract_text = talk_abstract_text
   ))
 }
-
-intellum_datetime <- . %>%
-  lubridate::with_tz("America/New_York") %>%
-  (lubridate::stamp("2008-01-30 14:30", "ymdHM"))
 
 speakers <- list.files("speakers", pattern = "*.md", full.names = TRUE) %>%
   lapply(parse_file) %>%

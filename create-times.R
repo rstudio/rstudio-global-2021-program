@@ -2,7 +2,7 @@ library(googlesheets4)
 library(dplyr)
 library(lubridate)
 
-source("_session_helpers.R")
+source("_helpers.R")
 
 url <- "https://docs.google.com/spreadsheets/d/1M6tEh7LBb0VejHSwfxE-6Fvn7kQJIPYrIyhH9UqCcpk/edit#gid=1179995302"
 if (!exists("speaker_program_df")) {
@@ -68,9 +68,21 @@ df5 <- df3 %>%
     TRUE ~ paste0("Discussion: ", session, " ", sub_block)
   )) %>%
   mutate(description = case_when(
-    is.na(track) ~ paste0("Join us for audience Q&A with keynote speaker ", name, "."),
+    is.na(track) ~ paste0("Join Jenny Bryan for audience Q&A with keynote speaker ", name, "."),
     TRUE ~ paste0("Join ", hosts, " for audience Q&A with the preceding speakers in this session.")
   )) %>%
   select(topic, title, description, start_time = discuss_start, duration = discuss_duration)
 
-readr::write_csv(df5, "discussion_sessions.csv")
+df6 <- df5 %>%
+  arrange(start_time) %>%
+  group_by(topic, title, duration) %>%
+  summarise(.groups = "drop",
+    time1 = intellum_datetime(start_time[[1]]),
+    desc1 = description[[1]],
+    time2 = intellum_datetime(start_time[[2]]),
+    desc2 = description[[2]]
+  ) %>%
+  arrange(time1)
+
+readr::write_csv(df6, "discussion_sessions.csv")
+# googlesheets4::gs4_create(, sheets = df6)

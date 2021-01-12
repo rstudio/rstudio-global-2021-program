@@ -1,43 +1,22 @@
-topic,title,description,start_time,duration
-Discussion/Keynote,Q&A: Hadley Wickham,Join us for audience Q&A with keynote speaker Hadley Wickham.,2020-01-21T16:33:00Z,2820
-Discussion/Track A/Learning,Discussion: Learning 1,Join Jesse Mostipak for audience Q&A with the preceding speakers in this session.,2020-01-21T18:29:02Z,1858
-Discussion/Track B/Language interop,Discussion: Language interop 1,Join Amanda Gadrow and Teon Brooks for audience Q&A with the preceding speakers in this session.,2020-01-21T18:34:18Z,1542
-Discussion/Track C/Visualisation,Discussion: Visualisation 1,Join Thomas Pedersen and Danielle Navarro for audience Q&A with the preceding speakers in this session.,2020-01-21T18:33:42Z,1578
-Discussion/Track A/Learning,Discussion: Learning 2,Join Jesse Mostipak for audience Q&A with the preceding speakers in this session.,2020-01-21T19:38:00Z,1320
-Discussion/Track B/Language interop,Discussion: Language interop 2,Join Amanda Gadrow and Teon Brooks for audience Q&A with the preceding speakers in this session.,2020-01-21T19:37:23Z,1357
-Discussion/Track C/Visualisation,Discussion: Visualisation 2,Join Thomas Pedersen and Danielle Navarro for audience Q&A with the preceding speakers in this session.,2020-01-21T19:34:15Z,1545
-Discussion/Keynote,Q&A: John Burn-Murdoch,Join us for audience Q&A with keynote speaker John Burn-Murdoch.,2020-01-21T20:40:00Z,2400
-Discussion/Track A/Teaching,Discussion: Teaching 1,Join Desirée De Leon for audience Q&A with the preceding speakers in this session.,2020-01-21T22:39:21Z,1239
-Discussion/Track B/Package dev,Discussion: Package dev 1,Join Rich Iannone for audience Q&A with the preceding speakers in this session.,2020-01-21T22:34:53Z,1507
-Discussion/Track C/Modelling,Discussion: Modelling 1,Join Julia Silge and Erin Ledell for audience Q&A with the preceding speakers in this session.,2020-01-21T22:30:52Z,1748
-Discussion/Track A/Teaching,Discussion: Teaching 2,Join Desirée De Leon for audience Q&A with the preceding speakers in this session.,2020-01-21T23:40:06Z,1194
-Discussion/Track B/Package dev,Discussion: Package dev 2,Join Rich Iannone for audience Q&A with the preceding speakers in this session.,2020-01-21T23:40:02Z,1198
-Discussion/Track C/Modelling,Discussion: Modelling 2,Join Julia Silge and Erin Ledell for audience Q&A with the preceding speakers in this session.,2020-01-21T23:42:19Z,1061
-Discussion/Keynote,Q&A: Vicki Boykis,Join us for audience Q&A with keynote speaker Vicki Boykis.,2020-01-22T00:40:00Z,2400
-Discussion/Track A/Data for good,Discussion: Data for good 1,Join Tom Mock and Sharla Gelfand for audience Q&A with the preceding speakers in this session.,2020-01-22T02:29:14Z,1846
-Discussion/Track B/Organisational tooling,Discussion: Organisational tooling 1,Join Alex Gold for audience Q&A with the preceding speakers in this session.,2020-01-22T02:33:40Z,1580
-Discussion/Track C/Programming,Discussion: Programming 1,Join Nick Strayer for audience Q&A with the preceding speakers in this session.,2020-01-22T02:31:14Z,1726
-Discussion/Track A/Data for good,Discussion: Data for good 2,Join Tom Mock and Sharla Gelfand for audience Q&A with the preceding speakers in this session.,2020-01-22T03:32:30Z,1650
-Discussion/Track B/Organisational tooling,Discussion: Organisational tooling 2,Join Alex Gold for audience Q&A with the preceding speakers in this session.,2020-01-22T03:36:43Z,1397
-Discussion/Track C/Programming,Discussion: Programming 2,Join Nick Strayer for audience Q&A with the preceding speakers in this session.,2020-01-22T03:39:11Z,1249
-Discussion/Keynote,Q&A: Hadley Wickham,Join us for audience Q&A with keynote speaker Hadley Wickham.,2020-01-22T04:33:00Z,2820
-Discussion/Track A/Learning,Discussion: Learning 1,Join Rob Hyndman and Emi Tanaka for audience Q&A with the preceding speakers in this session.,2020-01-22T06:29:02Z,1858
-Discussion/Track B/Language interop,Discussion: Language interop 1,Join Earo Wang and Stuart Lee for audience Q&A with the preceding speakers in this session.,2020-01-22T06:34:18Z,1542
-Discussion/Track C/Visualisation,Discussion: Visualisation 1,Join Di Cook and Ursula Laa for audience Q&A with the preceding speakers in this session.,2020-01-22T06:33:42Z,1578
-Discussion/Track A/Learning,Discussion: Learning 2,Join Rob Hyndman and Emi Tanaka for audience Q&A with the preceding speakers in this session.,2020-01-22T07:38:00Z,1320
-Discussion/Track B/Language interop,Discussion: Language interop 2,Join Earo Wang and Stuart Lee for audience Q&A with the preceding speakers in this session.,2020-01-22T07:37:23Z,1357
-Discussion/Track C/Visualisation,Discussion: Visualisation 2,Join Di Cook and Ursula Laa for audience Q&A with the preceding speakers in this session.,2020-01-22T07:34:15Z,1545
-Discussion/Keynote,Q&A: John Burn-Murdoch,Join us for audience Q&A with keynote speaker John Burn-Murdoch.,2020-01-22T08:40:00Z,2400
-Discussion/Track A/Teaching,Discussion: Teaching 1,Join Maelle Salmon and Vebashini Naidoo for audience Q&A with the preceding speakers in this session.,2020-01-22T10:39:21Z,1239
-Discussion/Track B/Package dev,Discussion: Package dev 1,Join Colin Fay and Ahmadou Dicko for audience Q&A with the preceding speakers in this session.,2020-01-22T10:34:53Z,1507
-Discussion/Track C/Modelling,Discussion: Modelling 1,Join Hannah Frick and Bruna Wundervald for audience Q&A with the preceding speakers in this session.,2020-01-22T10:30:52Z,1748
-Discussion/Track A/Teaching,Discussion: Teaching 2,Join Maelle Salmon and Vebashini Naidoo for audience Q&A with the preceding speakers in this session.,2020-01-22T11:40:06Z,1194
-Discussion/Track B/Package dev,Discussion: Package dev 2,Join Colin Fay and Ahmadou Dicko for audience Q&A with the preceding speakers in this session.,2020-01-22T11:40:02Z,1198
-Discussion/Track C/Modelling,Discussion: Modelling 2,Join Hannah Frick and Bruna Wundervald for audience Q&A with the preceding speakers in this session.,2020-01-22T11:42:19Z,1061
-Discussion/Keynote,Q&A: Vicki Boykis,Join us for audience Q&A with keynote speaker Vicki Boykis.,2020-01-22T12:40:00Z,2400
-Discussion/Track A/Data for good,Discussion: Data for good 1,Join Carl Howe and Jeffrey Breen for audience Q&A with the preceding speakers in this session.,2020-01-22T14:29:14Z,1846
-Discussion/Track B/Organisational tooling,Discussion: Organisational tooling 1,Join Rachael Dempsey for audience Q&A with the preceding speakers in this session.,2020-01-22T14:33:40Z,1580
-Discussion/Track C/Programming,Discussion: Programming 1,Join Joe Cheng and Susan Vanderplas for audience Q&A with the preceding speakers in this session.,2020-01-22T14:31:14Z,1726
-Discussion/Track A/Data for good,Discussion: Data for good 2,Join Carl Howe and Jeffrey Breen for audience Q&A with the preceding speakers in this session.,2020-01-22T15:32:30Z,1650
-Discussion/Track B/Organisational tooling,Discussion: Organisational tooling 2,Join Rachael Dempsey for audience Q&A with the preceding speakers in this session.,2020-01-22T15:36:43Z,1397
-Discussion/Track C/Programming,Discussion: Programming 2,Join Joe Cheng and Susan Vanderplas for audience Q&A with the preceding speakers in this session.,2020-01-22T15:39:11Z,1249
+topic,title,duration,time1,desc1,time2,desc2
+Discussion/Keynote,Q&A: Hadley Wickham,2820,2020-01-21 14:33,Join Jenny Bryan for audience Q&A with keynote speaker Hadley Wickham.,2020-01-22 02:33,Join Jenny Bryan for audience Q&A with keynote speaker Hadley Wickham.
+Discussion/Track A/Learning,Discussion: Learning 1,1858,2020-01-21 16:29,Join Jesse Mostipak for audience Q&A with the preceding speakers in this session.,2020-01-22 04:29,Join Rob Hyndman and Emi Tanaka for audience Q&A with the preceding speakers in this session.
+Discussion/Track C/Visualisation,Discussion: Visualisation 1,1578,2020-01-21 16:33,Join Thomas Pedersen and Danielle Navarro for audience Q&A with the preceding speakers in this session.,2020-01-22 04:33,Join Di Cook and Ursula Laa for audience Q&A with the preceding speakers in this session.
+Discussion/Track B/Language interop,Discussion: Language interop 1,1542,2020-01-21 16:34,Join Amanda Gadrow and Teon Brooks for audience Q&A with the preceding speakers in this session.,2020-01-22 04:34,Join Earo Wang and Stuart Lee for audience Q&A with the preceding speakers in this session.
+Discussion/Track C/Visualisation,Discussion: Visualisation 2,1545,2020-01-21 17:34,Join Thomas Pedersen and Danielle Navarro for audience Q&A with the preceding speakers in this session.,2020-01-22 05:34,Join Di Cook and Ursula Laa for audience Q&A with the preceding speakers in this session.
+Discussion/Track B/Language interop,Discussion: Language interop 2,1357,2020-01-21 17:37,Join Amanda Gadrow and Teon Brooks for audience Q&A with the preceding speakers in this session.,2020-01-22 05:37,Join Earo Wang and Stuart Lee for audience Q&A with the preceding speakers in this session.
+Discussion/Track A/Learning,Discussion: Learning 2,1320,2020-01-21 17:38,Join Jesse Mostipak for audience Q&A with the preceding speakers in this session.,2020-01-22 05:38,Join Rob Hyndman and Emi Tanaka for audience Q&A with the preceding speakers in this session.
+Discussion/Keynote,Q&A: John Burn-Murdoch,2400,2020-01-21 18:40,Join Jenny Bryan for audience Q&A with keynote speaker John Burn-Murdoch.,2020-01-22 06:40,Join Jenny Bryan for audience Q&A with keynote speaker John Burn-Murdoch.
+Discussion/Track C/Modelling,Discussion: Modelling 1,1748,2020-01-21 20:30,Join Julia Silge and Erin Ledell for audience Q&A with the preceding speakers in this session.,2020-01-22 08:30,Join Hannah Frick and Bruna Wundervald for audience Q&A with the preceding speakers in this session.
+Discussion/Track B/Package dev,Discussion: Package dev 1,1507,2020-01-21 20:34,Join Rich Iannone for audience Q&A with the preceding speakers in this session.,2020-01-22 08:34,Join Colin Fay and Ahmadou Dicko for audience Q&A with the preceding speakers in this session.
+Discussion/Track A/Teaching,Discussion: Teaching 1,1239,2020-01-21 20:39,Join Desirée De Leon for audience Q&A with the preceding speakers in this session.,2020-01-22 08:39,Join Maelle Salmon and Vebashini Naidoo for audience Q&A with the preceding speakers in this session.
+Discussion/Track A/Teaching,Discussion: Teaching 2,1194,2020-01-21 21:40,Join Desirée De Leon for audience Q&A with the preceding speakers in this session.,2020-01-22 09:40,Join Maelle Salmon and Vebashini Naidoo for audience Q&A with the preceding speakers in this session.
+Discussion/Track B/Package dev,Discussion: Package dev 2,1198,2020-01-21 21:40,Join Rich Iannone for audience Q&A with the preceding speakers in this session.,2020-01-22 09:40,Join Colin Fay and Ahmadou Dicko for audience Q&A with the preceding speakers in this session.
+Discussion/Track C/Modelling,Discussion: Modelling 2,1061,2020-01-21 21:42,Join Julia Silge and Erin Ledell for audience Q&A with the preceding speakers in this session.,2020-01-22 09:42,Join Hannah Frick and Bruna Wundervald for audience Q&A with the preceding speakers in this session.
+Discussion/Keynote,Q&A: Vicki Boykis,2400,2020-01-21 22:40,Join Jenny Bryan for audience Q&A with keynote speaker Vicki Boykis.,2020-01-22 10:40,Join Jenny Bryan for audience Q&A with keynote speaker Vicki Boykis.
+Discussion/Track A/Data for good,Discussion: Data for good 1,1846,2020-01-22 00:29,Join Tom Mock and Sharla Gelfand for audience Q&A with the preceding speakers in this session.,2020-01-22 12:29,Join Carl Howe and Jeffrey Breen for audience Q&A with the preceding speakers in this session.
+Discussion/Track C/Programming,Discussion: Programming 1,1726,2020-01-22 00:31,Join Nick Strayer for audience Q&A with the preceding speakers in this session.,2020-01-22 12:31,Join Joe Cheng and Susan Vanderplas for audience Q&A with the preceding speakers in this session.
+Discussion/Track B/Organisational tooling,Discussion: Organisational tooling 1,1580,2020-01-22 00:33,Join Alex Gold for audience Q&A with the preceding speakers in this session.,2020-01-22 12:33,Join Rachael Dempsey for audience Q&A with the preceding speakers in this session.
+Discussion/Track A/Data for good,Discussion: Data for good 2,1650,2020-01-22 01:32,Join Tom Mock and Sharla Gelfand for audience Q&A with the preceding speakers in this session.,2020-01-22 13:32,Join Carl Howe and Jeffrey Breen for audience Q&A with the preceding speakers in this session.
+Discussion/Track B/Organisational tooling,Discussion: Organisational tooling 2,1397,2020-01-22 01:36,Join Alex Gold for audience Q&A with the preceding speakers in this session.,2020-01-22 13:36,Join Rachael Dempsey for audience Q&A with the preceding speakers in this session.
+Discussion/Track C/Programming,Discussion: Programming 2,1249,2020-01-22 01:39,Join Nick Strayer for audience Q&A with the preceding speakers in this session.,2020-01-22 13:39,Join Joe Cheng and Susan Vanderplas for audience Q&A with the preceding speakers in this session.

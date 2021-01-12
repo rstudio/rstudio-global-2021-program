@@ -11,3 +11,7 @@ session_df <- local({
     }
   }, USE.NAMES = FALSE, SIMPLIFY = FALSE) %>% dplyr::bind_rows()
 })
+
+intellum_datetime <- . %>%
+  lubridate::with_tz("America/New_York") %>%
+  (lubridate::stamp("2008-01-30 14:30", "ymdHM"))
