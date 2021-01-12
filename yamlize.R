@@ -13,6 +13,12 @@ blocknames <- c("alfa", "bravo", "charlie", "delta", "echo", "foxtrot", "golf",
   "hotel", "india", "juliett", "kilo", "lima")
 blocktimes <- unlist(read_yaml("block-times-gmt.yml"))
 
+talk_times <- readr::read_csv("talk_times.csv") %>%
+  group_by(talk_id) %>%
+  summarise(.groups = "drop_last",
+    time1 = start[[1]], time2 = start[[2]], duration = mean(duration)
+  )
+
 sessionnames <- read_yaml("session-names.yml")
 
 normalize_social <- function(x, url_prefix) {
@@ -149,16 +155,21 @@ parse_file <- function(filename) {
   ))
 }
 
+intellum_datetime <- . %>%
+  lubridate::with_tz("America/New_York") %>%
+  (lubridate::stamp("2008-01-30 14:30", "ymdHM"))
+
 speakers <- list.files("speakers", pattern = "*.md", full.names = TRUE) %>%
   lapply(parse_file) %>%
   bind_rows() %>%
-  arrange(tolower(name))
+  arrange(tolower(name)) %>%
+  left_join(talk_times, by = "talk_id")
 
 talk_labels <- c(lightning = "Lightning Talk", talk = "Talk", keynote = "Keynote")
 
 df <- speakers %>%
-  mutate(time1 = blocktimes[block_1], time2 = blocktimes[block_2]) %>%
-  select(name, affiliation, headshot, summary, bio, time1, time2)
+  # mutate(time1 = blocktimes[block_1], time2 = blocktimes[block_2]) %>%
+  select(name, affiliation, headshot, summary, bio)
 
 readr::write_csv(df, "export.csv")
 # googlesheets4::gs4_create(, sheets = df)
@@ -184,8 +195,9 @@ df2 <- speakers %>%
     title,
     abstract = abstract_text,
     speaker = name,
-    speaker_summary = summary_text) %>%
-  group_by(talk_id, topic, title, abstract) %>%
+    speaker_summary = summary_text, time1, time2, duration) %>%
+  mutate(time1 = intellum_datetime(time1), time2 = intellum_datetime(time2)) %>%
+  group_by(talk_id, topic, title, abstract, time1, time2, duration) %>%
   summarise(.groups = "drop",
     speaker_info = paste(collapse = "\n",
       mapply(speaker, speaker_summary, FUN = function(name, summary) {
@@ -193,7 +205,7 @@ df2 <- speakers %>%
       })
     )
   ) %>%
-  mutate(abstract_with_bio = paste(sep = "\n", abstract, speaker_info)) %>%
+  mutate(abstract_with_bio = paste(sep = "\n", abstract, speaker_info), .after = "abstract") %>%
   select(-speaker_info)
 
 df2_sorted <- df2[match(unique(speakers$talk_id), df2$talk_id),]
