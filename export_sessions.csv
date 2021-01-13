@@ -410,7 +410,7 @@ I think you’ll find this talk interesting as it shows how we applied tools tha
 Speaker: Megan Beckett
 
 Megan Beckett is a Data Scientist at Exegetic Analytics, where she consults, develops and leads several analytical projects across a wide range of fields and industries. ""Scientifically creative; creatively scientific."" This aptly describes her philosophy and approach in her work and life. Megan helped co-found and organises the Cape Town R-Ladies chapter and is a co-organiser of the satRday events in South Africa. She loves to paint, with her most recent work exploring the biodiversity of southern Africa, and running is her passion, whether on the road or the trail.
-",2020-01-21 14:19,2020-01-22 02:19,1108
+",2020-01-21 14:19,2020-01-22 02:19,1126
 328,Lightning Talk/Track C/Visualisation,Making .pot-ery with R: Translations in R Packages,"The R community is globally distributed and R itself is available with messages in 14 languages. Adding translations for non-native English-speaking users of your package can ease their experience and empower them to build better things with less frustration (though please note that ""object of type 'closure' is not subsettable"" is equally inscrutable in all human languages).
 
 In this talk, I will cover translations in R packages -- how to implement them, why to do so, and how to maintain them. This will summarize and extend learnings based on our experience adding Mandarin translations to data.table and culminating in the potools package.
@@ -423,7 +423,7 @@ Speaker: Michael Chirico
 Michael Chirico is a data scientist working on compute memory efficiency at Google. Before that he worked at Grab in Singapore and earlier got his PhD in Economics at the University of Pennsylvania.
 
 He is passionate about making tools to empower others who work with data (most of this energy is directed towards data.table) and loves learning languages (at various middling levels of proficiency in Japanese, Spanish, and Mandarin, with goals to learn Cantonese, Hokkien, Vietnamese and Bahasa).
-",2020-01-21 14:29,2020-01-22 02:29,270
+",2020-01-21 14:30,2020-01-22 02:30,270
 322,Talk/Track B/Language interop,Bringing the Tidyverse to Python with Siuba,"Last January I left my job to spend a year developing siuba, a python port of dplyr. At its core, this decision was driven by a decade of watching python and R users produce similar analyses, but in very different ways.
 
 In this talk, I'll discuss 3 ways siuba enables R users to transfer their hard-earned programming knowledge to python: (1) leveraging the power of dplyr syntax, (2) options to generate SQL code, and (3) working with the plotnine plotting library.
@@ -438,7 +438,7 @@ Looking back, I'll consider two critical pieces that have helped me develop siub
 Speaker: Michael Chow
 
 Michael Chow is a data scientist and learning researcher. He serves as a co-director at Code for Philly. In past lives, he worked on adaptive assessment tools in ed tech, and received a PhD in cognitive psychology from Princeton University.
-",2020-01-21 13:00,2020-01-22 01:00,1143
+",2020-01-21 13:00,2020-01-22 01:00,1157
 309,Talk/Track A/Teaching,Feedback at scale,"As enrolments in statistics and data science courses grow and as these courses become more computational, educators are faced with an interesting challenge -- providing timely and meaningful feedback, particularly with online delivery of courses. The simplest solution is using assignments that are easier to auto-grade, e.g. multiple-choice questions, simplistic coding exercises, but it is impossible to assess mastery of the entire data science cycle using only these types of exercises. In this talk I will discuss writing effective learnr exercises, providing useful and motivating feedback with gradethis, distributing them at scale online and as an R package, and collecting student data for formative assessment with learnrhash.
 ","As enrolments in statistics and data science courses grow and as these courses become more computational, educators are faced with an interesting challenge -- providing timely and meaningful feedback, particularly with online delivery of courses. The simplest solution is using assignments that are easier to auto-grade, e.g. multiple-choice questions, simplistic coding exercises, but it is impossible to assess mastery of the entire data science cycle using only these types of exercises. In this talk I will discuss writing effective learnr exercises, providing useful and motivating feedback with gradethis, distributing them at scale online and as an R package, and collecting student data for formative assessment with learnrhash.
 
@@ -459,7 +459,7 @@ Neal Richardson leads the engineering team at Ursa Computing, a startup working 
 Speaker: Nicholas Pylypiw
 
 Nick is the Director of Data Science at Cape Fear Collective, a non profit which supports Southeastern North Carolina’s front line organizations in combating poverty, racism, poor health and education outcomes, and socio-economic disparities. Prior to CFC, he honed his data science and consulting skills in the marketing analytics space, transforming the way Fortune 500+ companies (Lowe's Southwest Airlines, P&G, and many others) think about their customer strategy and value proposition. He lives in Raleigh, North Carolina.
-",2020-01-21 14:15,2020-01-22 02:15,276
+",2020-01-21 14:16,2020-01-22 02:16,276
 182,Talk/Track C/Visualisation,"A New Paradigm for Multifigure, Coordinate-Based Plotting in R","R is unparalleled in its ability to transform raw data into a wide array of beautiful graphics, all within the same environment. However, when it comes to complex, multi-paneled plots, users rely on 3rd party graphic design software to arrange plots. Here I present the new world of programmatic, coordinate-based multi-figure plotting in R. Employing grid Graphics and drawing from the paradigms of base plotting and ggplot2, I am developing a package that will revolutionize the way plots are laid out in R. Not only will individual plots be aesthetically customizable and tailored for speed, users will also be offered exquisite control over all aspects of page layout, plot placement, and arrangements. Come join me in changing how we plot in R!
 ","R is unparalleled in its ability to transform raw data into a wide array of beautiful graphics, all within the same environment. However, when it comes to complex, multi-paneled plots, users rely on 3rd party graphic design software to arrange plots. Here I present the new world of programmatic, coordinate-based multi-figure plotting in R. Employing grid Graphics and drawing from the paradigms of base plotting and ggplot2, I am developing a package that will revolutionize the way plots are laid out in R. Not only will individual plots be aesthetically customizable and tailored for speed, users will also be offered exquisite control over all aspects of page layout, plot placement, and arrangements. Come join me in changing how we plot in R!
 
@@ -473,7 +473,7 @@ Nicole Kramer is a third year Bioinformatics and Computational Biology graduate 
 Speaker: Pamela E. Pairo
 
 Pamela E. Pairo is a Ph.D. in Biological Sciences of the University of Buenos Aires, with expertise in community ecology. One of her research lines focuses on analyzing the impact of human activities on the diversity and composition of biological communities with particular interest in arthropods. In addition, she is interested in studying the spatio-temporal patterns of dengue disease in Argentina. She also is a teaching assistant in statistics at the Argentine University of Enterprise (UADE).
-",2020-01-21 14:24,2020-01-22 02:24,288
+",2020-01-21 14:25,2020-01-22 02:25,288
 225,Lightning Talk/Track C/Modelling,How I became a Data Composer – examples of simulated datasets that bring value to a data-driven company,"How can I get the buy-in from business partners to use more advanced techniques? What can I do to make a data project involving several teams more efficient? And how can I train analysts who do not (yet) have access to sensitive data?
 A good data composer is skilled at creating suitable data quickly and efficiently. R has many functions and packages that help with simulating independent variables and composing those in a meaningful way.
 In this talk, I will share how I started creating data and how this skill helped me with solving some of the issues described above. Showing a few examples – of small, medium-sized, and large data composition – I want to encourage attendees to simulate data and enrich their data skillset.
@@ -539,7 +539,7 @@ Key Takeaways.
 
 Speaker: Shirbi Ish-Shalom
 
-",2020-01-21 17:16,2020-01-22 05:16,870
+",2020-01-21 17:16,2020-01-22 05:16,767
 117,Lightning Talk/Track C/Modelling,"tidymodels/stacks, Or, In Preparation for Pesto: A Grammar for Stacked Ensemble Modeling","Through a community survey conducted over the summer, the RStudio tidymodels team learned that users felt the #1 priority for future development in the tidymodels package ecosystem should be ensembling, a statistical modeling technique involving the synthesis of multiple learning algorithms to improve predictive performance. This December, we were delighted to announce the initial release of stacks, a package for tidymodels-aligned ensembling. A particularly statistically-involved pesto recipe will help us get a sense for how the package works and how it advances the tidymodels package ecosystem as a whole.
 ","Through a community survey conducted over the summer, the RStudio tidymodels team learned that users felt the #1 priority for future development in the tidymodels package ecosystem should be ensembling, a statistical modeling technique involving the synthesis of multiple learning algorithms to improve predictive performance. This December, we were delighted to announce the initial release of stacks, a package for tidymodels-aligned ensembling. A particularly statistically-involved pesto recipe will help us get a sense for how the package works and how it advances the tidymodels package ecosystem as a whole.
 
@@ -553,7 +553,7 @@ Simon Couch is an R developer and statistics student at Reed College, where he i
 Speaker: Sophie Beiers
 
 Sophie Beiers works on the ACLU's Analytics team as a Data Journalist where she analyzes and visualizes data for their lawyers’ legal arguments and for external advocacy pieces. Prior to her time at the ACLU, she received her master’s degree in Quantitative Methods in Social Sciences at Columbia University where she also TA’d at the Lede Program for Data Journalism. Before NYC, she kicked off her career in analytics in San Francisco at the education nonprofit ""YouthTruth."" Sophie is a Bay Area native but currently lives in Portland, OR and enjoys running, hiking, and making pottery in her free time.
-",2020-01-21 14:00,2020-01-22 02:00,937
+",2020-01-21 14:00,2020-01-22 02:00,960
 2,Keynote,Just glue it,"Vicky will discuss how that as people who can write code and analyze data, we have a lot of input and power over what our digital and work worlds looks like, and therefore can act as agents of change and repair.
 ","Vicky will discuss how that as people who can write code and analyze data, we have a lot of input and power over what our digital and work worlds looks like, and therefore can act as agents of change and repair.
 
@@ -608,7 +608,7 @@ Speaker: Yanina Bellini Saibene
 
 Yanina Bellini Saibene is a researcher at INTA (National Institute of Agricultural Technology) dedicated to applying data science to the agricultural sector and a professor in several regional specializations about Digital Agriculture and Data Analysis. Yanina is formally trained as a Licenciate in Information System with a Master degree in Data Mining and Knowledge Management. She is an active member of the R Community as an R-Ladies organizer and part of the R-Ladies Global Team. She also is a co-founder and co-chair of LatinR and part of the organizing team of useR!2020 and user!2021 (co-chair).
 She also co-founder of MetaDocencia, an open, free, volunteer-lead, not-for-profit educational organization and part of the teams that translate educational and technical material to Spanish.
-",2020-01-21 17:22,2020-01-22 05:22,1031
+",2020-01-21 17:22,2020-01-22 05:22,1040
 114,Lightning Talk/Track C/Programming,Easy larger-than-RAM data manipulation with {disk.frame},"Learn how to handle 100GBs of data with ease using {disk.frame} - the larger-than-RAM-data manipulation package.
 
 R loads data in its entirety into RAM. However, RAM is a precious resource and often do run out. That's why most R user would have run into the ""cannot allocate vector of size xxB."" error at some point.
