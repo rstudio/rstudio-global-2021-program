@@ -71,11 +71,19 @@ df5 <- df3 %>%
     is.na(track) ~ paste0("Join ", hosts, " for audience Q&A with keynote speaker ", name, "."),
     TRUE ~ paste0("Join ", hosts, " for audience Q&A with the preceding speakers in this session.")
   )) %>%
-  select(topic, title, description, start_time = discuss_start, duration = discuss_duration)
+  mutate(summary = case_when(
+    is.na(track) ~ paste0("Live audience Q&A with keynote speaker ", name, "."),
+    TRUE ~ paste0("Live audience Q&A and discussion with session hosts and speakers for the ",
+      ifelse(sub_block == 1, "first", "second"),
+      " half of the \"",
+      session,
+      "\" session.")
+  )) %>%
+  select(topic, title, summary, description, start_time = discuss_start, duration = discuss_duration)
 
 df6 <- df5 %>%
   arrange(start_time) %>%
-  group_by(topic, title, duration) %>%
+  group_by(topic, title, summary, duration) %>%
   summarise(.groups = "drop",
     time1 = intellum_datetime(start_time[[1]]),
     desc1 = description[[1]],
