@@ -104,7 +104,7 @@ Athanasia M. Mowinckel is a staff scientist at the Center for Lifespan Changes i
 She has a background on cognitive psychology, and uses R for almost everything.
 She goes by the nickname ""Mo"" (closer to 'Mou' than 'Moe'), and is a member of the R-Ladies Global team.
 ",2020-01-21 18:20,2020-01-22 06:20,292
-312,Talk/Track C/Programming,<code>plumber</code> + <code>future</code>: Async Web APIs,"plumber is an R package that allows users to create web APIs by decorating R functions using roxygen2-like comments. In the latest release, asynchronous code (using future or promises) may be inserted at any stage of a plumber route execution, enabling parallel processing using multiple workers.  In this talk, I will go through how you can set up your own asynchronous plumber API to leverage your full computing potential.
+312,Talk/Track C/Programming,plumber + future: Async Web APIs,"plumber is an R package that allows users to create web APIs by decorating R functions using roxygen2-like comments. In the latest release, asynchronous code (using future or promises) may be inserted at any stage of a plumber route execution, enabling parallel processing using multiple workers.  In this talk, I will go through how you can set up your own asynchronous plumber API to leverage your full computing potential.
 ","plumber is an R package that allows users to create web APIs by decorating R functions using roxygen2-like comments. In the latest release, asynchronous code (using future or promises) may be inserted at any stage of a plumber route execution, enabling parallel processing using multiple workers.  In this talk, I will go through how you can set up your own asynchronous plumber API to leverage your full computing potential.
 
 Speaker: Barret Schloerke

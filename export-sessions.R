@@ -252,7 +252,8 @@ simple_schedule <- speakers %>%
   group_by(talk_id, type, block, track, title_text, time, duration) %>%
   summarise(.groups = "drop", name = paste(name, collapse = "\n")) %>%
   relocate(name, .before = title_text) %>%
-  arrange(block, time, track)
+  arrange(block, track, time) %>%
+  rename("time (GMT)" = time)
 
 googlesheets4::write_sheet(simple_schedule,
   "https://docs.google.com/spreadsheets/d/1wYf7w-Elg5vSeZkKjRFeWzShVPXqDXJzy6vrYUyJm0c/edit#gid=0",
