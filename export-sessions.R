@@ -5,6 +5,7 @@ library(yaml)
 library(dplyr)
 library(htmltools)
 library(tidyr)
+library(lubridate)
 
 source("_helpers.R")
 
@@ -257,4 +258,22 @@ simple_schedule <- speakers %>%
 
 googlesheets4::write_sheet(simple_schedule,
   "https://docs.google.com/spreadsheets/d/1wYf7w-Elg5vSeZkKjRFeWzShVPXqDXJzy6vrYUyJm0c/edit#gid=0",
+  "Sheet1")
+
+discussion_links <- speakers %>%
+  select(type, track, name, time1, time2) %>%
+  mutate(
+    "First session join time (GMT)" = lubridate::floor_date(time1, unit = "hour") + lubridate::minutes(5),
+    "Second session join time (GMT)" = lubridate::floor_date(time2, unit = "hour") + lubridate::minutes(5),
+    "Zoom link" = case_when(
+      track == "A" ~ "https://us02web.zoom.us/j/85471971782",
+      track == "B" ~ "https://us02web.zoom.us/j/9205496340",
+      track == "C" ~ "https://us02web.zoom.us/j/9718702413",
+      type == "keynote" ~ "https://us02web.zoom.us/j/81544473935",
+      TRUE ~ NA_character_
+    )
+  ) %>%
+  select(-type, -time1, -time2)
+googlesheets4::write_sheet(discussion_links,
+  "https://docs.google.com/spreadsheets/d/1dJrgRqCkIlKiWxSHkXdbbhIJXllgiYl9qug3HgJC2R8/edit#gid=0",
   "Sheet1")
