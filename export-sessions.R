@@ -248,14 +248,25 @@ print(processx::run("aws", c(
 simple_schedule <- speakers %>%
   pivot_longer(starts_with("block_"), names_to = "block_num", values_to = "block") %>%
   mutate(time = ifelse(block_num == "block_1", format(time1), format(time2)), .after = "time2") %>%
-  select(talk_id, type, block, track, name, title_text, time, duration) %>%
+  select(talk_id, type, block, track, name, title_text, time, duration, abstract_html = abstract, abstract_text,
+    bio_html = bio, bio_text = summary_text, url) %>%
   # Group by everything but name
-  group_by(talk_id, type, block, track, title_text, time, duration) %>%
-  summarise(.groups = "drop", name = paste(name, collapse = "\n")) %>%
+  group_by(talk_id, type, block, track, title_text, time, duration, abstract_html, abstract_text, url) %>%
+  summarise(.groups = "drop",
+    name = paste(name, collapse = "\n"),
+    bio_html = paste(bio_html, collapse = "\n"),
+    bio_text = paste(bio_text, collapse = "\n\n")
+  ) %>%
   relocate(name, .before = title_text) %>%
+  relocate(bio_html, bio_text, .before = url) %>%
   arrange(block, track, time) %>%
-  rename("time (GMT)" = time)
+  rename("time (GMT)" = time) %>%
+  left_join(session_df, c("block", "track")) %>%
+  mutate(session = ifelse(is.na(session), "Keynote", session)) %>%
+  relocate(session, .after = track) %>%
+  rename(topic = session)
 
+# readr::write_csv(simple_schedule, "simple_schedule.csv")
 googlesheets4::write_sheet(simple_schedule,
   "https://docs.google.com/spreadsheets/d/1wYf7w-Elg5vSeZkKjRFeWzShVPXqDXJzy6vrYUyJm0c/edit#gid=0",
   "Sheet1")
