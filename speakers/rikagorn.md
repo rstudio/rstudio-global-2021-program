@@ -1,5 +1,6 @@
 ---
 talk_id: 186
+url: https://global.rstudio.com/student/page/40636
 type: talk
 track: B
 blocks:

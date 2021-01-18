@@ -1,5 +1,6 @@
 ---
 talk_id: 167
+url: https://global.rstudio.com/student/page/40632
 type: lightning
 track: C
 blocks:

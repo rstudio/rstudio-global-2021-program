@@ -1,5 +1,6 @@
 ---
 talk_id: 1
+url: https://global.rstudio.com/student/page/40521
 type: keynote
 track: null
 blocks:

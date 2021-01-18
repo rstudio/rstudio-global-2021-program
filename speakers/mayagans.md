@@ -1,5 +1,6 @@
 ---
 talk_id: 148
+url: https://global.rstudio.com/student/page/40626
 type: talk
 track: A
 blocks:
