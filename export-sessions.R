@@ -260,16 +260,23 @@ simple_schedule <- speakers %>%
   relocate(name, .before = title_text) %>%
   relocate(bio_html, bio_text, .before = url) %>%
   arrange(block, track, time) %>%
-  rename("time (GMT)" = time) %>%
+  rename("time_gmt" = time) %>%
   left_join(session_df, c("block", "track")) %>%
   mutate(session = ifelse(is.na(session), "Keynote", session)) %>%
   relocate(session, .after = track) %>%
   rename(topic = session)
 
-# readr::write_csv(simple_schedule, "simple_schedule.csv")
 googlesheets4::write_sheet(simple_schedule,
   "https://docs.google.com/spreadsheets/d/1wYf7w-Elg5vSeZkKjRFeWzShVPXqDXJzy6vrYUyJm0c/edit#gid=0",
   "Sheet1")
+
+readr::write_csv(simple_schedule, "simple_schedule.csv")
+print(processx::run("aws", c(
+  "s3",
+  "cp",
+  rprojroot::find_rstudio_root_file("simple_schedule.csv"),
+  "s3://rstudio-global-2021/schedule.csv"
+)))
 
 discussion_links <- speakers %>%
   select(type, track, name, time1, time2) %>%

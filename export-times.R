@@ -79,7 +79,7 @@ df5 <- df3 %>%
       session,
       "\" session.")
   )) %>%
-  select(topic, title, summary, description, start_time = discuss_start, duration = discuss_duration)
+  select(topic, block, track, title, summary, description, start_time = discuss_start, duration = discuss_duration)
 
 df6 <- df5 %>%
   arrange(start_time) %>%
