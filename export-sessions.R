@@ -271,12 +271,6 @@ googlesheets4::write_sheet(simple_schedule,
   "Sheet1")
 
 readr::write_csv(simple_schedule, "simple_schedule.csv")
-print(processx::run("aws", c(
-  "s3",
-  "cp",
-  rprojroot::find_rstudio_root_file("simple_schedule.csv"),
-  "s3://rstudio-global-2021/schedule.csv"
-)))
 
 discussion_links <- speakers %>%
   select(type, track, name, time1, time2) %>%

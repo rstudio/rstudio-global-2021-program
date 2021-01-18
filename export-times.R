@@ -81,6 +81,8 @@ df5 <- df3 %>%
   )) %>%
   select(topic, block, track, title, summary, description, start_time = discuss_start, duration = discuss_duration)
 
+readr::write_csv(df5 %>% select(-topic), "discussion_sessions_normalized.csv")
+
 df6 <- df5 %>%
   arrange(start_time) %>%
   group_by(topic, title, summary, duration) %>%
