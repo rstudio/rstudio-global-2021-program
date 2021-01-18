@@ -11,7 +11,7 @@ if (!exists("speaker_program_df")) {
 
 url2 <- "https://docs.google.com/spreadsheets/d/19NMt0A9vXzUV5eNhGkUPY3r7dFSsXcgPx4GAnxnU2ds/edit#gid=0"
 if (!exists("host_df")) {
-  host_df <- read_sheet(url2, sheet = "proposed-hosts") %>%
+  host_df <- read_sheet(url2, sheet = "hosts") %>%
     rowwise() %>%
     mutate(hosts = paste(collapse = " and ", na.omit(c(name, `co-host`)))) %>%
     ungroup() %>%
