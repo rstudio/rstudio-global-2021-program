@@ -21,7 +21,7 @@ if (!exists("host_df")) {
 stopifnot(all(table(speaker_program_df$talk_id) == 2))
 
 df <- speaker_program_df %>%
-  mutate(base_time = parse_date_time(`Europe/London`, "m d, H:M p") %>% `year<-`(2020)) %>%
+  mutate(base_time = parse_date_time(`Europe/London`, "m d, H:M p") %>% `year<-`(2021)) %>%
   mutate(duration_secs = case_when(
     is.na(actual_duration) ~ duration * 60,
     TRUE ~ suppressWarnings(period_to_seconds(ms(actual_duration)))
