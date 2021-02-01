@@ -114,13 +114,6 @@ hello()! Dr. Barret Schloerke is a Software Engineer on the Shiny team at RStudi
 163,Lightning Talk/Track B/Organisational tooling,Custom theming in Shiny &amp; R Markdown with bslib &amp; thematic,"Custom theming in Shiny and R Markdown often requires writing styling rules in both CSS and R. In particular, styles for HTML content (e.g., actionButton(), tabsetPanel(), titlePanel(), etc) derive from Bootstrap CSS, so customization is traditionally done by overwriting that CSS, which is difficult to do 100% correctly. The {bslib} package helps solve this problem by making it easy to customize (any version of) Bootstrap CSS defaults from R. However, this only solves part of the problem since CSS doesn't necessarily effect output(s) rendered by R, such as plotOutput(). The thematic package helps solve this problem by providing auto theming of plotOutput()s (based on CSS) as well as a simple interface for styling any R graphic for any output format.
 ","Custom theming in Shiny and R Markdown often requires writing styling rules in both CSS and R. In particular, styles for HTML content (e.g., actionButton(), tabsetPanel(), titlePanel(), etc) derive from Bootstrap CSS, so customization is traditionally done by overwriting that CSS, which is difficult to do 100% correctly. The {bslib} package helps solve this problem by making it easy to customize (any version of) Bootstrap CSS defaults from R. However, this only solves part of the problem since CSS doesn't necessarily effect output(s) rendered by R, such as plotOutput(). The thematic package helps solve this problem by providing auto theming of plotOutput()s (based on CSS) as well as a simple interface for styling any R graphic for any output format.
 
-Note: bslib and shiny 1.6.0 aren't yet on CRAN, but will be in the next few days. In the meantime, you can install them with:
-
-  remotes::install_github("rstudio/bslib@rc-v0.2.4")
-
-  remotes::install_github("rstudio/shiny@rc-v1.6.0")
-
-
 Speaker: Carson Sievert
 
 Carson is a software engineer at RStudio working on projects that bridge R with web technologies, such as {shiny}, {bslib}, {thematic}, and {plotly}. Before joining RStudio in late 2018, Carson worked as consultant, delivering analytical and scientific software to organizations such as the Library of Congress, NOAA, Sandia National Labs, and plotly. Carson began consulting part-time during his PhD in statistics at Iowa State, where his work on the R package {plotly} was recognized by the ASA with the 2017 Chambers Award. His book ""Interactive data visualization with R, plotly, and shiny"""" is freely available online at https://plotly-r.com.
@@ -570,10 +563,6 @@ Vicki Boykis is a machine learning engineer at Automattic, the company behind Wo
 ",2021-01-21 19:00,2021-01-22 07:00,1454
 335,Talk/Track C/Programming,Making Shiny apps faster with caching,"Shiny's 1.6 has a new function, bindCache(), which makes it easy to dramatically speed up reactive expressions and output rendering functions. This allows many applications to scale up to serve several times more users without an increase in server resources.
 ","Shiny's 1.6 has a new function, bindCache(), which makes it easy to dramatically speed up reactive expressions and output rendering functions. This allows many applications to scale up to serve several times more users without an increase in server resources.
-
-Note: Shiny 1.6.0 isn't yet on CRAN, but will be in the next few days. In the meantime, you can install it with:
-
-  remotes::install_github("rstudio/shiny@rc-v1.6.0")
 
 Speaker: Winston Chang
 
